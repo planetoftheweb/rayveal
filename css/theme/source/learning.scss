@@ -10,12 +10,21 @@
 @import "../template/settings";
 // ---------------------------------------------
 
+// Color palette
+
+$darkgray: #313235;
+$blue: #0077B5;
+$orange: #E68523;
+$mediumgray: #86888A;
+$lightgray: #CDCDCD;
+$white: #FFF;
+
 
 // Override theme settings (see ../template/settings.scss)
-$backgroundColor: #FFF;
+$backgroundColor: $white;
 
-$mainColor: #444444;
-$headingColor: #444444;
+$mainColor: $darkgray;
+$headingColor: $mainColor;
 
 $mainFontSize: 42px;
 $mainFont: 'Avenir', sans-serif;
@@ -24,9 +33,9 @@ $headingTextShadow: none;
 $headingLetterSpacing: normal;
 $headingTextTransform: inherit;
 $headingFontWeight: 900;
-$linkColor: #DC762C;
+$linkColor: $orange;
 $linkColorHover: lighten( $linkColor, 15% );
-$selectionBackgroundColor: #EEC856;
+$selectionBackgroundColor: $lightgray;
 
 $heading1Size: 50pt;
 $heading2Size: 48pt;
@@ -35,7 +44,7 @@ $heading4Size: 38pt;
 
 section.has-light-background {
 	&, h1, h2, h3, h4, h5, h6 {
-		color: #3C3C3B;
+		color: $mainColor;
 	}
 }
 
@@ -223,7 +232,7 @@ body {
 .reveal pre {
 	display: block;
 	position: relative;
-	width: 90%;
+	width: 100%;
 	margin: $blockMargin auto;
 
 	text-align: left;
@@ -232,16 +241,17 @@ body {
 	line-height: 120%;
 
 	word-wrap: break-word;
-
-	box-shadow: 0px 0px 6px rgba(0,0,0,0.3);
+  outline: none !important;
 }
+
 .reveal code {
-	font-family: monospace;
+	font-family: 'Calynda',monospace;
+	padding: 10px;
 }
 
 .reveal pre code {
 	display: block;
-	padding: 5px;
+	padding: 10px 20px;
 	overflow: auto;
 	max-height: 400px;
 	word-wrap: normal;
@@ -251,17 +261,42 @@ body {
 	margin: auto;
 	border-collapse: collapse;
 	border-spacing: 0;
+	font-size: 2rem !important;
+	width: 100%;
 }
 
 .reveal table th {
+  vertical-align: middle;
 	font-weight: bold;
+	color: $white;
+	background:$blue;
+	line-height: 100%;
+	border: 1px solid;
 }
 
 .reveal table th,
 .reveal table td {
 	text-align: left;
-	padding: 0.2em 0.5em 0.2em 0.5em;
-	border-bottom: 1px solid;
+	padding: 0.5em;
+	border: 1px solid black;
+}
+
+.reveal table th {
+	border: 1px solid white;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.reveal table th:first-child {
+	border-left: 1px solid black;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.reveal table th:last-child {
+	border-right: 1px solid black;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
 }
 
 .reveal table th[align="center"],
@@ -274,10 +309,10 @@ body {
 	text-align: right;
 }
 
-.reveal table tbody tr:last-child th,
-.reveal table tbody tr:last-child td {
-	border-bottom: none;
+.reveal table td {
+	font-size: 1.7rem;
 }
+
 
 .reveal sup {
 	vertical-align: super;
@@ -290,11 +325,9 @@ body {
 	display: inline-block;
 	font-size: 0.6em;
 	line-height: 120%;
-	vertical-align: top;
 }
 
 .reveal small * {
-	vertical-align: top;
 }
 
 
@@ -318,7 +351,7 @@ body {
 	}
 
 .reveal .roll span:after {
-	color: #fff;
+	color: $white;
 	background: darken( $linkColor, 15% );
 }
 
@@ -421,7 +454,7 @@ body {
 
 .title {
 	letter-spacing: .03em;
-	color: #FFF;
+	color: $white;
 }
 
 .title h1,.title h2,.title h3,.title h4,.title h5,.title h6 {
@@ -442,7 +475,7 @@ body {
 
 
 .bar h1, .bar h2, .bar h3 {
-	color: #FFF;
+	color: $white;
 }
 
 
@@ -454,8 +487,97 @@ body {
 
 .hasicon h2 > i {
 	font-size: 120px;	
-	color: #DC762C;
+	color: $orange;
 	margin-left: -120px;
   vertical-align: middle;
 }
 
+
+// Code template
+/*********************************************
+ * Code
+ *********************************************/
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	padding: 0.5em;
+	background: #eee;
+	color: $darkgray;
+	border-radius: 10px;
+	font-family: 'Calynda', monospace;
+}
+
+.hljs-link,
+.hljs-emphasis,
+.hljs-attribute,
+.hljs-addition {
+	color: #070
+}
+
+.hljs-emphasis {
+	font-style: italic
+}
+
+.hljs-strong,
+.hljs-string,
+.hljs-deletion {
+	color: #d14
+}
+
+.hljs-strong {
+	font-weight: bold
+}
+
+.hljs-quote,
+.hljs-comment {
+	color: #998;
+	font-style: italic
+}
+
+.hljs-section,
+.hljs-title {
+	color: #900
+}
+
+.hljs-class .hljs-title,
+.hljs-type {
+	color: #458
+}
+
+.hljs-variable,
+.hljs-template-variable {
+	color: #336699
+}
+
+.hljs-bullet {
+	color: #997700
+}
+
+.hljs-meta {
+	color: #3344bb
+}
+
+.hljs-code,
+.hljs-number,
+.hljs-literal,
+.hljs-keyword,
+.hljs-selector-tag {
+	color: $blue;
+}
+
+.hljs-regexp {
+	background-color: #fff0ff;
+	color: #880088
+}
+
+.hljs-symbol {
+	color: #990073
+}
+
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class {
+	color: #007700
+}
