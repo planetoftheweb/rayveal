@@ -16,9 +16,9 @@ Essential Training
 - Battle tested
 - Uses modern web technologies
 
-Note:
-# What is Bootstrap
-A framework for building sites fast.
+>> 
+# Note
+Anything after the note special characters won't appear on the slides, but will still be in the markdown file. That means you can write your speaking notes here.
 
 
 ---
