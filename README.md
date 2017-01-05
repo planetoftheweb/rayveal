@@ -1,7 +1,7 @@
 # RayVeal
 My own version of RevealJS. Based on the awesome [Reveal JS](https://github.com/hakimel/reveal.js).
 
-- Demo: http://raybo.org/rayveal/slideshow
+- [Demo](http://raybo.org/rayveal/slideshow)
 
 ## Installation
 Pretty much like installing RevealJS.
