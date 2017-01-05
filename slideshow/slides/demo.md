@@ -2,6 +2,8 @@
 #Bootstrap 4
 Essential Training
 
+>> You can create author's notes.
+
 ---
 
 <!-- .slide: data-state="hasicon" -->
