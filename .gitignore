@@ -8,8 +8,8 @@ out/
 log/*.log
 tmp/**
 node_modules/
-slideshows/slides/01_01.md
-!slideshows/slides/demo.md
+./slideshows/slides/*.md
+!./slideshows/slides/demo.md
 .sass-cache
 css/reveal.min.css
 js/reveal.min.js
