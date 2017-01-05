@@ -53,25 +53,6 @@ Anything after the note special characters won't appear on the slides, but will 
 
 ---
 
-<!-- .slide: data-state="hasicon" -->
-
-## <i class="fa fa-font"></i> Typography
-
-<ul>
-	<li class="fragment">`Reboot.css` styles</li>
-	<li class="fragment">`Rems` vs `Ems`</li></li>
-	<li class="fragment">Avoid `margin-top`</li>
-</ul>
-
->> Speaker Notes:
-1. There is a special portion at the beginning of the bootstrap styles called reboot.css. It normalizes styles so that they look similar in different platforms for consistent display. Unlike other normalizing css templates, it's somewhat opinionated.
-
-2. Bootstrap uses Rems, a font measurement system that makes it easier to control both the size of fonts across the entire browser and within individual components. That's going to make it easier to 
-
-3. In CSS, vertical margins can collapse and that makes it confusing to calculate the proper spacing in between different elements. To avoid this, bootstrap adds margin only at the bottom of elements.
-
----
-
 ## Easiest Electron App
 
 ```javascript
