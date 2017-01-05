@@ -14,11 +14,17 @@ Essential Training
 - Battle tested
 - Uses modern web technologies
 
+Note:
+# What is Bootstrap
+A framework for building sites fast.
+
+
 ---
 
 <!-- .slide: data-state="bar" -->
 
 ## Installation: Advanced
+
 - Downloading source
 - Using build tools
 - Sass or LESS
@@ -60,7 +66,7 @@ app.on('ready', function() {
 
 ## What’s a Framework?
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor sapien nec arcu gravida, pellentesque dictum sapien condimentum. Nunc eget quam id metus maximus consequat in quis massa. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor sapien nec arcu gravida, pellentesque dictum sapien condimentum. Nunc eget quam id metus maximus consequat in quis massa.
 
 ---
 
