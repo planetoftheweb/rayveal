@@ -1,8 +1,7 @@
 {
-  "name": "reveal.js",
-  "version": "3.3.0",
-  "description": "The HTML Presentation Framework",
-  "homepage": "http://lab.hakim.se/reveal-js",
+  "name": "LearnVeal",
+  "version": "1.0.0",
+  "description": "HTML Presentation Framework...based on RevealJS 3.3.0 by @hakim http://lab.hakim.se/reveal-js",
   "subdomain": "revealjs",
   "main": "js/reveal.js",
   "scripts": {
@@ -10,13 +9,13 @@
     "start": "grunt serve"
   },
   "author": {
-    "name": "Hakim El Hattab",
-    "email": "hakim.elhattab@gmail.com",
-    "web": "http://hakim.se"
+    "name": "Ray Villalobos",
+    "email": "ray@planetoftheweb.com",
+    "web": "http://raybo.org"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/hakimel/reveal.js.git"
+    "url": "git://github.com/planetoftheweb/reveal.js.git"
   },
   "engines": {
     "node": ">=4.0.0"
@@ -39,6 +38,5 @@
     "grunt-sass": "~1.1.0-beta",
     "grunt-zip": "~0.17.1",
     "node-sass": "~3.13.0"
-  },
-  "license": "MIT"
+  }
 }
