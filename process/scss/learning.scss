@@ -532,6 +532,14 @@ body {
 }
 
 
+/*********************************************
+ * OVERRIDE FRAGMENTS ANIMATION
+ *********************************************/
+
+.reveal .slides section .fragment {
+  -webkit-transition: all ease;
+          transition: all ease;
+}
 
 /*********************************************
  * Title Slide
@@ -580,11 +588,6 @@ body {
 .bar body {
   background: linear-gradient(180deg, $blue 0%,$blue 25%,#FFF 25%,#FFF 100%);
 }
-
-// data-background-color="#0C62A6"
-// data-background-position="bottom"
-// data-background-size="100% 75%"
-// data-background-image="../css/theme/bar.png"
 
 .bar h1, .bar h2, .bar h3 {
 	color: $white;

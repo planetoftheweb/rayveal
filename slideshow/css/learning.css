@@ -396,6 +396,13 @@ body {
   color: #007700; }
 
 /*********************************************
+ * OVERRIDE FRAGMENTS ANIMATION
+ *********************************************/
+.reveal .slides section .fragment {
+  -webkit-transition: all ease;
+  transition: all ease; }
+
+/*********************************************
  * Title Slide
  *********************************************/
 .title body {
