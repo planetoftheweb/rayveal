@@ -437,7 +437,9 @@ body {
  * Has Bar
  *********************************************/
 .bar body {
-  background: linear-gradient(180deg, #0077B5 0%, #0077B5 25%, #FFF 25%, #FFF 100%); }
+  background-repeat: no-repeat;
+  background-image: linear-gradient(#0077B5, #0077B5), linear-gradient(#FFF, #FFF);
+  background-size: 100% 25%, 100%; }
 
 .bar h1, .bar h2, .bar h3 {
   color: #FFF; }

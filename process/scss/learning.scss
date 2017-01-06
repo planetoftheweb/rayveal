@@ -586,7 +586,9 @@ body {
  *********************************************/
 
 .bar body {
-  background: linear-gradient(180deg, $blue 0%,$blue 25%,#FFF 25%,#FFF 100%);
+  background-repeat: no-repeat;
+  background-image: linear-gradient($blue, $blue), linear-gradient(#FFF, #FFF);
+  background-size: 100% 25%, 100%;
 }
 
 .bar h1, .bar h2, .bar h3 {
