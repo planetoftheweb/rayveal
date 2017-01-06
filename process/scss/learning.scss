@@ -35,7 +35,8 @@ $headingTextTransform: inherit;
 $headingFontWeight: 900;
 $linkColor: $orange;
 $linkColorHover: lighten( $linkColor, 15% );
-$selectionBackgroundColor: $lightgray;
+$selectionColor: $darkgray;
+$selectionBackgroundColor: lighten( $lightgray, 5% );;
 
 $heading1Size: 50pt;
 $heading2Size: 48pt;
@@ -69,7 +70,7 @@ body {
 }
 
 ::selection {
-	color: $selectionColor;
+	color: inherit;
 	background: $selectionBackgroundColor;
 	text-shadow: none;
 }

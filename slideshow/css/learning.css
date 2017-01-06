@@ -21,8 +21,8 @@ body {
   color: #313235; }
 
 ::selection {
-  color: #fff;
-  background: #CDCDCD;
+  color: inherit;
+  background: #dadada;
   text-shadow: none; }
 
 .reveal .slides {
