@@ -10,7 +10,7 @@ tmp/**
 node_modules/
 slideshow/slides/*.md
 !slideshow/slides/demo.md
-!slideshow/course.html
+slideshow/course.html
 .sass-cache
 css/reveal.min.css
 js/reveal.min.js
