@@ -39,9 +39,9 @@ Anything after the note special characters won't appear on the slides, but will 
 ## <i class="fa fa-font"></i> Typography
 
 <ul>
-	<li class="fragment">`Reboot.css` styles</li>
-	<li class="fragment">`Rems` vs `Ems`</li></li>
-	<li class="fragment">Avoid `margin-top`</li>
+	<li>`Avoid.css` styles</li>
+	<li>`Rems` vs `Ems`</li></li>
+	<li>Avoid `margin-top`</li>
 </ul>
 
 >> Speaker Notes:

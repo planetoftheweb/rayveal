@@ -171,6 +171,10 @@ body {
 	margin-bottom: 40pt;
 }
 
+.reveal li + code, .reveal ol li + code {
+	margin-left: -300px;
+}
+
 .reveal ul ul {
 	list-style-type: square;
 	margin-bottom: 20pt;
@@ -601,7 +605,7 @@ body {
  *********************************************/
 
 .hasicon .slides {
-	margin-left: 20% !important;
+	margin-left: 10% !important;
 }
 
 .hasicon .slides h2 {
