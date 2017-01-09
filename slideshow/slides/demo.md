@@ -21,6 +21,17 @@ Essential Training
 Anything after the note special characters won't appear on the slides, but will still be in the markdown file. That means you can write your speaking notes here.
 
 ---
+## Video
+
+  <video controls>
+    <source data-src="http://planetoftheweb.com/i/video.mp4" type="video/mp4" />
+  </video>
+
+  
+>> Note:
+You could make this a background video using `<!-- .slide: data-background-video="http://planetoftheweb.com/i/video.mp4" -->`
+
+---
 <!-- .slide: data-state="textonimage" data-background-image="http://planetoftheweb.com/i/bridge.jpg" -->
 
 ## Background with an image
