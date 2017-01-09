@@ -33,11 +33,6 @@
 		<script src="js/lib/head.min.js"></script>
 		<script src="js/reveal.js"></script>
 
-    <script type="text/javascript">
-
-    </script>
-
-
 		<script>
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
@@ -59,9 +54,24 @@
 					{ src: 'js/plugin/markdown/marked.js' },
 					{ src: 'js/plugin/markdown/markdown.js' },
 					{ src: 'js/plugin/notes/notes.js', async: true },
-					{ src: 'js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+					{ src: 'js/plugin/highlight/highlight.js', async: true, callback: function() { 
+						hljs.configure({
+							tabReplace: '  ', // 2 spaces
+						})
+						hljs.initHighlightingOnLoad(); 
+					}}
 				]
 			});
+
+			//Modifying all the PRE tags so they are teditable
+			Reveal.addEventListener( 'ready', function( event ) {
+				var nodes = document.querySelectorAll('pre');
+				nodes.forEach(function(item) {
+					item.contentEditable=true;
+					item.dataset.trim = true;
+				}, this);
+			});
+			
 		</script>
 	</body>
 </html>

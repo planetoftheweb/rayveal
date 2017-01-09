@@ -21,6 +21,12 @@ Essential Training
 Anything after the note special characters won't appear on the slides, but will still be in the markdown file. That means you can write your speaking notes here.
 
 ---
+<!-- .slide: data-state="textonimage" data-background-image="http://planetoftheweb.com/i/bridge.jpg" -->
+
+## Background with an image
+And some text, small shadow...
+
+---
 
 <!-- .slide: data-state="bar" -->
 
@@ -60,14 +66,21 @@ var electron = require('electron');
 var BrowserWindow = electron.BrowserWindow;
 var app = electron.app;
 
-
 app.on('ready', function() {
   var appWindow;
   appWindow = new BrowserWindow();
   appWindow.loadURL('http://raybo.org');
 });
 ```
-<!-- .element: data-trim="true" data-noescape="true" contenteditable="true" class="fragment" -->
+<!-- .element: data-trim="true" contenteditable="true" class="fragment" -->
+
+---
+
+## Embedded Code
+<small>Here's a sample of an embeded CodePen into a slide with bootstrap loaded.</small>
+
+<iframe height='300' scrolling='no' title='Bootstrap 4' src='//codepen.io/planetoftheweb/embed/bgdOzX/?height=300&theme-id=27192&default-tab=html,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/planetoftheweb/pen/bgdOzX/'>Bootstrap 4</a> by Ray Villalobos (<a href='http://codepen.io/planetoftheweb'>@planetoftheweb</a>) on <a href='http://codepen.io'>CodePen</a>.
+</iframe>
 
 ---
 

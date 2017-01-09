@@ -587,6 +587,46 @@ body {
 
 
 /*********************************************
+ * Title Slide
+ *********************************************/
+
+.textonimage body {
+	background-image: $blue;
+}
+
+.textonimage .slides {
+	height: 100%;
+	display: flex !important;
+	flex-direction: column !important;
+	align-items: center !important;
+	justify-content: center !important;
+}
+
+
+.textonimage .slides {
+	letter-spacing: .03em;
+	color: $white;
+	text-align: center;
+}
+
+.textonimage .slides h1,.textonimage .slides h2,.textonimage .slides h3,.textonimage .slides h4,.textonimage .slides h5,.textonimage .slides h6 {
+	color: inherit;
+	text-align: center;
+	margin-bottom: 0;
+	margin-top: 0;
+	text-shadow: 0px 0px 50px rgba(0,0,0,.7);
+}
+
+.textonimage .slides h1 {
+}
+
+.textonimage .slides p {
+	margin-top: 0;
+	text-shadow: 0px 0px 10px rgba(0,0,0,1);
+}
+
+
+/*********************************************
  * Has Bar
  *********************************************/
 
@@ -605,7 +645,7 @@ body {
  *********************************************/
 
 .hasicon .slides {
-	margin-left: 10% !important;
+	margin-left: 20% !important;
 }
 
 .hasicon .slides h2 {
