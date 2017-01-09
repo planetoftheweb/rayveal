@@ -56,7 +56,7 @@ And some text, small shadow...
 ## <i class="fa fa-font"></i> Typography
 
 <ul>
-	<li>`Avoid.css` styles</li>
+	<li>`Reboot.css` styles</li>
 	<li>`Rems` vs `Ems`</li></li>
 	<li>Avoid `margin-top`</li>
 </ul>
