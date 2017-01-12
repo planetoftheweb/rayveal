@@ -95,6 +95,13 @@ app.on('ready', function() {
 
 ---
 
+## Another Codepen
+
+<iframe height='300' scrolling='no' title='Bootstrap justify-content-center' src='//codepen.io/planetoftheweb/embed/ZLWmQK/?height=300&theme-id=27192&default-tab=html,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/planetoftheweb/pen/ZLWmQK/'>Bootstrap justify-content-center</a> by Ray Villalobos (<a href='http://codepen.io/planetoftheweb'>@planetoftheweb</a>) on <a href='http://codepen.io'>CodePen</a>.
+</iframe>
+
+---
+
 ## Column Metrics
 
 <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor sapien nec arcu gravida, pellentesque dictum sapien condimentum. Nunc eget quam id metus maximus consequat in quis massa.</small>
