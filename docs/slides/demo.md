@@ -1,5 +1,5 @@
 <!-- .slide: data-state="title" -->
-#Bootstrap 4
+# Bootstrap 4
 Essential Training
 
 >> You can create author's notes.
@@ -11,23 +11,21 @@ Essential Training
 ## <i class="fa fa-html5"></i> What is Bootstrap?
 
 - A framework
-- Mobile first
+- Mobile `first`
 - Responsive design
 - Battle tested
 - Uses modern web technologies
 
->> 
+>>
 # Note
 Anything after the note special characters won't appear on the slides, but will still be in the markdown file. That means you can write your speaking notes here.
 
 ---
-## Video
-
-  <video controls>
+  <video controls muted autoplay>
     <source data-src="http://planetoftheweb.com/i/video.mp4" type="video/mp4" />
   </video>
 
-  
+
 >> Note:
 You could make this a background video using `<!-- .slide: data-background-video="http://planetoftheweb.com/i/video.mp4" -->`
 
@@ -55,18 +53,16 @@ And some text, small shadow...
 
 ## <i class="fa fa-font"></i> Typography
 
-<ul>
-	<li>`Reboot.css` styles</li>
-	<li>`Rems` vs `Ems`</li></li>
-	<li>Avoid `margin-top`</li>
-</ul>
+- `Reboot.css` styles
+- `Rems` vs `Ems`
+- Avoid `margin-top`
 
 >> Speaker Notes:
-1. There is a special portion at the beginning of the bootstrap styles called reboot.css. It normalizes styles so that they look similar in different platforms for consistent display. Unlike other normalizing css templates, it's somewhat opinionated.
+- There is a special portion at the beginning of the bootstrap styles called reboot.css. It normalizes styles so that they look similar in different platforms for consistent display. Unlike other normalizing css templates, it's somewhat opinionated.
 
-2. Bootstrap uses Rems, a font measurement system that makes it easier to control both the size of fonts across the entire browser and within individual components. That's going to make it easier to 
+- Bootstrap uses Rems, a font measurement system that makes it easier to control both the size of fonts across the entire browser and within individual components. That's going to make it easier to
 
-3. In CSS, vertical margins can collapse and that makes it confusing to calculate the proper spacing in between different elements. To avoid this, bootstrap adds margin only at the bottom of elements.
+- In CSS, vertical margins can collapse and that makes it confusing to calculate the proper spacing in between different elements. To avoid this, bootstrap adds margin only at the bottom of elements.
 
 ---
 
@@ -93,16 +89,10 @@ app.on('ready', function() {
 <iframe height='300' scrolling='no' title='Bootstrap 4' src='//codepen.io/planetoftheweb/embed/bgdOzX/?height=300&theme-id=27192&default-tab=html,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/planetoftheweb/pen/bgdOzX/'>Bootstrap 4</a> by Ray Villalobos (<a href='http://codepen.io/planetoftheweb'>@planetoftheweb</a>) on <a href='http://codepen.io'>CodePen</a>.
 </iframe>
 
----
-
-## Another Codepen
-
-<iframe height='300' scrolling='no' title='Bootstrap justify-content-center' src='//codepen.io/planetoftheweb/embed/ZLWmQK/?height=300&theme-id=27192&default-tab=html,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/planetoftheweb/pen/ZLWmQK/'>Bootstrap justify-content-center</a> by Ray Villalobos (<a href='http://codepen.io/planetoftheweb'>@planetoftheweb</a>) on <a href='http://codepen.io'>CodePen</a>.
-</iframe>
 
 ---
 
-## Column Metrics
+## Sample Table
 
 <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor sapien nec arcu gravida, pellentesque dictum sapien condimentum. Nunc eget quam id metus maximus consequat in quis massa.</small>
 
@@ -121,16 +111,53 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor sapien nec
 
 ---
 
-## When Should I Use Bootstrap?
+## Sample Fragments
 
-1. Excellent for small, quick projects<!-- .element: class="fragment"-->
-2. Prototyping and scaffolding sites<!-- .element: class="fragment"-->
-3. Also great for larger projects<!-- .element: class="fragment"-->
-  - Customize your install<!-- .element: class="fragment"-->
+1. Excellent for small, quick projects
+2. Prototyping and scaffolding sites
+3. Also great for larger projects
+  - Customize your install
 
 ---
-## Installation: Basic
 
-- CDNs<!-- .element: class="fragment"-->
-- Download and install<!-- .element: class="fragment"-->
-- Requires jQuery<!-- .element: class="fragment"-->
+<!-- .slide: data-state="hasicon" -->
+
+## <i class="fa fa-list-alt"></i> Card Styling
+
+<ul>
+	<li class="fragment"><p contenteditable>`card-COLOR`</p>
+		<small style="line-height: 220%; vertical-align: text-bottom;">
+			<code style="background:#0275d8; color:white;">primary</code>
+			<code style="background:#5cb85c; color:white;">success</code>
+			<code style="background:#5bc0de; color:white;">info</code><br>
+			<code style="background:#f0ad4e; color:white;">warning</code>
+			<code style="background:#D9534E; color:white;">danger</code>
+		</small>
+	</li>
+	<li class="fragment">`card-inverse`</li>
+</ul>
+
+>> Speaker Notes:
+1. All cards require a container and in order to get things going, you need to add the card class to activate the features. Cards have a mild rounded edge at the top.
+
+---
+
+<!-- .slide: data-state="hasicon" -->
+
+## <i class="fa fa-list-alt"></i> Custom HTML
+
+<ul>
+	<li><p contenteditable>`card-outline-COLOR`</p>
+		<small style="line-height: 220%; vertical-align: text-bottom;">
+			<code style="background:#FFF; border: 1px solid #0275d8; color:#666;">primary</code>
+			<code style="background:#FFF; border: 1px solid #292b2c; color:#666;">secondary</code>
+			<code style="background:#FFF; border: 1px solid #5cb85c; color:#666;">success</code><br>
+			<code style="background:#FFF; border: 1px solid #5bc0de; color:#666;">info</code>
+			<code style="background:#FFF; border: 1px solid #f0ad4e; color:#666;">warning</code>
+			<code style="background:#FFF; border: 1px solid #D9534E; color:#666;">danger</code>
+		</small>
+	</li>
+</ul>
+
+>> Speaker Notes:
+1. All cards require a container and in order to get things going, you need to add the card class to activate the features. Cards have a mild rounded edge at the top.

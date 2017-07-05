@@ -1,7 +1,7 @@
 /**
- * Black theme for reveal.js. This is the opposite of the 'white' theme.
- *
- * By Hakim El Hattab, http://hakim.se
+ * Learning theme for reveal.js
+ * built to match LinkedIn Learning Style
+ * By Ray Villalobos, http://raybo.org
  */
 section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
   color: #313235; }
@@ -26,7 +26,10 @@ body {
   text-shadow: none; }
 
 .reveal .slides {
-  text-align: left; }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
 
 .reveal .slides > section,
 .reveal .slides > section > section {
@@ -50,7 +53,7 @@ body {
   letter-spacing: normal;
   margin-top: 20pt;
   margin-bottom: 40pt;
-  text-align: left;
+  text-align: center;
   text-transform: inherit;
   text-shadow: none;
   word-wrap: break-word; }
@@ -75,14 +78,15 @@ body {
  *********************************************/
 .reveal p {
   margin: 20px 0;
-  line-height: 160%; }
+  line-height: 160%;
+  padding: 0 5%; }
 
 /* Ensure certain elements are never larger than the slide itself */
 .reveal img,
 .reveal video,
 .reveal iframe {
-  max-width: 95%;
-  max-height: 95%; }
+  width: 100%;
+  height: 100%; }
 
 .reveal strong,
 .reveal b {
@@ -99,16 +103,14 @@ body {
   margin: 0; }
 
 .reveal ol {
-  list-style-type: decimal;
-  width: 100%; }
+  list-style-type: decimal; }
 
 .reveal ul {
-  width: 100%;
   list-style-type: disc; }
 
-.reveal ul li, .reveal ol li {
+.reveal .slides ul li, .reveal .slides ol li {
   margin-left: 50px;
-  margin-bottom: 40pt; }
+  margin-bottom: 30pt; }
 
 .reveal li + code, .reveal ol li + code {
   margin-left: -300px; }
@@ -172,7 +174,9 @@ body {
 
 .reveal code {
   font-family: 'Calynda',monospace;
-  padding: 10px; }
+  padding: 10px;
+  white-space: nowrap;
+  cursor: pointer; }
 
 .reveal li code {
   background: #eee;
@@ -183,15 +187,18 @@ body {
   display: block;
   padding: 10px 20px;
   overflow: auto;
+  width: 80%;
+  margin: 0 auto;
   max-height: 400px;
-  word-wrap: normal; }
+  word-wrap: normal;
+  white-space: inherit; }
 
 .reveal table {
-  margin: auto;
+  width: 90%;
+  margin: 0 auto;
   border-collapse: collapse;
   border-spacing: 0;
-  font-size: 2rem !important;
-  width: 100%; }
+  font-size: 2rem !important; }
 
 .reveal table th {
   vertical-align: middle;
@@ -401,6 +408,10 @@ body {
 /*********************************************
  * OVERRIDE FRAGMENTS ANIMATION
  *********************************************/
+.reveal .slides > section,
+.reveal .slides > section > section {
+  padding: 0; }
+
 .reveal .slides section .fragment {
   -webkit-transition: all ease;
   transition: all ease; }
@@ -412,11 +423,10 @@ body {
   background: #0077B5; }
 
 .title .slides {
-  height: 100%;
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  justify-content: center !important; }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
 
 .title .slides {
   letter-spacing: .03em;
@@ -479,9 +489,6 @@ body {
 /*********************************************
  * Has Icon
  *********************************************/
-.hasicon .slides {
-  margin-left: 15% !important; }
-
 .hasicon .slides h2 {
   margin-top: 20px;
   margin-bottom: 10px; }
@@ -489,5 +496,10 @@ body {
 .hasicon .slides h2 > i {
   font-size: 120px;
   color: #E68523;
-  margin-left: -120px;
   vertical-align: middle; }
+
+/*********************************************
+ * Disable outline on contentEditable
+ *********************************************/
+.slides [contenteditable]:focus {
+  outline: none; }
