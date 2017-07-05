@@ -1,7 +1,7 @@
 /**
- * Black theme for reveal.js. This is the opposite of the 'white' theme.
- *
- * By Hakim El Hattab, http://hakim.se
+ * Learning theme for reveal.js
+ * built to match LinkedIn Learning Style
+ * By Ray Villalobos, http://raybo.org
  */
 
 
@@ -76,7 +76,10 @@ body {
 }
 
 .reveal .slides {
-	text-align: left;
+  display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .reveal .slides>section,
@@ -104,7 +107,7 @@ body {
 	letter-spacing: $headingLetterSpacing;
 	margin-top: 20pt;
 	margin-bottom: 40pt;
-	text-align: left;
+	text-align: center;
 
 	text-transform: $headingTextTransform;
 	text-shadow: $headingTextShadow;
@@ -129,14 +132,15 @@ body {
 .reveal p {
 	margin: $blockMargin 0;
 	line-height: 160%;
+  padding: 0 5%;
 }
 
 /* Ensure certain elements are never larger than the slide itself */
 .reveal img,
 .reveal video,
 .reveal iframe {
-	max-width: 95%;
-	max-height: 95%;
+	width: 100%;
+	height: 100%;
 }
 .reveal strong,
 .reveal b {
@@ -158,17 +162,15 @@ body {
 
 .reveal ol {
 	list-style-type: decimal;
-	width: 100%;
 }
 
 .reveal ul {
-	width: 100%;
 	list-style-type: disc;
 }
 
-.reveal ul li, .reveal ol li {
+.reveal .slides ul li, .reveal .slides ol li {
 	margin-left: 50px;
-	margin-bottom: 40pt;
+	margin-bottom: 30pt;
 }
 
 .reveal li + code, .reveal ol li + code {
@@ -248,8 +250,10 @@ body {
 }
 
 .reveal code {
-	font-family: 'Calynda',monospace;
-	padding: 10px;
+  font-family: 'Calynda',monospace;
+  padding: 10px;
+  white-space: nowrap;
+  cursor: pointer;
 }
 
 .reveal li code {
@@ -262,16 +266,19 @@ body {
 	display: block;
 	padding: 10px 20px;
 	overflow: auto;
+  width: 80%;
+  margin: 0 auto;
 	max-height: 400px;
 	word-wrap: normal;
+  white-space: inherit;
 }
 
 .reveal table {
-	margin: auto;
+  width: 90%;
+	margin: 0 auto;
 	border-collapse: collapse;
 	border-spacing: 0;
 	font-size: 2rem !important;
-	width: 100%;
 }
 
 .reveal table th {
@@ -541,6 +548,11 @@ body {
  * OVERRIDE FRAGMENTS ANIMATION
  *********************************************/
 
+ .reveal .slides > section,
+ .reveal .slides > section > section {
+   padding: 0;
+}
+
 .reveal .slides section .fragment {
   -webkit-transition: all ease;
           transition: all ease;
@@ -555,11 +567,10 @@ body {
 }
 
 .title .slides {
-	height: 100%;
-	display: flex !important;
-	flex-direction: column !important;
-	align-items: center !important;
-	justify-content: center !important;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 
@@ -641,7 +652,6 @@ body {
  *********************************************/
 
 .hasicon .slides {
-	margin-left: 15% !important;
 }
 
 .hasicon .slides h2 {
@@ -652,6 +662,13 @@ body {
 .hasicon .slides h2 > i {
 	font-size: 120px;
 	color: $orange;
-	margin-left: -120px;
   vertical-align: middle;
+}
+
+/*********************************************
+ * Disable outline on contentEditable
+ *********************************************/
+
+.slides [contenteditable]:focus {
+  outline: none;
 }

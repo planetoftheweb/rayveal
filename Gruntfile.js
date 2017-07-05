@@ -1,7 +1,7 @@
 /* global module:false */
 module.exports = function(grunt) {
 	var port = grunt.option('port') || 8000;
-	var base = grunt.option('base') || 'slideshow';
+	var base = grunt.option('base') || 'docs';
 
 	// Project configuration
 	grunt.initConfig({
@@ -22,15 +22,15 @@ module.exports = function(grunt) {
 				banner: '<%= meta.banner %>\n'
 			},
 			build: {
-				src: 'slideshow/js/reveal.js',
-				dest: 'slideshow/js/reveal.min.js'
+				src: 'docs/js/reveal.js',
+				dest: 'docs/js/reveal.min.js'
 			}
 		},
 
 		sass: {
 			core: {
 				files: {
-					'slideshow/css/reveal.css': 'process/scss/reveal.scss',
+					'docs/css/reveal.css': 'process/scss/reveal.scss',
 				}
 			},
 			themes: {
@@ -39,7 +39,7 @@ module.exports = function(grunt) {
 						expand: true,
 						cwd: 'process/scss',
 						src: ['*.scss'],
-						dest: 'slideshow/css',
+						dest: 'docs/css',
 						ext: '.css'
 					}
 				]
@@ -48,14 +48,14 @@ module.exports = function(grunt) {
 
 		autoprefixer: {
 			dist: {
-				src: 'slideshow/css/reveal.css'
+				src: 'docs/css/reveal.css'
 			}
 		},
 
 		cssmin: {
 			compress: {
 				files: {
-					'slideshow/css/reveal.min.css': [ 'slideshow/css/reveal.css' ]
+					'docs/css/reveal.min.css': [ 'docs/css/reveal.css' ]
 				}
 			}
 		},
@@ -82,7 +82,7 @@ module.exports = function(grunt) {
 					exports: false
 				}
 			},
-			files: [ 'Gruntfile.js', 'slideshow/js/reveal.js' ]
+			files: [ 'Gruntfile.js', 'docs/js/reveal.js' ]
 		},
 
 		connect: {
@@ -98,13 +98,13 @@ module.exports = function(grunt) {
 
 		zip: {
 			'presentation.zip': [
-				'slideshow/**'
+				'docs/**'
 			]
 		},
 
 		watch: {
 			js: {
-				files: [ 'Gruntfile.js', 'slideshow/js/reveal.js' ],
+				files: [ 'Gruntfile.js', 'docs/js/reveal.js' ],
 				tasks: 'js'
 			},
 			theme: {
@@ -116,10 +116,10 @@ module.exports = function(grunt) {
 				tasks: 'css-core'
 			},
 			html: {
-				files: [ 'slideshow/**/*.html']
+				files: [ 'docs/**/*.html']
 			},
 			markdown: {
-				files: [ 'slideshow/**/*.md' ]
+				files: [ 'docs/**/*.md' ]
 			},
 			options: {
 				livereload: true
