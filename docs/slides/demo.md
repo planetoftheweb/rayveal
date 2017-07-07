@@ -39,13 +39,10 @@ And some text, small shadow...
 
 <!-- .slide: data-state="bar" -->
 
-## Installation: Advanced
+## Sample: Has Bar
 
 - Downloading source
 - Using build tools
-- Sass or LESS
-- GitHub repo
-- Custom build
 
 ---
 
@@ -114,8 +111,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor sapien nec
 ## Sample Fragments
 
 1. Excellent for small, quick projects
-2. Prototyping and scaffolding sites
-3. Also great for larger projects
+2. Also great for larger projects
   - Customize your install
 
 ---

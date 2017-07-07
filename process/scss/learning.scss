@@ -84,6 +84,10 @@ body {
 
 .reveal .slides>section,
 .reveal .slides>section>section {
+  display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	line-height: 1.2;
 	font-weight: inherit;
 }
@@ -567,10 +571,6 @@ body {
 }
 
 .title .slides {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
 }
 
 
@@ -637,14 +637,15 @@ body {
  * Has Bar
  *********************************************/
 
-.bar body {
-  background-repeat: no-repeat;
-  background-image: linear-gradient($blue, $blue), linear-gradient(#FFF, #FFF);
-  background-size: 100% 25%, 100%;
-}
-
 .bar h1, .bar h2, .bar h3 {
 	color: $white;
+  background-color: $blue;
+  padding: 30px 0;
+}
+
+.bar h1, .bar h2 {
+  width: 100vw;
+  margin-top: 0;
 }
 
 /*********************************************

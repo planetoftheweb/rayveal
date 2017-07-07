@@ -2881,7 +2881,7 @@
 	function showSlide( slide ) {
 
 		// Show the slide element
-		slide.style.display = 'block';
+		slide.style.display = 'flex';
 
 		// Media elements with data-src attributes
 		toArray( slide.querySelectorAll( 'img[data-src], video[data-src], audio[data-src]' ) ).forEach( function( element ) {
