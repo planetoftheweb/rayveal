@@ -10,6 +10,7 @@ tmp/**
 images
 node_modules/
 slideshow/slides/*.md
+!slideshow/slides/Bootstrap 4 Cards.md
 !slideshow/slides/demo.md
 slideshow/course.html
 .sass-cache
