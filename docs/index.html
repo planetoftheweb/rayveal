@@ -6,7 +6,7 @@
 
 		<title>Learning</title>
 
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"></head>
+    <link href="css/font-awesome.min.css" rel="stylesheet"></head>
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/learning.css" id="theme">
 
@@ -28,6 +28,18 @@
 
 
 </div><!-- slides -->
+
+<!-- ADD PERSISTENT NAVBAR CODE HERE -->
+<footer class="footer">
+  <div class="persistent">
+    <strong>Slides:</strong> <a href="http://bit.ly/thenext50">bit.ly/thenext50</a> &bull; <strong>Contact:</strong>
+    <a href="https://www.linkedin.com/in/planetoftheweb">LinkedIn</a> | <a href="https://www.linkedin.com/learning/instructors/ray-villalobos">courses</a> | <a href="http://twitter.com/planetoftheweb">@planetoftheweb</a> | <a href="http://github.com/planetoftheweb">github</a>
+  </div>
+  <div class="smaller">Use arrows to navigate, esc for overview</div>
+</footer>
+<!-- ADD PERSISTENT NAVBAR CODE HERE -->
+
+
 </div><!-- reveal -->
 
 		<script src="js/lib/head.min.js"></script>
@@ -48,13 +60,16 @@
 
 			if (getUrlVars().d) {
 				var dataFile = getUrlVars().d;
-				console.log('slides/' + dataFile + '.md');
+				//console.log('slides/' + dataFile + '.md');
 				document.querySelector('section').dataset.markdown = 'slides/' + dataFile + '.md';
-				console.log(document.querySelector('section').dataset.markdown);
+				//console.log(document.querySelector('section').dataset.markdown);
 			}
 
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
+      	margin: 0,
+      	minScale: .5,
+      	maxScale: 1,
         display: 'flex',
 				fragments: true,
 				history: true,
@@ -101,7 +116,6 @@
 				asideNodes.forEach(function(item) {
 					item.className='';
 				}, this);
-
 
 			}); // ready
 

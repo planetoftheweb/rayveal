@@ -1,39 +1,65 @@
 <!-- .slide: data-state="title" -->
-# Bootstrap 4
-Essential Training
-
->> You can create author's notes.
+# RayVeal
+opinionated reveal.js
 
 ---
 
-<!-- .slide: data-state="hasicon" -->
+## Simple Slide
 
-## <i class="fa fa-html5"></i> What is Bootstrap?
+This is possibly the simplest slide you could make. Just some text with a paragraph. All slides are written with markdown. You can add invisible notes for yourself using two &gt;&gt; after a carriage return (<a href="slides/demo.md">see markdown file here</a>)
 
-- A framework
-- Mobile `first`
-- Responsive design
-- Battle tested
-- Uses modern web technologies
-
->>
-# Note
-Anything after the note special characters won't appear on the slides, but will still be in the markdown file. That means you can write your speaking notes here.
+>> Author Notes: Author notes are similar to markdown blockquotes, but you use double greater than signs. They won't appear on your slides, so I personally use them as reading notes, but Reveal.js has a presentation mode that allows you to see them in your slides.
 
 ---
-  <video controls muted autoplay>
-    <source data-src="http://planetoftheweb.com/i/video.mp4" type="video/mp4" />
-  </video>
+
+## Persistent Navigation
+
+<small>**Notice:** the persistent navigation bar at the bottom is on every page. To modify, look for the following code (delete it if you don't need it)</small>
+
+```
+<footer class="footer">
+  <div class="persistent">
+    <strong>Slides:</strong> <a href="http://bit.ly/thenext50">bit.ly/thenext50</a> &bull; <strong>Contact:</strong>
+    <a href="https://www.linkedin.com/in/planetoftheweb">LinkedIn</a> | <a href="https://www.linkedin.com/learning/instructors/ray-villalobos">courses</a> | <a href="http://twitter.com/planetoftheweb">@planetoftheweb</a> | <a href="http://github.com/planetoftheweb">github</a>
+  </div>
+  <div class="smaller">Use arrows to navigate, esc for overview</div>
+</footer>
+```
 
 
->> Note:
-You could make this a background video using `<!-- .slide: data-background-video="http://planetoftheweb.com/i/video.mp4" -->`
+>> Author Notes: Author notes are similar to markdown blockquotes, but you use double greater than signs. They won't appear on your slides, so I personally use them as reading notes, but Reveal.js has a presentation mode that allows you to see them in your slides.
 
 ---
-<!-- .slide: data-state="textonimage" data-background-image="http://planetoftheweb.com/i/bridge.jpg" -->
 
-## Background with an image
-And some text, small shadow...
+## Multiple slides
+
+You can use multiple markdown files within the same slide, just add a different slide in the slides folder and [link to it](/?d=Bootstrap 4 Cards&). (see [markdown](slides/demo.md) file for how it works)
+---
+
+## Sidebar Menu
+
+Press the 'm' key to show [sidebar menu](https://github.com/denehyg/reveal.js-menu). You can use it to jump to different slides. There is also an [index](slides/index.html) file in the slides menu, where you can add links to your different files.
+
+---
+
+## Standalone Folder
+Presentations live in a docs folder within the main project, simply upload the docs folder to a server and change the name if you want. It's self contained. It's also easy to add as documentation using Github Pages.
+
+---
+
+## Fragments
+
+1. Are on by default
+2. You can write HTML lists
+  - if you don't want them
+
+---
+
+  ## Code options
+
+    - bootstrap-like colors for code
+    - <code class="code-primary">primary</code> <code class="code-success">success</code> <code class="code-info">info</code> <code class="code-warning">warning</code> <code class="code-danger">danger</code>
+    - <a class="tooltip" href="#">`tooltips`<span>for overlay explanations</span></a> on rollover
 
 ---
 
@@ -41,29 +67,43 @@ And some text, small shadow...
 
 ## Sample: Has Bar
 
-- Downloading source
-- Using build tools
+- This slide has a blue bar
+- Aligns to the top
+- &lt;!-- .slide: data-state="bar" --&gt;
 
 ---
 
 <!-- .slide: data-state="hasicon" -->
 
-## <i class="fa fa-font"></i> Typography
+## <i class="fa fa-html5"></i> Has Icon
 
-- `Reboot.css` styles
-- `Rems` vs `Ems`
-- Avoid `margin-top`
-
->> Speaker Notes:
-- There is a special portion at the beginning of the bootstrap styles called reboot.css. It normalizes styles so that they look similar in different platforms for consistent display. Unlike other normalizing css templates, it's somewhat opinionated.
-
-- Bootstrap uses Rems, a font measurement system that makes it easier to control both the size of fonts across the entire browser and within individual components. That's going to make it easier to
-
-- In CSS, vertical margins can collapse and that makes it confusing to calculate the proper spacing in between different elements. To avoid this, bootstrap adds margin only at the bottom of elements.
+- Template with an icon
+- Preloading [font-awesome](http://fontawesome.io) <small>by Dave Gandy</small>
+- &lt;!-- .slide: data-state="hasicon" --&gt;
 
 ---
 
-## Easiest Electron App
+# Background Video
+
+<!-- .slide: data-state="textonvideo" data-background-video="http://planetoftheweb.com/i/fish.mp4" -->
+
+<small>&lt;!-- .slide: data-state="textonvideo" data-background-video="http://planetoftheweb.com/i/fish.mp4" --&gt;</small>
+
+>> Note: You also have the option of creating video as a background using regular reveal.js tags.
+
+---
+
+
+<!-- .slide: data-state="textonimage" data-background-image="http://planetoftheweb.com/i/bridge.jpg" -->
+
+## Background with an image
+And some text, small shadow...
+
+<small>&lt;!-- .slide: data-state="textonimage" data-background-image="http://planetoftheweb.com/i/bridge.jpg" --&gt;</small>
+
+---
+
+## Here's some code
 
 ```javascript
 var electron = require('electron');
@@ -76,84 +116,26 @@ app.on('ready', function() {
   appWindow.loadURL('http://raybo.org');
 });
 ```
-<!-- .element: data-trim="true" contenteditable="true" class="fragment" -->
+<!-- .element: data-trim="true" contenteditable="true" -->
+
+Syntax highlighted, editable by default
 
 ---
 
 ## Embedded Code
-<small>Here's a sample of an embeded CodePen into a slide with bootstrap loaded.</small>
+<small>Here's a sample of an embeded CodePen. Use an iframe.</small>
 
 <iframe height='300' scrolling='no' title='Bootstrap 4' src='//codepen.io/planetoftheweb/embed/bgdOzX/?height=300&theme-id=27192&default-tab=html,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/planetoftheweb/pen/bgdOzX/'>Bootstrap 4</a> by Ray Villalobos (<a href='http://codepen.io/planetoftheweb'>@planetoftheweb</a>) on <a href='http://codepen.io'>CodePen</a>.
 </iframe>
 
-
 ---
 
-## Sample Table
+## Tables
 
-<small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor sapien nec arcu gravida, pellentesque dictum sapien condimentum. Nunc eget quam id metus maximus consequat in quis massa.</small>
+Here's what a table looks like. Use the <a href="http://www.tablesgenerator.com/markdown_tables">tables generator</a> to help you write the markdown.
 
 | |  Extra small <small>< 768px</small> | Small <small> ≥ 768px</small> | Medium <small>≥992px</small> | Large <small>≥1200px</small> |
 |---|---|---|---|---|
 | **Container**	| Auto | 750px | 970px | 1170px |
 | **Size**	| .col-xs- | .col-sm- | .col-md- | .col-lg- |
 | **Column width** | Auto | ~62px | ~81px | ~97px |
-
-
----
-
-## What’s a Framework?
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor sapien nec arcu gravida, pellentesque dictum sapien condimentum. Nunc eget quam id metus maximus consequat in quis massa.
-
----
-
-## Sample Fragments
-
-1. Excellent for small, quick projects
-2. Also great for larger projects
-  - Customize your install
-
----
-
-<!-- .slide: data-state="hasicon" -->
-
-## <i class="fa fa-list-alt"></i> Card Styling
-
-<ul>
-	<li class="fragment"><p contenteditable>`card-COLOR`</p>
-		<small style="line-height: 220%; vertical-align: text-bottom;">
-			<code style="background:#0275d8; color:white;">primary</code>
-			<code style="background:#5cb85c; color:white;">success</code>
-			<code style="background:#5bc0de; color:white;">info</code><br>
-			<code style="background:#f0ad4e; color:white;">warning</code>
-			<code style="background:#D9534E; color:white;">danger</code>
-		</small>
-	</li>
-	<li class="fragment">`card-inverse`</li>
-</ul>
-
->> Speaker Notes:
-1. All cards require a container and in order to get things going, you need to add the card class to activate the features. Cards have a mild rounded edge at the top.
-
----
-
-<!-- .slide: data-state="hasicon" -->
-
-## <i class="fa fa-list-alt"></i> Custom HTML
-
-<ul>
-	<li><p contenteditable>`card-outline-COLOR`</p>
-		<small style="line-height: 220%; vertical-align: text-bottom;">
-			<code style="background:#FFF; border: 1px solid #0275d8; color:#666;">primary</code>
-			<code style="background:#FFF; border: 1px solid #292b2c; color:#666;">secondary</code>
-			<code style="background:#FFF; border: 1px solid #5cb85c; color:#666;">success</code><br>
-			<code style="background:#FFF; border: 1px solid #5bc0de; color:#666;">info</code>
-			<code style="background:#FFF; border: 1px solid #f0ad4e; color:#666;">warning</code>
-			<code style="background:#FFF; border: 1px solid #D9534E; color:#666;">danger</code>
-		</small>
-	</li>
-</ul>
-
->> Speaker Notes:
-1. All cards require a container and in order to get things going, you need to add the card class to activate the features. Cards have a mild rounded edge at the top.

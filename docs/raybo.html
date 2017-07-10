@@ -4,11 +4,11 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Raybo</title>
+		<title>Learning</title>
 
+    <link href="css/font-awesome.min.css" rel="stylesheet"></head>
 		<link rel="stylesheet" href="css/reveal.css">
-		<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"></head>
-		<link rel="stylesheet" href="css/raybo.css">
+		<link rel="stylesheet" href="css/raybo.css" id="theme">
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -19,7 +19,7 @@
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
 	</head>
-<body spellcheck="false">
+	<body spellcheck="false">
 <div class="reveal">
 <div class="slides">
 
@@ -55,10 +55,12 @@
 
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
+      	margin: 0,
+      	minScale: .5,
+      	maxScale: 1,
+        display: 'flex',
 				fragments: true,
 				history: true,
-				width: 960,
-				height: 700,
 				transition: 'none', // none/fade/slide/convex/concave/zoom
     		transitionSpeed: 0, // default/fast/slow
 		    backgroundTransition: 'none',
@@ -66,12 +68,18 @@
 				controls: false,
 			  progress: false,
   			rollingLinks: false,
-
-
+        menu: {
+          transitions: false,
+          openButton: false,
+          custom: [
+      			{ title: 'Files', icon: '<i class="fa fa-external-link">', src: 'slides/index.html' },
+      		]
+        },
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
 					{ src: 'js/plugin/markdown/marked.js' },
 					{ src: 'js/plugin/markdown/markdown.js' },
+          { src: 'js/plugin/menu/menu.js' },
 					{ src: 'js/plugin/notes/notes.js', async: true },
 					{ src: 'js/plugin/highlight/highlight.js', async: true, callback: function() {
 						hljs.configure({
@@ -82,14 +90,23 @@
 				]
 			});
 
-			//Modifying all the PRE tags so they are teditable
 			Reveal.addEventListener( 'ready', function( event ) {
-				var nodes = document.querySelectorAll('pre');
-				nodes.forEach(function(item) {
+
+        //Modifying all the PRE tags so they are teditable
+				var preNodes = document.querySelectorAll('pre');
+				preNodes.forEach(function(item) {
 					item.contentEditable=true;
 					item.dataset.trim = true;
 				}, this);
-			});
+
+        // Remove fragments in notes
+        var asideNodes = document.querySelectorAll('aside.notes li');
+				asideNodes.forEach(function(item) {
+					item.className='';
+				}, this);
+
+
+			}); // ready
 
 		</script>
 	</body>
