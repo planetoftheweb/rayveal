@@ -15,6 +15,9 @@ The `docs` folder has everything you'd need to upload to a server to get the sli
 
 The slide content is in the `slides` folder in markdown format. You can add as many markdown files as you want. There are custom styles for tables, code, etc.
 
+
+## Preview slides locally
+
 When you're ready to preview the slides
 
 ```sh
