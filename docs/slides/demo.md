@@ -33,7 +33,7 @@ This is possibly the simplest slide you could make. Just some text with a paragr
 
 ## Multiple slides
 
-You can use multiple markdown files within the same slide, just add a different slide in the slides folder and [link to it](/?d=Bootstrap 4 Cards&). (see [markdown](slides/demo.md) file for how it works)
+You can use multiple markdown files within the same slide, just add a different slide in the slides folder and [link to it](?d=Bootstrap 4 Cards&). (see [markdown](slides/demo.md) file for how it works)
 ---
 
 ## Sidebar Menu
