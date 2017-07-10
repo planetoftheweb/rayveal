@@ -607,10 +607,10 @@ body {
 /*********************************************
  * Tooltips
  *********************************************/
-.tooltip {
+.reveal .tooltip {
   position: relative; }
 
-.tooltip span {
+.reveal .tooltip span {
   background: #444;
   bottom: 100%;
   display: block;
@@ -629,9 +629,9 @@ body {
   white-space: nowrap;
   transform: translateY(0px); }
 
-.tooltip:hover span {
+.reveal .tooltip:hover span {
   display: inline-block;
   opacity: 1; }
 
-a.tooltip span {
+.reveal a.tooltip span {
   color: #FFF !important; }

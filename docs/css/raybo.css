@@ -613,10 +613,10 @@ body {
 /*********************************************
  * Tooltips
  *********************************************/
-.tooltip {
+.reveal .tooltip {
   position: relative; }
 
-.tooltip span {
+.reveal .tooltip span {
   background: #444;
   bottom: 100%;
   display: block;
@@ -635,11 +635,11 @@ body {
   white-space: nowrap;
   transform: translateY(0px); }
 
-.tooltip:hover span {
+.reveal .tooltip:hover span {
   display: inline-block;
   opacity: 1; }
 
-a.tooltip span {
+.reveal a.tooltip span {
   color: #FFF !important; }
 
 section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
