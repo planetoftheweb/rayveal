@@ -16,7 +16,7 @@ This protocol will help them through the process of assessing their skills, use 
 ---
 ## Mockup
 
-![Mockup](https://www.dropbox.com/s/93owu466cqg4h4b/2017-07-12_15-59-15.png)
+![Mockup](kobprotocol.png)
 
 ---
 
