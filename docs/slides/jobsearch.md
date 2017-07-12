@@ -5,9 +5,9 @@ Team #4
 
 ## Problem Statement
 
-- Problem Statement: 75.2% of developers are interested in hearing about new [job opportunities](https://insights.stackoverflow.com/survey/2017#work). ,
+- Problem Statement: 75.2% of developers are interested in hearing about new [job opportunities](https://insights.stackoverflow.com/survey/2017#work).
 - Developers lack skills to make them successful the interviews.
-- Only half the jobs will be able to be filled
+- Only half the jobs will be able to be filled.
 
 ---
 ## Problem Statement
@@ -16,7 +16,7 @@ This protocol will help them through the process of assessing their skills, use 
 ---
 ## Mockup
 
-![Mockup](https://www.dropbox.com/s/93owu466cqg4h4b/2017-07-12_15-59-15.png?dl=0)
+![Mockup](https://www.dropbox.com/s/93owu466cqg4h4b/2017-07-12_15-59-15.png)
 
 ---
 
