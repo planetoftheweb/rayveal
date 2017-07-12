@@ -1,6 +1,6 @@
 <!-- .slide: data-state="title" -->
 # Job Search Protocol
-Team #4
+Team #4 (http://bit.ly/jobprotoco)
 ---
 
 ## Problem Statement
