@@ -4,9 +4,19 @@ opinionated reveal.js
 
 ---
 
+## Installing
+
+- Grab it from [repo](http://github.com/planetoftheweb/rayveal)
+- Requires server (FTP/Node)
+- [https://nodejs.org](NodeJS) (optional)
+- grunt serve (http://localhost:800)
+- Use docs folder in any project
+
+---
+
 ## Simple Slide
 
-This is possibly the simplest slide you could make. Just some text with a paragraph. All slides are written with markdown. You can add invisible notes for yourself using two &gt;&gt; after a carriage return (<a href="slides/demo.md">see markdown file here</a>)
+This is the simplest slide you could make. It does whatever a [spider can](https://github.com/hakimel/reveal.js). Just some text with a paragraph. All slides are written with markdown. You can add invisible notes for yourself using two &gt;&gt; after a carriage return (<a href="slides/demo.md">see markdown file here</a>)
 
 >> Author Notes: Author notes are similar to markdown blockquotes, but you use double greater than signs. They won't appear on your slides, so I personally use them as reading notes, but Reveal.js has a presentation mode that allows you to see them in your slides.
 
