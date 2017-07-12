@@ -1,6 +1,6 @@
 <!-- .slide: data-state="title" -->
 # Job Search Protocol
-Team #4 [bit.ly/jobprotoco](http://bit.ly/jobprotoco)
+Team #4
 
 ---
 
@@ -11,10 +11,12 @@ Team #4 [bit.ly/jobprotoco](http://bit.ly/jobprotoco)
 - Only half the jobs will be able to be filled.
 
 ---
+
 ## Problem Statement
 This protocol will help them through the process of assessing their skills, use a VLE to go through a mock interview process and then give some suggestions as to companies that they may apply for. Helping them practice this process through a VLE will help them feel comfortable with the experience.
 
 ---
+
 ## Mockup
 
 ![Mockup](kobprotocol.png)
