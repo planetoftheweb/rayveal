@@ -1,4 +1,5 @@
 <!-- .slide: data-state="title" -->
+
 # Job Search Protocol
 Team #4
 
@@ -12,7 +13,7 @@ Team #4
 
 ---
 
-## Problem Statement
+## Solution
 This protocol will help them through the process of assessing their skills, use a VLE to go through a mock interview process and then give some suggestions as to companies that they may apply for. Helping them practice this process through a VLE will help them feel comfortable with the experience.
 
 ---
@@ -34,7 +35,7 @@ This protocol will help them through the process of assessing their skills, use 
 ## Project Modules
 - Module 4: Mock Interview 
   - Negotiating Salary
-
+  
 ---
 
 ## Project Modules
@@ -45,20 +46,20 @@ This protocol will help them through the process of assessing their skills, use 
 
 ---
 
-## Supporting Videos
-[Applying for a Job](https://www.lynda.com/Graphic-Design-tutorials/Applying-job/577558/632195-4.html)
-[Search for Jobs](https://www.lynda.com/LinkedIn-tutorials/Search-jobs/595944/599586-4.html)
-[Work with Jobs](https://www.lynda.com/QuickBooks-Pro-tutorials/Work-jobs/504791/571015-4.html)
-[Emerging Careers](https://www.lynda.com/Data-Science-tutorials/Emerging-careers/475941/517493-4.html)
-[Provide Opportunities for Career Growt](https://www.lynda.com/Business-Skills-tutorials/Provide-opportunities-career-growth/570964/619649-4.html)
-[Career Paths](https://www.lynda.com/Web-Documentaries-tutorials/Career-Paths/56647/58727-4.html)
+## Existing Videos
+- [Applying for a Job](https://www.lynda.com/Graphic-Design-tutorials/Applying-job/577558/632195-4.html)
+- [Search for Jobs](https://www.lynda.com/LinkedIn-tutorials/Search-jobs/595944/599586-4.html)
+- [Work with Jobs](https://www.lynda.com/QuickBooks-Pro-tutorials/Work-jobs/504791/571015-4.html)
+- [Emerging Careers](https://www.lynda.com/Data-Science-tutorials/Emerging-careers/475941/517493-4.html)
+- [Provide Opportunities for Career Growt](https://www.lynda.com/Business-Skills-tutorials/Provide-opportunities-career-growth/570964/619649-4.html)
+- [Career Paths](https://www.lynda.com/Web-Documentaries-tutorials/Career-Paths/56647/58727-4.html)
 
 ---
 
 ## Project team
-**Ray Villalobos** - Course Author Expert
-**Young Choi** - International Engineer
-**Tom Oh** - IT professor, technologist
-**Chris Gamrat** - instructional designer and educational researcher
-**Stephanie August** - computer scientist
+- **Ray Villalobos** - Course Author Expert
+- **Young Choi** - International Engineer
+- **Tom Oh** - IT professor, technologist
+- **Chris Gamrat** - instructional designer and educational researcher
+- **Stephanie August** - computer scientist
 
