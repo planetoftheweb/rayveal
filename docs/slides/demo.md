@@ -6,17 +6,17 @@ opinionated reveal.js
 
 ## Installing
 
-- Grab it from [repo](http://github.com/planetoftheweb/rayveal)
-- Requires server (FTP/Node)
-- [https://nodejs.org](NodeJS) (optional)
-- grunt serve (http://localhost:800)
-- Use docs folder in any project
+- Grab/Fork from [repo](http://github.com/planetoftheweb/rayveal)
+- `docs` folder has presentation
+- `slides/demo.md` subfolder has main markdown
 
 ---
 
 ## 100% Markdown
 
-Rayveal assumes you want to use markdown to create slide. The index.html file points to a markdown file in slides/demo.md. You can add multiple files in that folder. However, it does whatever [reveal.js can](https://github.com/hakimel/reveal.js) can. You can add invisible notes for yourself using two &gt;&gt; after a carriage return (<a href="slides/demo.md">see markdown file here</a>)
+- Rayveal assumes you want to use markdown to create slides. The `index.html` file points to a markdown file in `slides/demo.md`.
+
+- It does whatever [reveal.js can](https://github.com/hakimel/reveal.js) can. You can add invisible notes for yourself using two &gt;&gt; after a carriage return (<a href="slides/demo.md">see markdown file</a>)
 
 >> Author Notes: Author notes are similar to markdown blockquotes, but you use double greater than signs. They won't appear on your slides, so I personally use them as reading notes, but Reveal.js has a presentation mode that allows you to see them in your slides.
 
@@ -67,9 +67,9 @@ Presentations live in a docs folder within the main project, simply upload the d
 
   ## Code options
 
-    - bootstrap-like colors for code
-    - <code class="code-primary">primary</code> <code class="code-success">success</code><br><code class="code-info">info</code><code class="code-warning">warning</code> <code class="code-danger">danger</code>
-    - <a class="tooltip" href="#">`tooltips`<span>for overlay explanations</span></a> on rollover
+- [Bootstrap](http://getbootstrap.com)-like colors for code
+- <code class="code-primary">primary</code> <code class="code-success">success</code> <code class="code-info">info</code> <code class="code-warning">warning</code> <code class="code-danger">danger</code>
+- <a class="tooltip" href="#">`tooltips`<span>for overlay explanations</span></a> on rollover
 
 ---
 

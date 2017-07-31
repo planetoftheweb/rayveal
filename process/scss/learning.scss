@@ -267,9 +267,10 @@ body {
 
 .reveal code {
   font-family: $monospaceFont;
+  background: #eee;
+  color: $primary;
   display: inline-block;
   padding: 5px 10px;
-  margin: 10px;
   white-space: nowrap;
   cursor: text;
   border-radius: 5px;
@@ -279,11 +280,12 @@ body {
 	background: #eee;
 	color: $primary;
 	border-radius: 5px;
+  margin: 2px;
 }
 
 .reveal pre code {
 	display: block;
-	padding: 10px 20px;
+	padding: 2px 15px;
 	overflow: auto;
   width: 80%;
   margin: 0 auto;
@@ -359,7 +361,7 @@ body {
 .reveal small {
 	display: inline-block;
 	font-size: 0.6em;
-	line-height: 120%;
+	line-height: 100%;
 }
 
 .reveal small * {
