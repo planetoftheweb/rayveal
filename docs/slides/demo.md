@@ -73,16 +73,6 @@ Presentations live in a docs folder within the main project, simply upload the d
 
 ---
 
-<!-- .slide: data-state="bar" -->
-
-## Sample: Has Bar
-
-- This slide has a blue bar
-- Aligns to the top
-- &lt;!-- .slide: data-state="bar" --&gt;
-
----
-
 <!-- .slide: data-state="hasicon" -->
 
 ## <i class="fa fa-html5"></i> Has Icon
@@ -95,21 +85,20 @@ Presentations live in a docs folder within the main project, simply upload the d
 
 # Background Video
 
-<!-- .slide: data-state="textonvideo" data-background-video="http://planetoftheweb.com/i/fish.mp4" -->
+<!-- .slide: data-state="textonvideo" data-background-video="http://planetoftheweb.com/i/video.mp4" -->
 
-<small>&lt;!-- .slide: data-state="textonvideo" data-background-video="http://planetoftheweb.com/i/fish.mp4" --&gt;</small>
+<small>&lt;!-- .slide: data-state="textonvideo" data-background-video="http://planetoftheweb.com/i/video.mp4" --&gt;</small>
 
 >> Note: You also have the option of creating video as a background using regular reveal.js tags.
 
 ---
 
-
-<!-- .slide: data-state="textonimage" data-background-image="http://planetoftheweb.com/i/bridge.jpg" -->
+<!-- .slide: data-state="textonimage" data-background-image="http://planetoftheweb.com/i/photo.jpg" -->
 
 ## Background with an image
 And some text, small shadow...
 
-<small>&lt;!-- .slide: data-state="textonimage" data-background-image="http://planetoftheweb.com/i/bridge.jpg" --&gt;</small>
+<small>&lt;!-- .slide: data-state="textonimage" data-background-image="http://planetoftheweb.com/i/photo.jpg" --&gt;</small>
 
 ---
 
