@@ -10,46 +10,6 @@
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/learning.css" id="theme">
 
-		<style>
-			@keyframes fadein {
-  			0% { 
-					opacity: 0;
-					transform: translate(0, 200px);					
-				}
-				100% { 
-					opacity: 1;
-					transform: translate(0, 0);					
-				}
-				
-			}
-
-			@keyframes fadeout {
-  			0% {
-					opacity: 1;
-					transform: translate(0, 0);					
-				}
-  			100% { 
-					opacity: 0;
-					transform: translate(0, 200px);					
-				}
-			}
-
-			footer.fadein {
-				opacity: 1;
-				animation-name: fadein;
-				animation-timing-function: ease-out;
-    		animation-duration: .5s;
-			}
-
-			footer.fadeout {
-				opacity: 0;
-    		animation-name: fadeout;
-				animation-timing-function: ease-out;
-    		animation-duration: 1s;
-					transform: translate(0, 200px);					
-			}
-		</style>
-
 		<!-- Printing and PDF exports -->
 		<script>
 			var link = document.createElement( 'link' );
@@ -178,9 +138,10 @@
 				getFileIndex.open('GET', 'slides/index.txt');
 
 				getFileIndex.onreadystatechange = function () {
-					if (getFileIndex.status === 200 
+					if (getFileIndex.status === 200
 						&& getFileIndex.readyState === 4) {
 						var menuData = (getFileIndex.responseText).split(/\r\n|\r|\n/g);
+            menuData = menuData.filter(Boolean);
 						menuData.forEach(function(element, index) {
 							menuData[index]= '<div class="slide-menu-item"><a href="?d=' + element + '&">' + element + '</a> | <a href="slides/' + element + '.md">Notes</a></div>';
 						}, this);
