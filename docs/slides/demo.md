@@ -1,6 +1,6 @@
 <!-- .slide: data-state="title" -->
-# RayVeal
-opinionated reveal.js
+# Pixel Prowess
+my own slideshow
 
 ---
 
