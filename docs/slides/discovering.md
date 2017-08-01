@@ -1,10 +1,10 @@
 <!-- .slide: data-state="title" -->
 # RayVeal
-Building Markdown Slides
+<small>Easy Markdown Slides</small>
 
 ---
 
-## What is Rayveal.js
+## What is Rayveal.js?
 
 - Copy of [reveal.js](https://github.com/hakimel/reveal.js)
 
