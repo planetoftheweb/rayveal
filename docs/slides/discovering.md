@@ -32,13 +32,10 @@
 
 >> Author Notes:
 - Let's take a look at how easy it is to create your own slideshow. You'll need your own github account, but once you've got that, you can fork the [rayveal](https://github.com/planetoftheweb/rayveal) repo.
-
 - Next, you'll need to set up your fork to publish to the web. To do that, you can go into settings tab and look under the Github Pages section. The default repo is set up to use the docs folder, so choose that and then choose a theme.
-
 - Once you do that, you'll have a web accessible URL to the presentation demo, let's click on that to see the demo. It's designed to be self documenting so you can read about the features. To show the toolbar hit t, to change to a different presentation hit the m key and then choose a document.
 
 ---
-
 <!-- .slide: data-state="title" -->
 # Editing
 
@@ -47,11 +44,8 @@
 - Let's go ahead and make a simple edit to our demo. We'll hit the pencil tool and thend edit our title.
 - Now we can reload the slide in our browser and you should see the update. I like to create slides by starting with a copy of the markdown text and creating a new file.
 - There's a special file `/docs/slides/index.txt` with the filenames that you want to show in the slideout menu. Edit that to control which documents show up on the sidbar list.
-
 - There's one more thing you probably want to update and that's the toolbar HTML. There's a comment that marks it clearly.
-
-```html
-<!-- ADD PERSISTENT NAVBAR CODE HERE -->
+```
 <footer class="footer fadein">
   <div class="persistent">
     <strong>Links:</strong> <a href="http://raybo.org/masteringcode">Slides</a> | <a href="http://github.com/planetoftheweb/masteringcode">Repo</a> | <strong>Contact:</strong>
@@ -59,18 +53,12 @@
   </div>
   <div class="small"><strong>&larr; &rarr;</strong>-navigate <strong>t</strong>-toolbar <strong>m</strong>-menu <strong>esc</strong>-overview</div>
 </footer>
-<!-- ADD PERSISTENT NAVBAR CODE HERE -->
 ```
-
-Let's change the link to the slides. Usualy I create a shortcut link so that while people are watching the presentation, they can see where they can get the slides.
-
+- Let's change the link to the slides. Usualy I create a shortcut link so that while people are watching the presentation, they can see where they can get the slides.
 ```
 <a href="http://raybo.org/masteringcode">Slides</a>
 ```
-
 - By default the slides will show the demo.md file, if you want to change that, you can change the  code in the index.html file as well. 
-
 ```
 <section data-markdown="slides/demo.md" data-separator="\n---\n" data-separator-notes=">>">
 ```
-
