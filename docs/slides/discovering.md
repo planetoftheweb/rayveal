@@ -38,3 +38,9 @@ Building Markdown Slides
 - Now we can reload the slide in our browser and you should see the update. I like to create slides by starting with a copy of the markdown text and creating a new file.
 - There's a special file called index.txt with the filenames that you want to show in the slideout menu. Let's edit that to remove a couple of documents from the list.
 - There's one more thing you probably want to update and that's the toolbar HTML. There's a comment that marks it clearly. Let's change the link to the slides. Usualy I create a shortcut link so that while people are watching the presentation, they can see where they can get the slides. http://raybo.org/masteringcode
+- By default the slides will show the demo.md file, if you want to change that, you can change the  code in the index.html file as well. 
+
+```
+<section data-markdown="slides/demo.md" data-separator="\n---\n" data-separator-notes=">>">
+```
+
