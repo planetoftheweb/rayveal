@@ -44,7 +44,7 @@
 - Editing is really easy and you can use the github tools to create a slide. Go to the docs/slides folder and choose the demo project. You'll see the markdown preview that Github givesyou. Slides can have author notes that don't display in the slides by using double greater than sign.
 - Let's go ahead and make a simple edit to our demo. We'll hit the pencil tool and thend edit our title.
 - Now we can reload the slide in our browser and you should see the update. I like to create slides by starting with a copy of the markdown text and creating a new file.
-- There's a special file **/docs/slides/index.txt** with the filenames that you want to show in the slideout menu. Edit that to control which documents show up on the sidbar list.
+- There's a special file /docs/slides/index.txt with the filenames that you want to show in the slideout menu. Edit that to control which documents show up on the sidbar list.
 - There's one more thing you probably want to update and that's the toolbar HTML. There's a comment that marks it clearly.
 - Let's change the link to the slides. Usualy I create a shortcut link so that while people are watching the presentation, they can see where they can get the slides.
 - By default the slides will show the demo.md file, if you want to change that, you can change the  code in the index.html file as well.
