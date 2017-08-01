@@ -36,6 +36,7 @@
 - Once you do that, you'll have a web accessible URL to the presentation demo, let's click on that to see the demo. It's designed to be self documenting so you can read about the features. To show the toolbar hit t, to change to a different presentation hit the m key and then choose a document.
 
 ---
+
 <!-- .slide: data-state="title" -->
 # Editing
 
@@ -45,11 +46,6 @@
 - Now we can reload the slide in our browser and you should see the update. I like to create slides by starting with a copy of the markdown text and creating a new file.
 - There's a special file `/docs/slides/index.txt` with the filenames that you want to show in the slideout menu. Edit that to control which documents show up on the sidbar list.
 - There's one more thing you probably want to update and that's the toolbar HTML. There's a comment that marks it clearly.
-- Let's change the link to the slides. Usualy I create a shortcut link so that while people are watching the presentation, they can see where they can get the slides.
-```
-<a href="http://raybo.org/masteringcode">Slides</a>
-```
+- Let's change the link to the slides. Usualy I create a shortcut link so that while people are watching the presentation, they can see where they can get the slides. `<a href="http://raybo.org/masteringcode">Slides</a>`
 - By default the slides will show the demo.md file, if you want to change that, you can change the  code in the index.html file as well. 
-```
-<section data-markdown="slides/demo.md" data-separator="\n---\n" data-separator-notes=">>">
-```
+`<section data-markdown="slides/demo.md" data-separator="\n---\n" data-separator-notes=">>">`
