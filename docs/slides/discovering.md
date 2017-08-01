@@ -45,15 +45,6 @@
 - Now we can reload the slide in our browser and you should see the update. I like to create slides by starting with a copy of the markdown text and creating a new file.
 - There's a special file `/docs/slides/index.txt` with the filenames that you want to show in the slideout menu. Edit that to control which documents show up on the sidbar list.
 - There's one more thing you probably want to update and that's the toolbar HTML. There's a comment that marks it clearly.
-```
-<footer class="footer fadein">
-  <div class="persistent">
-    <strong>Links:</strong> <a href="http://raybo.org/masteringcode">Slides</a> | <a href="http://github.com/planetoftheweb/masteringcode">Repo</a> | <strong>Contact:</strong>
-    <a href="https://www.linkedin.com/in/planetoftheweb">LinkedIn</a>, <a href="http://twitter.com/planetoftheweb">@planetoftheweb</a>, <a href="http://github.com/planetoftheweb">Github</a> | <a href="https://www.linkedin.com/learning/instructors/ray-villalobos">Courses</a>
-  </div>
-  <div class="small"><strong>&larr; &rarr;</strong>-navigate <strong>t</strong>-toolbar <strong>m</strong>-menu <strong>esc</strong>-overview</div>
-</footer>
-```
 - Let's change the link to the slides. Usualy I create a shortcut link so that while people are watching the presentation, they can see where they can get the slides.
 ```
 <a href="http://raybo.org/masteringcode">Slides</a>
