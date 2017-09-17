@@ -14,7 +14,7 @@
 
 - Adds features
 
->>Author Notes:
+> > Author Notes:
 
 - Rayveal is essentially a copy of the reveal.js framework. It's really a set of customizations on top of reveal.js that makes it easier to create slides using markdown.
 
@@ -22,14 +22,14 @@
 
 - Although you can use it with HTML just like you can with reveal.js, it's meant to be used with markdown, a simple language that makes it much easier to create slides.
 
-- It adds features like a slidein toolbar at the bottom of your slides, which you can toggle by pressing t. It also adds a plugin that provides a sidebar menu, where you can switch between multiple slides. 
+- It adds features like a slidein toolbar at the bottom of your slides, which you can toggle by pressing t. It also adds a plugin that provides a sidebar menu, where you can switch between multiple slides.
 
 ---
 
 <!-- .slide: data-state="title" -->
 # Quickstart
 
->>Author Notes:
+> > Author Notes:
 - Let's take a look at how easy it is to create your own slideshow. You'll need your own github account, but once you've got that, you can fork the [rayveal](https://github.com/planetoftheweb/rayveal) repo.
 - Next, you'll need to set up your fork to publish to the web. To do that, you can go into settings tab and look under the Github Pages section. The default repo is set up to use the docs folder, so choose that and then choose a theme.
 - Once you do that, you'll have a web accessible URL to the presentation demo, let's click on that to see the demo. It's designed to be self documenting so you can read about the features. To show the toolbar hit t, to change to a different presentation hit the m key and then choose a document.
@@ -39,7 +39,7 @@
 <!-- .slide: data-state="title" -->
 # Editing
 
->>Author Notes:
+> > Author Notes:
 - Editing is really easy and you can use the github tools to create a slide. Go to the docs/slides folder and choose the demo project. You'll see the markdown preview that Github givesyou. Slides can have author notes that don't display in the slides by using double greater than sign.
 - Let's go ahead and make a simple edit to our demo. We'll hit the pencil tool and thend edit our title.
 - Now we can reload the slide in our browser and you should see the update. I like to create slides by starting with a copy of the markdown text and creating a new file.

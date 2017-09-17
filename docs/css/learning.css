@@ -84,6 +84,9 @@ body {
   margin: 20px 0;
   padding: 0 5%; }
 
+.reveal li p {
+  padding: 0; }
+
 /* Ensure certain elements are never larger than the slide itself */
 .reveal img,
 .reveal video {
@@ -106,8 +109,7 @@ body {
 .reveal ul {
   display: inline-block;
   text-align: left;
-  margin: 0;
-  margin-top: 20px; }
+  margin: 0 5%; }
 
 .reveal ol {
   list-style-type: decimal; }
@@ -139,14 +141,10 @@ body {
 .reveal ul ol,
 .reveal ol ol,
 .reveal ol ul {
-  display: block;
-  margin-left: 40px; }
+  display: block; }
 
 .reveal dt {
   font-weight: bold; }
-
-.reveal dd {
-  margin-left: 40px; }
 
 .reveal q,
 .reveal blockquote {
@@ -351,18 +349,22 @@ body {
 *********************************************/
 .reveal .code-primary {
   background-color: #0077B5 !important;
+  margin: 5px;
   color: #FFF !important; }
 
 .reveal .code-success {
   background-color: #5cb85c !important;
+  margin: 5px;
   color: #FFF !important; }
 
 .reveal .code-info {
   background-color: #5bc0de !important;
+  margin: 5px;
   color: #FFF !important; }
 
 .reveal .code-warning {
   background-color: #E68523 !important;
+  margin: 5px;
   color: #FFF !important; }
 
 .reveal .code-danger {
@@ -646,3 +648,6 @@ footer.fadeout {
 
 .reveal a.tooltip span {
   color: #FFF !important; }
+
+.reveal a code {
+  cursor: pointer !important; }

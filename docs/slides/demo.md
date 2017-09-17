@@ -18,7 +18,7 @@ opinionated reveal.js
 
 - It does whatever [reveal.js can](https://github.com/hakimel/reveal.js) can. You can add invisible notes for yourself using two &gt;&gt; after a carriage return (<a href="slides/demo.md">see markdown file</a>)
 
->> Author Notes: Author notes are similar to markdown blockquotes, but you use double greater than signs. They won't appear on your slides, so I personally use them as reading notes, but Reveal.js has a presentation mode that allows you to see them in your slides.
+> > Author Notes: Author notes are similar to markdown blockquotes, but you use double greater than signs. They won't appear on your slides, so I personally use them as reading notes, but Reveal.js has a presentation mode that allows you to see them in your slides.
 
 ---
 
@@ -37,7 +37,7 @@ opinionated reveal.js
 ```
 
 
->> Author Notes: Author notes are similar to markdown blockquotes, but you use double greater than signs. They won't appear on your slides, so I personally use them as reading notes, but Reveal.js has a presentation mode that allows you to see them in your slides.
+> > Author Notes: Author notes are similar to markdown blockquotes, but you use double greater than signs. They won't appear on your slides, so I personally use them as reading notes, but Reveal.js has a presentation mode that allows you to see them in your slides.
 
 ---
 
@@ -89,7 +89,7 @@ Presentations live in a docs folder within the main project, simply upload the d
 
 <small>&lt;!-- .slide: data-state="textonvideo" data-background-video="http://planetoftheweb.com/i/video.mp4" --&gt;</small>
 
->> Note: You also have the option of creating video as a background using regular reveal.js tags.
+> > Note: You also have the option of creating video as a background using regular reveal.js tags.
 
 ---
 
