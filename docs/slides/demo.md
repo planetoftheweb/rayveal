@@ -16,7 +16,7 @@ opinionated reveal.js
 
 - Rayveal assumes you want to use markdown to create slides. The `index.html` file points to a markdown file in `slides/demo.md`.
 
-- It does whatever [reveal.js can](https://github.com/hakimel/reveal.js) can. You can add invisible notes for yourself using two &gt;&gt; after a carriage return (<a href="slides/demo.md">see markdown file</a>)
+- It does whatever [reveal.js can](https://github.com/hakimel/reveal.js) can. You can add invisible notes for yourself using two &gt; &gt; after a carriage return (<a href="slides/demo.md">see markdown file</a>)
 
 > > Author Notes: Author notes are similar to markdown blockquotes, but you use double greater than signs. They won't appear on your slides, so I personally use them as reading notes, but Reveal.js has a presentation mode that allows you to see them in your slides.
 
