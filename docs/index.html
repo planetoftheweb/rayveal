@@ -27,10 +27,7 @@
 
   <div class="reveal">
     <div class="slides">
-
       <section data-markdown="slides/demo.md" data-separator="\n---\n" data-separator-notes="\n> >"></section>
-
-
     </div><!-- slides -->
 
     <!-- ADD PERSISTENT NAVBAR CODE HERE -->
@@ -39,7 +36,7 @@
         <strong>Links:</strong> <a href="http://raybo.org/rayveal">Slides</a> | <a href="http://github.com/planetoftheweb/rayveal">Repo</a> | <strong>Contact:</strong>
         <a href="https://www.linkedin.com/in/planetoftheweb">LinkedIn</a>, <a href="http://twitter.com/planetoftheweb">@planetoftheweb</a>, <a href="http://github.com/planetoftheweb">Github</a> | <a href="https://www.linkedin.com/learning/instructors/ray-villalobos">Courses</a>
       </div>
-      <div class="small"><strong>&larr; &rarr;</strong>-navigate <strong>t</strong>-toolbar <strong>m</strong>-menu <strong>esc</strong>-overview</div>
+      <div class="small"><strong>&larr; &rarr;</strong>-navigate <strong>ctrl-t</strong>-toolbar <strong>ctrl-m</strong>-menu <strong>esc</strong>-overview</div>
     </footer>
     <!-- ADD PERSISTENT NAVBAR CODE HERE -->
   </div><!-- reveal -->
@@ -119,7 +116,7 @@
 
         document.addEventListener('keydown', function(e) {
           var keyName = e.key;
-          if (keyName === 't') {
+          if (keyName === 't' && e.ctrlKey ) {
             var myNode = document.querySelector('.footer');
             myNode.classList.toggle('fadeout');
           }
