@@ -1,31 +1,43 @@
-const gulp = require('gulp'),
-  webserver = require('gulp-webserver'),
-
+var gulp = require('gulp'),
+  webserver = require('gulp-server-io'),
   source = './',
   dest = './';
 
-gulp.task('html', function() {
-  gulp.src(dest + '**/*.html');
-});
+function html() {
+  return gulp.src(dest + '**/*.html');
+}
 
-// Regular CSS
-gulp.task('css', function() {
-  gulp.src(dest + '**/*.css');
-});
+function js() {
+  return gulp.src(dest + '**/*.js');
+}
 
-gulp.task('watch', function() {
-  gulp.watch(source + '**/*.js', ['js']);
-  gulp.watch(source + '**/*.css', ['css']); //CSS
-  gulp.watch(source + '**/*.html', ['html']);
-});
+function styles() {
+  return gulp.src(dest + '**/*.css');
+}
 
-gulp.task('webserver', function() {
-  gulp.src(dest)
-    .pipe(webserver({
-      livereload: true,
+function watch() {
+  gulp.watch(source, js);
+  gulp.watch(source, styles);
+  gulp.watch(source, html);
+}
+
+function server() {
+  return gulp.src(dest).pipe(
+    webserver({
+      serverReload: {
+        dir: dest,
+        callback: function() {}
+      },
       port: 3333,
       open: true
-    }));    
-});
+    })
+  );
+}
 
-gulp.task('default', ['webserver','watch']);
+var build = gulp.series(
+  gulp.parallel(js, styles, html),
+  server,
+  watch
+);
+
+gulp.task('default', build);
