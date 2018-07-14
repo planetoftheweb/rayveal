@@ -36,10 +36,10 @@ function watch() {
 }
 
 function server() {
-  return gulp.src(dest).pipe(
+  return gulp.src(source).pipe(
     webserver({
       serverReload: {
-        dir: dest
+        dir: source
       },
       port: 3333,
       open: true
