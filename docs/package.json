@@ -1,12 +1,12 @@
 {
-  "name": "slideserver",
+  "name": "negotiatingsalary",
   "version": "1.0.1",
-  "description": "This package.json allows you to run a mini-server just for previewing presentations.",
+  "description": "These are the slides for my presentation for negotiating your salary.",
   "main": "gulpfile.js",
   "devDependencies": {
+    "browser-sync": "^2.26.3",
     "gulp": "^4.0.0",
-    "gulp-folder-index": "0.0.3",
-    "gulp-server-io": "^1.4.0"
+    "gulp-folder-index": "0.0.3"
   },
   "author": "Ray Villalobos"
 }
