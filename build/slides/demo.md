@@ -44,7 +44,9 @@ opinionated reveal.js
 
 ## Multiple slides
 
-## You can use multiple markdown files within the same slide, just add a different slide in the slides folder and [link to it](?d=Bootstrap 4 Cards&). (see [markdown](slides/demo.md) file for how it works)
+You can use multiple markdown files within the same slide, just add a different slide in the slides folder and [link to it](?d=Bootstrap 4 Cards&). (see [markdown](slides/demo.md) file for how it works)
+
+---
 
 ## Sidebar Menu
 
@@ -71,13 +73,24 @@ Presentations live in a docs folder within the main project, simply upload the d
 
 - [Bootstrap](http://getbootstrap.com)-like colors for code
 - <code class="code-primary">primary</code> <code class="code-success">success</code> <code class="code-info">info</code> <code class="code-warning">warning</code> <code class="code-danger">danger</code>
-- <a class="tooltip" href="#">`tooltips`<span>for overlay explanations</span></a> on rollover
+- `class="sample"`
+  <div class="sample">
+    **TYP**:
+    <code class="code-danger">one</code>
+    <code class="code-danger">two</code>
+    <code class="code-danger">three</code><br>
+    **COL**:
+    <code class="code-success">a</code>
+    <code class="code-success">b</code>
+    <code class="code-success">c</code>
+  </div>
+- <a class="tooltip" href="#">`tooltips`<span>For overlay explanations</span></a> on rollover
 
 ---
 
 <!-- .slide: data-state="hasicon" -->
 
-## <i class="fa fa-html5"></i> Has Icon
+## <i class="fab fa-html5"></i> Has Icon
 
 - Template with an icon
 - Preloading [font-awesome](http://fontawesome.io) <small>by Dave Gandy</small>
