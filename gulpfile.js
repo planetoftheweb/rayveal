@@ -1,8 +1,8 @@
 var gulp = require("gulp"),
   folderIndex = require("gulp-folder-index"),
   browserSync = require("browser-sync").create(),
-  source = "./",
-  dest = "./";
+  source = "./build/",
+  dest = "./build/";
 
 function html() {
   return gulp.src(dest + "**/*.html");
@@ -25,7 +25,7 @@ function slides() {
         filename: "index.json"
       })
     )
-    .pipe(gulp.dest(dest + "slides"));
+    .pipe(gulp.dest(source + "slides"));
 }
 
 function watch() {
@@ -40,7 +40,7 @@ function watch() {
 function server() {
   browserSync.init({
     server: {
-      baseDir: "./"
+      baseDir: source
     }
   });
 
