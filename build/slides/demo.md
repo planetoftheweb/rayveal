@@ -1,5 +1,7 @@
 <!-- .slide: data-state="title" -->
+
 # RayVeal
+
 opinionated reveal.js
 
 ---
@@ -36,15 +38,13 @@ opinionated reveal.js
 </footer>
 ```
 
-
 > > Author Notes: Author notes are similar to markdown blockquotes, but you use double greater than signs. They won't appear on your slides, so I personally use them as reading notes, but Reveal.js has a presentation mode that allows you to see them in your slides.
 
 ---
 
 ## Multiple slides
 
-You can use multiple markdown files within the same slide, just add a different slide in the slides folder and [link to it](?d=Bootstrap 4 Cards&). (see [markdown](slides/demo.md) file for how it works)
----
+## You can use multiple markdown files within the same slide, just add a different slide in the slides folder and [link to it](?d=Bootstrap 4 Cards&). (see [markdown](slides/demo.md) file for how it works)
 
 ## Sidebar Menu
 
@@ -53,6 +53,7 @@ Press the `ctrl-m` key to show [sidebar menu](https://github.com/denehyg/reveal.
 ---
 
 ## Standalone Folder
+
 Presentations live in a docs folder within the main project, simply upload the docs folder to a server and change the name if you want. It's self contained. It's also easy to add as documentation using Github Pages.
 
 ---
@@ -61,11 +62,12 @@ Presentations live in a docs folder within the main project, simply upload the d
 
 1. Are on by default
 2. You can write HTML lists
-  - if you don't want them
+
+- if you don't want them
 
 ---
 
-  ## Code options
+## Code options
 
 - [Bootstrap](http://getbootstrap.com)-like colors for code
 - <code class="code-primary">primary</code> <code class="code-success">success</code> <code class="code-info">info</code> <code class="code-warning">warning</code> <code class="code-danger">danger</code>
@@ -96,25 +98,27 @@ Presentations live in a docs folder within the main project, simply upload the d
 <!-- .slide: data-state="textonimage" data-background-image="http://planetoftheweb.com/i/photo.jpg" -->
 
 ## Background with an image
+
 And some text, small shadow...
 
-<small>&lt;!-- .slide: data-state="textonimage" data-background-image="http://planetoftheweb.com/i/photo.jpg" --&gt;</small>
+<small>&lt;!-- .slide: data-background-image="https://lil-cdn.com/585273/computing-apps-threequarter-211095871.jpg" --&gt;</small>
 
 ---
 
 ## Here's some code
 
 ```javascript
-var electron = require('electron');
+var electron = require("electron");
 var BrowserWindow = electron.BrowserWindow;
 var app = electron.app;
 
-app.on('ready', function() {
+app.on("ready", function() {
   var appWindow;
   appWindow = new BrowserWindow();
-  appWindow.loadURL('http://raybo.org');
+  appWindow.loadURL("http://raybo.org");
 });
 ```
+
 <!-- .element: data-trim="true" contenteditable="true" -->
 
 Syntax highlighted, editable by default
@@ -122,6 +126,7 @@ Syntax highlighted, editable by default
 ---
 
 ## Embedded Code
+
 <small>Here's a sample of an embeded CodePen. Use an iframe.</small>
 
 <iframe height='300' scrolling='no' title='Bootstrap 4' src='//codepen.io/planetoftheweb/embed/bgdOzX/?height=300&theme-id=27192&default-tab=html,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%; min-height: 50vh;'>See the Pen <a href='http://codepen.io/planetoftheweb/pen/bgdOzX/'>Bootstrap 4</a> by Ray Villalobos (<a href='http://codepen.io/planetoftheweb'>@planetoftheweb</a>) on <a href='http://codepen.io'>CodePen</a>.
@@ -133,13 +138,14 @@ Syntax highlighted, editable by default
 
 Here's what a table looks like. Use the <a href="http://www.tablesgenerator.com/markdown_tables">tables generator</a> to help you write the markdown.
 
-| |  Extra small <small>< 768px</small> | Small <small> ≥ 768px</small> | Medium <small>≥992px</small> | Large <small>≥1200px</small> |
-|---|---|---|---|---|
-| **Container**	| Auto | 750px | 970px | 1170px |
-| **Size**	| .col-xs- | .col-sm- | .col-md- | .col-lg- |
-| **Column width** | Auto | ~62px | ~81px | ~97px |
+|                  | Extra small <small>< 768px</small> | Small <small> ≥ 768px</small> | Medium <small>≥992px</small> | Large <small>≥1200px</small> |
+| ---------------- | ---------------------------------- | ----------------------------- | ---------------------------- | ---------------------------- |
+| **Container**    | Auto                               | 750px                         | 970px                        | 1170px                       |
+| **Size**         | .col-xs-                           | .col-sm-                      | .col-md-                     | .col-lg-                     |
+| **Column width** | Auto                               | ~62px                         | ~81px                        | ~97px                        |
 
 ---
+
 <!-- .slide: data-state="circles" -->
 
 # Circles

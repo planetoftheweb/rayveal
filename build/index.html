@@ -7,7 +7,6 @@
 
   <title>Learning</title>
 
-  <link href="css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/reveal.css">
   <link rel="stylesheet" href="css/learning.css" id="theme">
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
@@ -54,7 +53,6 @@
   </div>
   <!-- reveal -->
 
-  <script src="js/lib/head.min.js"></script>
   <script src="js/reveal.js"></script>
   <script>
     function getUrlVars() {
@@ -70,15 +68,14 @@
 
     if (getUrlVars().d) {
       var dataFile = getUrlVars().d;
-      //console.log('slides/' + dataFile + '.md');
       document.querySelector('section').dataset.markdown = 'slides/' + dataFile + '.md';
-      //console.log(document.querySelector('section').dataset.markdown);
     }
 
-    // More info https://github.com/hakimel/reveal.js#configuration
     Reveal.initialize({
+	    width: 1296,
+	    height: 858,
       margin: 0,
-      minScale: .5,
+      minScale: 0,
       maxScale: 1,
       display: 'flex',
       fragments: true,
@@ -86,7 +83,7 @@
       transition: 'none', // none/fade/slide/convex/concave/zoom
       transitionSpeed: 0, // default/fast/slow
       backgroundTransition: 'none',
-      center: true,
+      center: false,
       controls: false,
       progress: false,
       rollingLinks: false,
@@ -114,29 +111,6 @@
     });
 
     Reveal.addEventListener('ready', function (event) {
-
-
-      //Hide the mouse after three seconds of not moving it.
-      var mouseHidden = false;
-      var mouseNode = document.querySelector('html');
-      var mouseTimer;
-      document.addEventListener('mousemove', function () {
-        if (!mouseHidden) {
-          mouseHidden = false;
-          clearTimeout(mouseTimer);
-          mouseNode.style.cursor = 'default';
-          mouseTimer = setTimeout(function () {
-            mouseNode.style.cursor = 'none';
-            mouseHidden = true;
-          }, 3000);
-        } else {
-          mouseNode.style.cursor = 'default';
-          mouseTimer = setTimeout(function () {
-            mouseNode.style.cursor = 'none';
-            mouseHidden = false;
-          }, 3000);
-        }
-      });
 
       //Modifying all the PRE tags so they are teditable
       var preNodes = document.querySelectorAll('pre');
