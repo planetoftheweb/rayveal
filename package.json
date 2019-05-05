@@ -1,13 +1,14 @@
 {
   "name": "rayveal",
   "version": "1.0.0",
-  "description": "These are the slides for my presentation for negotiating your salary.",
+  "description": "RayVeal.js is an opinionated install of the awesome reveal.js with a mardown focused workflow.",
   "scripts": {
     "start": "gulp"
   },
   "main": "gulpfile.js",
   "devDependencies": {
     "browser-sync": "^2.26.3",
+    "directory-tree": "^2.2.2",
     "gulp": "^4.0.0",
     "gulp-folder-index": "0.0.3"
   },
