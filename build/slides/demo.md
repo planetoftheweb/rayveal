@@ -62,7 +62,7 @@ You can use multiple markdown files within the same slide, just add a different 
 
 # Sidebar Menu
 
-Press the `m` key to show [sidebar menu](https://github.com/denehyg/reveal.js-menu). You can use it to jump to different slideshows. This list is fed by the gulp process, which creates an `index.json` file for you as you add more markdown files to the `builds/slides` folder.
+Press the `m` key to show [sidebar menu](https://github.com/denehyg/reveal.js-menu). You can use it to jump to different slideshows. This list is fed by the gulp process, which generates an `index.json` file for you as you add more markdown files to the `builds/slides` folder.
 
 ---
 
