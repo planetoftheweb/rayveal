@@ -3,9 +3,9 @@
 # RayVeal
 
 Opinionated Reveal.js
-<small style="font-size: .4em;">Markdown First, Light Bootstrap, Sweet Extras</small>
+<small style="font-size: .4em;">A markdown first presentation framework. Based on reveal.js with preinstalled plugins, light Bootstrap and sweet extras.</small>
 
-<p><a class="btn btn-info text-white mr-3">Github Repo</a><a class="btn btn-info text-white">Demo</a></p>
+<a class="btn btn-lg btn-info text-white mr-3" href="https://github.com/planetoftheweb/rayveal">Github Repo</a></p>
 
 ---
 
@@ -33,8 +33,6 @@ Opinionated Reveal.js
 - Rayveal assumes you want to use markdown to create slides. The `index.html` file points to a markdown file in `builds/slides/demo.md`.
 
 - It does whatever [reveal.js can](https://github.com/hakimel/reveal.js) can. You can add invisible notes for yourself using two &gt; &gt; after a carriage return (<a href="slides/demo.md">see markdown file</a>)
-
-> > Author Notes: Author notes are similar to markdown blockquotes, but you use double greater than signs. They won't appear on your slides, so I personally use them as reading notes, but Reveal.js has a presentation mode that allows you to see them in your slides.
 
 ---
 
