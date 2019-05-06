@@ -4,7 +4,7 @@
   "alias": ["rayveal.tech"],
   "builds": [
     {
-      "src": "**/*.*",
+      "src": "build/**/*.*",
       "use": "@now/static"
     }
   ]
