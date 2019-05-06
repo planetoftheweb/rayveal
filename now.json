@@ -4,9 +4,8 @@
   "alias": ["rayveal.tech"],
   "builds": [
     {
-      "src": "build/*.html",
-      "use": "@now/static",
-      "config": { "distDir": "build" }
+      "src": "**/*.*",
+      "use": "@now/static"
     }
   ]
 }

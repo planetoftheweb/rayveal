@@ -4,7 +4,8 @@
   "description": "RayVeal.js is an opinionated install of the awesome reveal.js with a mardown focused workflow.",
   "scripts": {
     "start": "gulp",
-    "bootstrap-light": "node-sass ./src/bootstrap-light/scss/bootstrap.scss ./build/css/bootstrap-light.css"
+    "bootstrap-light": "node-sass ./src/bootstrap-light/scss/bootstrap.scss ./build/css/bootstrap-light.css",
+    "now": "now ./build -A ../now.json && now alias"
   },
   "main": "gulpfile.js",
   "license": "MIT",
