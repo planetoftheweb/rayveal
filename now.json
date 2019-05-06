@@ -2,9 +2,10 @@
   "version": 2,
   "name": "rayveal",
   "alias": ["rayveal.tech"],
+  "license": "MIT",
   "builds": [
     {
-      "src": "package.json",
+      "src": "build/index.html",
       "use": "@now/static-build",
       "config": { "distDir": "build" }
     }
