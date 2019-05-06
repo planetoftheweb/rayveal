@@ -2,21 +2,35 @@
 
 # RayVeal
 
-opinionated reveal.js
+Opinionated Reveal.js
+<small style="font-size: .4em;">Markdown First, Light Bootstrap, Sweet Extras</small>
+
+<p><a class="btn btn-info text-white mr-3">Github Repo</a><a class="btn btn-info text-white">Demo</a></p>
 
 ---
 
-## Installing
+# Installing
 
-- Grab/Fork from [repo](http://github.com/planetoftheweb/rayveal)
-- `docs` folder has presentation
-- `slides/demo.md` subfolder has main markdown
+1. Grab/Fork from [repo](http://github.com/planetoftheweb/rayveal)
+1. `build` folder has presentation
+1. `build/slides/demo.md` subfolder has sample markdown
+1. `slides/index.json` has a list of presentations (optional)
 
 ---
 
-## 100% Markdown
+# Running locally
 
-- Rayveal assumes you want to use markdown to create slides. The `index.html` file points to a markdown file in `slides/demo.md`.
+1. Run `$ npm install` from your terminal
+1. Edit `build/slides/demo.md` or add `*.md files`
+1. Run `$ npm start` from your terminal
+1. Generates the `build/slides/index.json` file (index)
+1. Creates a live reload server
+
+---
+
+# 100% Markdown
+
+- Rayveal assumes you want to use markdown to create slides. The `index.html` file points to a markdown file in `builds/slides/demo.md`.
 
 - It does whatever [reveal.js can](https://github.com/hakimel/reveal.js) can. You can add invisible notes for yourself using two &gt; &gt; after a carriage return (<a href="slides/demo.md">see markdown file</a>)
 
@@ -24,9 +38,9 @@ opinionated reveal.js
 
 ---
 
-## Persistent Navigation
+# Persistent Navigation
 
-<small>**Notice:** the persistent navigation bar at the bottom is on every page. It will disappear after 5 seconds. You can also toggle it by hitting the `ctrl-t` key. To modify, look for the following code (delete it if you don't need it)</small>
+<small>**Notice:** the persistent navigation bar at the bottom is on every page. It will disappear after 5 seconds. You can also toggle it by hitting the `t` key. To modify, look for the following code (delete it if you don't need it)</small>
 
 ```
 <footer class="footer">
@@ -38,29 +52,29 @@ opinionated reveal.js
 </footer>
 ```
 
-> > Author Notes: Author notes are similar to markdown blockquotes, but you use double greater than signs. They won't appear on your slides, so I personally use them as reading notes, but Reveal.js has a presentation mode that allows you to see them in your slides.
-
 ---
 
-## Multiple slides
+# Multiple slides
 
 You can use multiple markdown files within the same slide, just add a different slide in the slides folder and [link to it](?d=Bootstrap 4 Cards&). (see [markdown](slides/demo.md) file for how it works)
 
 ---
 
-## Sidebar Menu
+# Sidebar Menu
 
-Press the `ctrl-m` key to show [sidebar menu](https://github.com/denehyg/reveal.js-menu). You can use it to jump to different slides. There is also an [index.txt](slides/index.txt) file in the slides menu, where you can add other slides you want to feature in your menu.
-
----
-
-## Standalone Folder
-
-Presentations live in a docs folder within the main project, simply upload the docs folder to a server and change the name if you want. It's self contained. It's also easy to add as documentation using Github Pages.
+Press the `m` key to show [sidebar menu](https://github.com/denehyg/reveal.js-menu). You can use it to jump to different slideshows. This list is fed by the gulp process, which creates an `index.json` file for you as you add more markdown files to the `builds/slides` folder.
 
 ---
 
-## Fragments
+# Author Notes
+
+You can't see them, but they're there. Speaker notes lets you create notes that only you see. Press the `s`. I also use them so that I know what I'm going to say when using simpler bullets.
+
+> > Author Notes: Author notes are similar to markdown blockquotes, but you use double greater than signs. They won't appear on your slides, so I personally use them as reading notes, but Reveal.js has a presentation mode that allows you to see them in your slides.
+
+---
+
+# Fragments
 
 1. Are on by default
 2. You can write HTML lists
@@ -69,28 +83,84 @@ Presentations live in a docs folder within the main project, simply upload the d
 
 ---
 
-## Code options
+# Bootstrap Cards
+
+<p class="small">Some styles from the [bootstrap framework](https://getbootstrap.com/) can be real useful...like bootstrap cards. Combine them with reveal fragment transitions.</p>
+
+<div class="card-deck mx-5">
+<div class="card fragment fade-in-then-semi-out">
+  <img src="http://planetoftheweb.com/i/photo.jpg" class="card-img-top img-fluid" alt="Sample Image">
+  <div class="card-body">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary text-white">Go somewhere</a>
+  </div>
+</div>
+<div class="card fragment fade-in-then-semi-out">
+  <img src="http://planetoftheweb.com/i/photo.jpg" class="card-img-top  img-fluid" alt="Sample Image">
+  <div class="card-body">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary text-white">Go somewhere</a>
+  </div>
+</div>
+<div class="card fragment fade-in-then-semi-out">
+  <img src="http://planetoftheweb.com/i/photo.jpg" class="card-img-top  img-fluid" alt="Sample Image">
+  <div class="card-body">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary text-white">Go somewhere</a>
+  </div>
+</div>
+</div>
+---
+
+# Stages of a project
+
+<p class="small">List groups are another nice component you can use.<br>Here's the classic six stages of a project: </p>
+
+<ul class="list-group">
+  <li class="list-group-item fragment fade-down"><i class="far fa-smile"></i> Enthusiasm</li>
+  <li class="list-group-item fragment fade-down">Disillusionment</li>
+  <li class="list-group-item  d-flex justify-content-between align-items-center fragment fade-down">Panic <span class="badge badge-danger badge-pill"><i class="fas fa-star text-white"></i></span>
+  </li>
+  <li class="list-group-item fragment fade-down">
+    Search for the guilty
+  </li>
+  <li class="list-group-item fragment fade-down">
+    Punishment of the innocent
+  </li>
+  <li class="list-group-item fragment fade-in-then-semi-out">
+    Praise for the non-participants
+  </li>
+</ul>
+
+---
+
+# Code options
 
 - [Bootstrap](http://getbootstrap.com)-like colors for code
 - <code class="code-primary">primary</code> <code class="code-success">success</code> <code class="code-info">info</code> <code class="code-warning">warning</code> <code class="code-danger">danger</code>
-- `class="sample"`
-  <div class="sample">
-    **TYP**:
-    <code class="code-danger">one</code>
-    <code class="code-danger">two</code>
-    <code class="code-danger">three</code><br>
-    **COL**:
-    <code class="code-success">a</code>
-    <code class="code-success">b</code>
-    <code class="code-success">c</code>
-  </div>
+
 - <a class="tooltip" href="#">`tooltips`<span>For overlay explanations</span></a> on rollover
+
+---
+
+# List Samples
+
+- `sample`
+  - NUM: `one` `two` `three`
+  - NUM: `four` `five` `six`
+  - NUM: `seven` `eight` `nine`
+  - NUM: `ten` `eleven` `twelve`
+  - NUM:<br>
+    `thirteen` `fourteen` `fifteen`
 
 ---
 
 <!-- .slide: data-state="hasicon" -->
 
-## <i class="fab fa-html5"></i> Has Icon
+# <i class="fab fa-html5"></i> Has Icon
 
 - Template with an icon
 - Preloading [font-awesome](http://fontawesome.io) <small>by Dave Gandy</small>
@@ -110,7 +180,7 @@ Presentations live in a docs folder within the main project, simply upload the d
 
 <!-- .slide: data-state="textonimage" data-background-image="http://planetoftheweb.com/i/photo.jpg" -->
 
-## Background with an image
+# Background with an image
 
 And some text, small shadow...
 
@@ -118,7 +188,7 @@ And some text, small shadow...
 
 ---
 
-## Here's some code
+# Here's some code
 
 ```javascript
 var electron = require("electron");
@@ -138,7 +208,7 @@ Syntax highlighted, editable by default
 
 ---
 
-## Embedded Code
+# Embedded Code
 
 <small>Here's a sample of an embeded CodePen. Use an iframe.</small>
 
@@ -147,7 +217,7 @@ Syntax highlighted, editable by default
 
 ---
 
-## Tables
+# Tables
 
 Here's what a table looks like. Use the <a href="http://www.tablesgenerator.com/markdown_tables">tables generator</a> to help you write the markdown.
 

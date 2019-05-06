@@ -49,7 +49,7 @@
       </div>
       <div class="small">
         <strong>&larr; &rarr;</strong>-navigate
-        <strong>ctrl-t</strong>-toolbar
+        <strong>ctrl-shift-T</strong>-toolbar
         <strong>ctrl-m</strong>-menu
         <strong>esc</strong>-overview</div>
     </footer>
@@ -84,7 +84,7 @@
       display: 'flex',
       fragments: true,
       history: true,
-      transition: 'none', // none/fade/slide/convex/concave/zoom
+      transition: 'convex', // none/fade/slide/convex/concave/zoom
       transitionSpeed: 0, // default/fast/slow
       backgroundTransition: 'none',
       center: false,
@@ -95,7 +95,8 @@
         transitions: false,
         themes: false,
         slides: false,
-        openButton: false
+        openButton: false,
+        loadIcons: false
       },
       // More info https://github.com/hakimel/reveal.js#dependencies
       dependencies: [
@@ -123,6 +124,13 @@
         item.dataset.trim = true;
       }, this);
 
+      var codeNodes = document.querySelectorAll('code');
+      codeNodes.forEach(function (item) {
+        item.contentEditable = true;
+      }, this);
+
+
+
       // Remove fragments in notes
       var asideNodes = document.querySelectorAll('aside.notes li');
       asideNodes.forEach(function (item) {
@@ -130,13 +138,10 @@
       }, this);
 
 
-      document.addEventListener('keydown', function (e) {
-        var keyName = e.key;
-        if (keyName === 't' && e.ctrlKey) {
-          var myNode = document.querySelector('.footer');
-          myNode.classList.toggle('fadeout');
-        }
-      }, false);
+      Reveal.addKeyBinding( { keyCode: 84, key: 'T', description: 'Start timer' }, function() {
+        var myNode = document.querySelector('.footer');
+        myNode.classList.toggle('fadeout');
+      })
 
       setTimeout(function () {
         var myNode = document.querySelector('.footer');

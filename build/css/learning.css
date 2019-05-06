@@ -5,7 +5,7 @@
 .reveal {
   font-family: Avenir, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 42px;
+  font-size: 2rem;
   font-weight: 100;
   letter-spacing: 0.015em;
   color: #444;
@@ -13,7 +13,6 @@
 
 ::selection {
   color: inherit;
-  background: #d9d9d9;
   text-shadow: none;
 }
 
@@ -30,7 +29,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  line-height: 1.2;
   font-weight: inherit;
 }
 
@@ -43,39 +41,34 @@
 .reveal h4,
 .reveal h5,
 .reveal h6 {
-  margin: 0 0 20px 0;
+  margin: 0 0 0.2em 0;
   color: #444;
   font-family: Avenir, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 900;
-  line-height: 1.2;
+  line-height: 120%;
   letter-spacing: normal;
   margin-top: 0;
-  margin-bottom: 20px;
   text-align: center;
   text-transform: inherit;
   text-shadow: none;
   word-wrap: break-word;
 }
 
-.reveal h1 {
+.reveal section > h1 {
   font-size: 50pt;
 }
 
-.reveal h2 {
+.reveal section > h2 {
   font-size: 48pt;
 }
 
-.reveal h3 {
+.reveal section > h3 {
   font-size: 44pt;
 }
 
-.reveal h4 {
+.reveal section > h4 {
   font-size: 38pt;
-}
-
-.reveal h1 {
-  text-shadow: none;
 }
 
 /*********************************************
@@ -330,7 +323,7 @@
 /*********************************************
  * IMAGES
  *********************************************/
-.reveal section img {
+.reveal section > img {
   margin: 15px 0px;
   background: rgba(255, 255, 255, 0.12);
 }
@@ -661,14 +654,14 @@
 /*********************************************
  * Has Icon
  *********************************************/
-.hasicon .slides h2 {
+.hasicon .slides h1 {
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
-.hasicon .slides h2 > i {
+.hasicon .slides h1 > i {
   font-size: 120px;
-  color: #e68523;
+  color: var(--danger);
   vertical-align: middle;
 }
 
@@ -823,8 +816,66 @@ footer.fadeout {
   cursor: pointer !important;
 }
 
-.reveal .sample {
-  font-size: 0.6em;
-  margin: 10px 0;
-  vertical-align: text-bottom;
+.reveal ul {
+  margin-top: 1rem;
+}
+.reveal ul ul {
+  margin-left: 0 !important;
+  font-weight: bold;
+}
+
+.reveal ul li ul li,
+.reveal ol li ul li {
+  line-height: 100%;
+  font-size: 0.7em;
+  margin-bottom: 20px !important;
+  margin-left: -30px !important;
+  list-style-type: none;
+  white-space: nowrap !important;
+}
+
+.reveal ul li ul li:nth-child(1) code {
+  background-color: var(--success);
+  color: white;
+  font-weight: normal;
+  margin: 4px 0;
+}
+.reveal ul li ul li:nth-child(2) code {
+  background-color: var(--danger);
+  color: white;
+  font-weight: normal;
+  margin: 4px 0;
+}
+.reveal ul li ul li:nth-child(3) code {
+  background-color: var(--primary);
+  color: white;
+  font-weight: normal;
+  margin: 4px 0;
+}
+.reveal ul li ul li:nth-child(4) code {
+  background-color: var(--warning);
+  color: white;
+  font-weight: normal;
+  margin: 4px 0;
+}
+.reveal ul li ul li:nth-child(5) code {
+  background-color: var(--info);
+  color: white;
+  font-weight: normal;
+  margin: 4px 0;
+}
+
+.card {
+  font-size: 1rem;
+}
+
+ul.list-group li,
+ol.list-group li {
+  font-size: 1.2rem;
+  margin-bottom: 0 !important;
+}
+
+ul.list-group li.current-fragment {
+  background-color: var(--primary);
+  color: var(--white);
 }
