@@ -7,6 +7,12 @@ Opinionated Reveal.js
 
 <a class="btn btn-lg btn-info text-white mr-3" href="https://github.com/planetoftheweb/rayveal">Github Repo</a></p>
 
+<div style="font-size: .6em;"><strong>&larr; &rarr;</strong>-navigate
+<strong>t</strong>-toolbar
+<strong>m</strong>-menu
+<strong>esc</strong>-overview</div>
+</div>
+
 ---
 
 # Installing
