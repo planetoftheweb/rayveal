@@ -2,42 +2,22 @@
 
 # RayVeal
 
-Opinionated Reveal.js
-<small style="font-size: .4em;">A markdown first presentation framework. Based on reveal.js with preinstalled plugins, light Bootstrap and sweet extras.</small>
+## Opinionated Reveal.js
 
-<a class="btn btn-lg btn-info text-white mr-3" href="https://github.com/planetoftheweb/rayveal">Github Repo</a></p>
+A markdown first presentation framework. Based on reveal.js with preinstalled plugins, a dash of Bootstrap and sweet extras.
 
-<div style="font-size: .6em;"><strong>&larr; &rarr;</strong>-navigate
-<strong>t</strong>-toolbar
-<strong>m</strong>-menu
-<strong>esc</strong>-overview</div>
-</div>
+<a class="btn btn-lg btn-info text-white mr-3" href="https://github.com/planetoftheweb/rayveal">Github Repo</a>
 
----
-
-# Installing
-
-1. Grab/Fork from [repo](http://github.com/planetoftheweb/rayveal)
-1. `build` folder has presentation
-1. `build/slides/demo.md` subfolder has sample markdown
-1. `slides/index.json` has a list of presentations (optional)
-
----
-
-# Running locally
-
-1. Run `$ npm install` from your terminal
-1. Edit `build/slides/demo.md` or add `*.md files`
-1. Run `$ npm start` from your terminal
-1. Generates the `build/slides/index.json` file (index)
-1. Creates a live reload server
+<div class="small mt-4"><span class="badge badge-light mr-1 ml-2">&larr; &rarr;</span> navigate
+<span class="badge badge-light mr-1 ml-2">t</span>toolbar
+<span class="badge badge-light mr-1 ml-2">m</span>menu
+<span class="badge badge-light mr-1 ml-2">esc</span>overview</div>
 
 ---
 
 # 100% Markdown
 
 - Rayveal assumes you want to use markdown to create slides. The `index.html` file points to a markdown file in `builds/slides/demo.md`.
-
 - It does whatever [reveal.js can](https://github.com/hakimel/reveal.js) can. You can add invisible notes for yourself using two &gt; &gt; after a carriage return (<a href="slides/demo.md">see markdown file</a>)
 
 ---
@@ -46,11 +26,18 @@ Opinionated Reveal.js
 
 <small>**Notice:** the persistent navigation bar at the bottom is on every page. It will disappear after 5 seconds. You can also toggle it by hitting the `t` key. To modify, look for the following code (delete it if you don't need it)</small>
 
-```
+```html
 <footer class="footer">
   <div class="persistent">
-    <strong>Slides:</strong> <a href="http://bit.ly/thenext50">bit.ly/thenext50</a> &bull; <strong>Contact:</strong>
-    <a href="https://www.linkedin.com/in/planetoftheweb">LinkedIn</a> | <a href="https://www.linkedin.com/learning/instructors/ray-villalobos">courses</a> | <a href="http://twitter.com/planetoftheweb">@planetoftheweb</a> | <a href="http://github.com/planetoftheweb">github</a>
+    <strong>Slides:</strong>
+    <a href="http://bit.ly/thenext50">bit.ly/thenext50</a> &bull;
+    <strong>Contact:</strong>
+    <a href="https://www.linkedin.com/in/planetoftheweb">LinkedIn</a> |
+    <a href="https://www.linkedin.com/learning/instructors/ray-villalobos"
+      >courses</a
+    >
+    | <a href="http://twitter.com/planetoftheweb">@planetoftheweb</a> |
+    <a href="http://github.com/planetoftheweb">github</a>
   </div>
   <div class="smaller">Use arrows to navigate, esc for overview</div>
 </footer>
@@ -195,12 +182,12 @@ And some text, small shadow...
 # Here's some code
 
 ```javascript
-var electron = require("electron");
-var BrowserWindow = electron.BrowserWindow;
-var app = electron.app;
+const electron = require("electron");
+const BrowserWindow = electron.BrowserWindow;
+const app = electron.app;
 
 app.on("ready", function() {
-  var appWindow;
+  const appWindow;
   appWindow = new BrowserWindow();
   appWindow.loadURL("http://raybo.org");
 });
@@ -245,3 +232,26 @@ Here's what a table looks like. Use the <a href="http://www.tablesgenerator.com/
 - just list items
 
 &lt;!-- .slide: data-state="circles" --&gt;
+
+---
+
+# Installing
+
+1. Grab/Fork from [repo](http://github.com/planetoftheweb/rayveal)
+1. `build` folder has presentation
+1. `build/slides/demo.md` subfolder has sample markdown
+1. `slides/index.json` has a list of presentations (optional)
+
+---
+
+# Running locally
+
+1. Run `$ npm install` from your terminal
+1. Edit `build/slides/demo.md` or add `*.md files`
+1. Run `$ npm start` from your terminal
+1. Generates the `build/slides/index.json` file (index)
+1. Creates a live reload server
+
+```
+
+```

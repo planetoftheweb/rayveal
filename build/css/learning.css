@@ -12,7 +12,7 @@
 }
 
 ::selection {
-  color: inherit;
+  background-color: #f2da63;
   text-shadow: none;
 }
 
@@ -77,11 +77,13 @@
 .reveal p {
   margin: 20px 0;
   padding: 0 5%;
+  line-height: 120%;
 }
 
 .reveal li p {
   padding: 0;
   margin: 0;
+  line-height: 120%;
 }
 
 /* Ensure certain elements are never larger than the slide itself */
@@ -110,7 +112,6 @@
 .reveal ul {
   display: inline-block;
   text-align: left;
-  margin: 0 5%;
 }
 
 .reveal ol {
@@ -123,8 +124,8 @@
 
 .reveal .slides ul li,
 .reveal .slides ol li {
-  margin-left: 50px;
-  margin-bottom: 30pt;
+  margin: 1rem 0 1rem 0;
+  line-height: 120%;
 }
 
 .reveal li + code,
@@ -185,25 +186,12 @@
   font-style: italic;
 }
 
-.reveal pre {
-  display: block;
-  position: relative;
-  width: 100%;
-  margin: 20px auto;
-  text-align: left;
-  font-size: 0.55em;
-  font-family: monospace;
-  line-height: 120%;
-  word-wrap: break-word;
-  outline: none !important;
-}
-
 .reveal code {
-  font-family: monospace;
   background: #eee;
   color: #0077b5;
+  font-family: monospace;
   display: inline-block;
-  padding: 5px 10px;
+  padding: 0 10px;
   white-space: nowrap;
   cursor: text;
   border-radius: 5px;
@@ -217,14 +205,19 @@
 }
 
 .reveal pre code {
+  background: rgb(250, 241, 218);
+  color: #555;
   display: block;
-  padding: 2px 15px;
-  overflow: auto;
-  width: 80%;
-  margin: 0 auto;
-  max-height: 400px;
-  word-wrap: normal;
+  font-family: monospace;
+  font-size: 0.55em;
+  line-height: 120%;
+  margin: 20px auto;
+  width: fit-content;
+  padding: 15px;
+  position: relative;
+  text-align: left;
   white-space: inherit;
+  word-wrap: break-word;
 }
 
 .reveal table {
@@ -294,7 +287,7 @@
 .reveal small {
   display: inline-block;
   font-size: 0.6em;
-  line-height: 100%;
+  line-height: 120%;
 }
 
 /*********************************************
@@ -430,93 +423,6 @@
 }
 
 /*********************************************
- * Code
- *********************************************/
-.hljs {
-  display: block;
-  overflow-x: auto;
-  padding: 0.5em;
-  background: #eee;
-  color: #444;
-  border-radius: 10px;
-  font-family: Calynda, monospace;
-}
-
-.hljs-link,
-.hljs-emphasis,
-.hljs-attribute,
-.hljs-addition {
-  color: #070;
-}
-
-.hljs-emphasis {
-  font-style: italic;
-}
-
-.hljs-strong,
-.hljs-string,
-.hljs-deletion {
-  color: #d14;
-}
-
-.hljs-strong {
-  font-weight: bold;
-}
-
-.hljs-quote,
-.hljs-comment {
-  color: #998;
-  font-style: italic;
-}
-
-.hljs-section,
-.hljs-title {
-  color: #900;
-}
-
-.hljs-class .hljs-title,
-.hljs-type {
-  color: #458;
-}
-
-.hljs-variable,
-.hljs-template-variable {
-  color: #336699;
-}
-
-.hljs-bullet {
-  color: #997700;
-}
-
-.hljs-meta {
-  color: #3344bb;
-}
-
-.hljs-code,
-.hljs-number,
-.hljs-literal,
-.hljs-keyword,
-.hljs-selector-tag {
-  color: #0077b5;
-}
-
-.hljs-regexp {
-  background-color: #fff0ff;
-  color: #880088;
-}
-
-.hljs-symbol {
-  color: #990073;
-}
-
-.hljs-tag,
-.hljs-name,
-.hljs-selector-id,
-.hljs-selector-class {
-  color: #007700;
-}
-
-/*********************************************
  * OVERRIDE FRAGMENTS ANIMATION
  *********************************************/
 .reveal .slides > section,
@@ -534,6 +440,7 @@
  *********************************************/
 .title body {
   background: #0077b5;
+  font-weight: 100;
 }
 
 .title .slides {
@@ -555,12 +462,22 @@
 }
 
 .title .slides h1 {
-  font-size: 4.5rem;
+  font-size: 2.2em;
+}
+
+.title .slides h2 {
+  font-size: 1.6em;
+  font-weight: 100;
+  line-height: 100%;
 }
 
 .title .slides p {
-  margin-top: 0;
-  font-size: 4.2rem;
+  font-size: 0.9em;
+}
+
+.title .small {
+  font-weight: 100;
+  font-size: 0.5em;
 }
 
 /*********************************************
@@ -872,7 +789,8 @@ footer.fadeout {
 ul.list-group li,
 ol.list-group li {
   font-size: 1.2rem;
-  margin-bottom: 0 !important;
+  margin: 0 !important;
+  margin-bottom: -1px !important;
 }
 
 ul.list-group li.current-fragment {
