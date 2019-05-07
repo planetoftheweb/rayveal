@@ -70,7 +70,7 @@ You can't see them, but they're there. Speaker notes lets you create notes that 
 1. Are on by default
 2. You can write HTML lists
 
-- if you don't want them
+- If you don't want them
 
 ---
 
