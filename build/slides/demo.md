@@ -251,7 +251,3 @@ Here's what a table looks like. Use the <a href="http://www.tablesgenerator.com/
 1. Run `$ npm start` from your terminal
 1. Generates the `build/slides/index.json` file (index)
 1. Creates a live reload server
-
-```
-
-```
