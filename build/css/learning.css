@@ -42,7 +42,6 @@
 .reveal h5,
 .reveal h6 {
   margin: 0 0 0.2em 0;
-  color: #444;
   font-family: Avenir, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 900;
@@ -796,4 +795,9 @@ ol.list-group li {
 ul.list-group li.current-fragment {
   background-color: var(--primary);
   color: var(--white);
+}
+
+.alert {
+  width: auto;
+  font-size: 0.6em;
 }
