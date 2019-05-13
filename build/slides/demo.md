@@ -130,16 +130,17 @@ You can't see them, but they're there. Speaker notes lets you create notes that 
 
 # Alerts
 
-<div class="alert alert-danger fragment">
-  <h2 class="alert-heading">Danger Will Robinson</h2>
-  <hr>
-  <p>A few adjustments to other Bootstrap components like alerts, can yield some pretty cool layouts for very little markup.</p>
-</div>
+<div class="mx-5">
+  <div class="alert alert-danger fragment">
+    <h2 class="alert-heading">Danger Will Robinson</h2>
+    <hr>
+    <p>A few adjustments to other Bootstrap components like alerts, can yield some pretty cool layouts for very little markup.</p>
+  </div>
 
-<div class="alert alert-success fragment">
-  <p>The alert contextual colors will also work here, so go nuts with these styles.</p>
+  <div class="alert alert-success fragment">
+    <p>The alert contextual colors will also work here, so go nuts with these styles.</p>
+  </div>
 </div>
-
 ---
 
 # Code options
