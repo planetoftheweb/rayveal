@@ -303,7 +303,6 @@
   color: #eeab68;
   text-decoration: underline;
   text-shadow: none;
-  border: none;
 }
 
 .reveal .roll span:after {
@@ -615,8 +614,8 @@
 .footer {
   font-size: 0.5em !important;
   display: block;
-  background: #ccc;
-  color: #777;
+  background: #212529;
+  color: #aaa;
   text-align: center;
   position: absolute;
   display: block;
@@ -627,7 +626,7 @@
 }
 
 .footer a {
-  color: #444;
+  color: #aaa;
 }
 
 .footer a:hover {

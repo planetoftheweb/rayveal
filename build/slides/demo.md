@@ -22,6 +22,14 @@ A markdown first presentation framework. Based on reveal.js with preinstalled pl
 
 ---
 
+# Icon Samples <a class="btn btn-danger btn-lg text-white fab fa-codepen" href="https://codepen.io/planetoftheweb/pen/oJOwYb"></a> <a class="btn btn-primary btn-lg text-white fab fa-linkedin-in" href="https://www.linkedin.com/learning/vue-js-essential-training-2"></a> <a class="btn btn-success btn-lg text-white fab fa-github-alt" href="https://github.com/planetoftheweb/vue-essentials"></a>
+
+- Look at the title
+- I added some icons from [font-awesome](http://fontawesome.io)
+-
+
+---
+
 # Persistent Navigation
 
 <small>**Notice:** the persistent navigation bar at the bottom is on every page. It will disappear after 5 seconds. You can also toggle it by hitting the `t` key. To modify, look for the following code (delete it if you don't need it)</small>
