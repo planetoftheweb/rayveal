@@ -5,6 +5,7 @@
 out/
 .DS_Store
 .svn
+.github
 log/*.log
 tmp/**
 images
