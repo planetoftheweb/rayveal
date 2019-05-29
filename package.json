@@ -1,6 +1,6 @@
 {
   "name": "rayveal",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "RayVeal.js is an opinionated install of the awesome reveal.js with a mardown focused workflow.",
   "scripts": {
     "start": "gulp",
