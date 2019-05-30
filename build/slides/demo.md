@@ -23,21 +23,14 @@ A markdown first presentation framework. Based on reveal.js with preinstalled pl
 
 # 100% Markdown
 
-- Rayveal assumes you want to use markdown to create slides. The `index.html` file points to a markdown file in `builds/slides/demo.md`.
-- It does whatever [reveal.js can](https://github.com/hakimel/reveal.js) can. You can add invisible notes for yourself using two &gt; &gt; after a carriage return (<a href="slides/demo.md">see markdown file</a>)
-
----
-
-# Icon Samples <a class="btn btn-danger btn-lg text-white fab fa-codepen" href="https://codepen.io/planetoftheweb/pen/oJOwYb"></a> <a class="btn btn-primary btn-lg text-white fab fa-linkedin-in" href="https://www.linkedin.com/learning/vue-js-essential-training-2"></a> <a class="btn btn-success btn-lg text-white fab fa-github-alt" href="https://github.com/planetoftheweb/vue-essentials"></a>
-
-- Look at the title
-- I added some icons from [font-awesome](http://fontawesome.io)
+- Assumes you use markdown to create slides. The `index.html` file points to a markdown file in `build/slides/demo.md`.
+- It does whatever [reveal.js](https://github.com/hakimel/reveal.js) can.
 
 ---
 
 # Persistent Navigation
 
-<small>**Notice:** the persistent navigation bar at the bottom is on every page. It will disappear after 5 seconds. You can also toggle it by hitting the `t` key. To modify, look for the following code (delete it if you don't need it)</small>
+<small>The persistent navigation bar at the bottom is on every page. It will disappear after 5 seconds. You can also toggle it by hitting the `t` key. Look for the following code on `index.html`</small>
 
 ```html
 <footer class="footer">
@@ -60,13 +53,9 @@ A markdown first presentation framework. Based on reveal.js with preinstalled pl
 
 # Multiple slides
 
-You can use multiple markdown files within the same slide, just add a different slide in the slides folder and [link to it](?d=Bootstrap 4 Cards&). (see [markdown](slides/demo.md) file for how it works)
+You can use multiple markdown files within the same project, just add a file in the `build/slides` folder.
 
----
-
-# Sidebar Menu
-
-Press the `m` key to show [sidebar menu](https://github.com/denehyg/reveal.js-menu). You can use it to jump to different slideshows. This list is fed by the gulp process, which generates an `index.json` file for you as you add more markdown files to the `builds/slides` folder.
+<small>Press the `m` key to show [sidebar menu](https://github.com/denehyg/reveal.js-menu). You can use it to jump to different slideshows. This list is created using the gulp build process, which generates an `index.json` file for you as you add more markdown files to the `builds/slides` folder.</small>
 
 ---
 
@@ -81,9 +70,152 @@ You can't see them, but they're there. Speaker notes lets you create notes that 
 # Fragments
 
 1. Are on by default
-2. You can write HTML lists
+1. You can write HTML lists<br><small>(If you don't want them)</small>
 
-- If you don't want them
+---
+
+<!-- .slide: data-state="title" class="bg-dark text-warning" -->
+
+# Templates
+
+---
+
+<!-- .slide: data-state="hasicon" -->
+
+# <i class="fab fa-html5"></i> Has Icon Template
+
+- Template with an icon
+- Preloading [font-awesome](http://fontawesome.io) <small>by Dave Gandy</small>
+- &lt;!-- .slide: data-state="hasicon" --&gt;
+
+---
+
+<!-- .slide: data-state="circles" -->
+
+# Circles Template
+
+- one
+- two
+- three
+- four
+- five
+- just list items
+
+&lt;!-- .slide: data-state="circles" --&gt;
+
+---
+
+<!-- .slide: data-state="textonimage" data-background-image="http://planetoftheweb.com/i/photo.jpg" -->
+
+# Background with an image
+
+And some text, small shadow...
+
+<small>&lt;!-- .slide: data-background-image="http://planetoftheweb.com/i/photo.jpg" --&gt;</small>
+
+---
+
+# Background Video
+
+<!-- .slide: data-state="textonvideo" data-background-video="http://planetoftheweb.com/i/video.mp4" -->
+
+<small>&lt;!-- .slide: data-state="textonvideo" data-background-video="http://planetoftheweb.com/i/video.mp4" --&gt;</small>
+
+---
+
+<!-- .slide: data-state="title" class="bg-dark text-warning" -->
+
+# Styles & Customization
+
+---
+
+<!-- .slide: data-state="title" class="bg-info" style="background-color: #563C7C" -->
+
+![pow](images/pow.svg)<!-- .element: style="width:80%" -->
+
+# Customizing<!-- .element: class="text-warning" style="text-shadow: 2px 2px 10px #222" -->
+
+## slides and elements
+
+<small>Add bootstrap classes or style attributes to customize.
+
+Control individual elements using `.element:`.
+
+<small>See how I added an SVG icon and the shadow on the headline?
+<a class="btn btn-warning mt-3" href="slides/demo.md">see markdown</a>
+
+</small>
+
+---
+
+# Icon Samples <a class="btn btn-danger btn-lg text-white fab fa-codepen" href="https://codepen.io/planetoftheweb/pen/oJOwYb"></a> <a class="btn btn-primary btn-lg text-white fab fa-linkedin-in" href="https://www.linkedin.com/learning/vue-js-essential-training-2"></a> <a class="btn btn-success btn-lg text-white fab fa-github-alt" href="https://github.com/planetoftheweb/vue-essentials"></a>
+
+- Look at the title
+- I added some icons from [font-awesome](http://fontawesome.io)
+
+---
+
+# Inline Code Styles
+
+- [Bootstrap](http://getbootstrap.com)-like colors for inline code
+- <code class="code-primary">primary</code> <code class="code-success">success</code> <code class="code-info">info</code> <code class="code-warning">warning</code> <code class="code-danger">danger</code>
+
+- <a class="tooltip" href="#">`tooltips`<span>For overlay explanations</span></a> on rollover
+- Always content-editable
+
+---
+
+# Inline Code in Lists
+
+Automatically colorize on second level lists<br>
+
+- `sample`
+  - NUM: `one` `two` `three`
+  - NUM: `four` `five` `six`
+  - NUM: `seven` `eight` `nine`
+  - NUM: `ten` `eleven` `twelve`
+  - NUM: `thirteen` `fourteen` `fifteen`
+
+---
+
+# Here's some code
+
+```javascript
+const electron = require("electron");
+const BrowserWindow = electron.BrowserWindow;
+const app = electron.app;
+
+app.on("ready", function() {
+  const appWindow;
+  appWindow = new BrowserWindow();
+  appWindow.loadURL("http://raybo.org");
+});
+```
+
+<!-- .element: data-trim="true" contenteditable="true" -->
+
+Syntax highlighted, editable by default
+
+---
+
+# Embedded Code
+
+<small>Here's a sample of an embeded CodePen. Use an iframe.</small>
+
+<iframe height='300' scrolling='no' title='Bootstrap 4' src='//codepen.io/planetoftheweb/embed/bgdOzX/?height=300&theme-id=27192&default-tab=html,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%; min-height: 50vh;'>See the Pen <a href='http://codepen.io/planetoftheweb/pen/bgdOzX/'>Bootstrap 4</a> by Ray Villalobos (<a href='http://codepen.io/planetoftheweb'>@planetoftheweb</a>) on <a href='http://codepen.io'>CodePen</a>.
+</iframe>
+
+---
+
+# Tables
+
+Here's what a table looks like. Use the <a href="http://www.tablesgenerator.com/markdown_tables">tables generator</a> to help you write the markdown.
+
+|                  | Extra small <small>< 768px</small> | Small <small> ≥ 768px</small> | Medium <small>≥992px</small> | Large <small>≥1200px</small> |
+| ---------------- | ---------------------------------- | ----------------------------- | ---------------------------- | ---------------------------- |
+| **Container**    | Auto                               | 750px                         | 970px                        | 1170px                       |
+| **Size**         | .col-xs-                           | .col-sm-                      | .col-md-                     | .col-lg-                     |
+| **Column width** | Auto                               | ~62px                         | ~81px                        | ~97px                        |
 
 ---
 
@@ -160,137 +292,6 @@ You can't see them, but they're there. Speaker notes lets you create notes that 
     <p>The alert contextual colors will also work here, so go nuts with these styles.</p>
   </div>
 </div>
----
-
-<!-- .slide: data-state="title" class="bg-dark text-warning" -->
-
-# Styles & Customization
-
----
-
-<!-- .slide: data-state="title" class="bg-info" style="background-color: #563C7C" -->
-
-![pow](images/pow.svg)<!-- .element: style="width:80%" -->
-
-# Customizing<!-- .element: class="text-warning" style="text-shadow: 2px 2px 10px #222" -->
-
-## slides and elements
-
-<small>Use the default title template by adding a comment with `data-state="title"`.<br>Add bootstrap classes or style attributes to customize.
-
-Control individual elements using `.element:`.
-
-<small>See how I added an SVG icon and the shadow on the headline?
-<a class="btn btn-warning mt-3" href="slides/demo.md">see markdown</a>
-
-</small>
-
----
-
-# Code options
-
-- [Bootstrap](http://getbootstrap.com)-like colors for code
-- <code class="code-primary">primary</code> <code class="code-success">success</code> <code class="code-info">info</code> <code class="code-warning">warning</code> <code class="code-danger">danger</code>
-
-- <a class="tooltip" href="#">`tooltips`<span>For overlay explanations</span></a> on rollover
-
----
-
-# List Samples
-
-- `sample`
-  - NUM: `one` `two` `three`
-  - NUM: `four` `five` `six`
-  - NUM: `seven` `eight` `nine`
-  - NUM: `ten` `eleven` `twelve`
-  - NUM:<br>
-    `thirteen` `fourteen` `fifteen`
-
----
-
-<!-- .slide: data-state="hasicon" -->
-
-# <i class="fab fa-html5"></i> Has Icon
-
-- Template with an icon
-- Preloading [font-awesome](http://fontawesome.io) <small>by Dave Gandy</small>
-- &lt;!-- .slide: data-state="hasicon" --&gt;
-
----
-
-# Background Video
-
-<!-- .slide: data-state="textonvideo" data-background-video="http://planetoftheweb.com/i/video.mp4" -->
-
-<small>&lt;!-- .slide: data-state="textonvideo" data-background-video="http://planetoftheweb.com/i/video.mp4" --&gt;</small>
-
-> > Note: You also have the option of creating video as a background using regular reveal.js tags.
-
----
-
-<!-- .slide: data-state="textonimage" data-background-image="http://planetoftheweb.com/i/photo.jpg" -->
-
-# Background with an image
-
-And some text, small shadow...
-
-<small>&lt;!-- .slide: data-background-image="https://lil-cdn.com/585273/computing-apps-threequarter-211095871.jpg" --&gt;</small>
-
----
-
-# Here's some code
-
-```javascript
-const electron = require("electron");
-const BrowserWindow = electron.BrowserWindow;
-const app = electron.app;
-
-app.on("ready", function() {
-  const appWindow;
-  appWindow = new BrowserWindow();
-  appWindow.loadURL("http://raybo.org");
-});
-```
-
-<!-- .element: data-trim="true" contenteditable="true" -->
-
-Syntax highlighted, editable by default
-
----
-
-# Embedded Code
-
-<small>Here's a sample of an embeded CodePen. Use an iframe.</small>
-
-<iframe height='300' scrolling='no' title='Bootstrap 4' src='//codepen.io/planetoftheweb/embed/bgdOzX/?height=300&theme-id=27192&default-tab=html,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%; min-height: 50vh;'>See the Pen <a href='http://codepen.io/planetoftheweb/pen/bgdOzX/'>Bootstrap 4</a> by Ray Villalobos (<a href='http://codepen.io/planetoftheweb'>@planetoftheweb</a>) on <a href='http://codepen.io'>CodePen</a>.
-</iframe>
-
----
-
-# Tables
-
-Here's what a table looks like. Use the <a href="http://www.tablesgenerator.com/markdown_tables">tables generator</a> to help you write the markdown.
-
-|                  | Extra small <small>< 768px</small> | Small <small> ≥ 768px</small> | Medium <small>≥992px</small> | Large <small>≥1200px</small> |
-| ---------------- | ---------------------------------- | ----------------------------- | ---------------------------- | ---------------------------- |
-| **Container**    | Auto                               | 750px                         | 970px                        | 1170px                       |
-| **Size**         | .col-xs-                           | .col-sm-                      | .col-md-                     | .col-lg-                     |
-| **Column width** | Auto                               | ~62px                         | ~81px                        | ~97px                        |
-
----
-
-<!-- .slide: data-state="circles" -->
-
-# Circles
-
-- one
-- two
-- three
-- four
-- five
-- just list items
-
-&lt;!-- .slide: data-state="circles" --&gt;
 
 ---
 
