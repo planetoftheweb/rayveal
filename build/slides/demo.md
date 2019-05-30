@@ -170,7 +170,7 @@ You can't see them, but they're there. Speaker notes lets you create notes that 
 
 <!-- .slide: data-state="title" class="bg-info" style="background-color: #563C7C" -->
 
-![Electron](images/pow.svg)<!-- .element: style="width:80%" -->
+![pow](images/pow.svg)<!-- .element: style="width:80%" -->
 
 # Customizing<!-- .element: class="text-warning" style="text-shadow: 2px 2px 10px #222" -->
 
