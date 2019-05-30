@@ -8,12 +8,5 @@ out/
 .github
 log/*.log
 tmp/**
-images
 node_modules/
-slideshow/slides/*.md
-!slideshow/slides/next50.md
-!slideshow/slides/demo.md
-slideshow/course.html
 .sass-cache
-css/reveal.min.css
-js/reveal.min.js
