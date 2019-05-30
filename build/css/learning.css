@@ -292,15 +292,13 @@
  * LINKS
  *********************************************/
 .reveal a {
-  color: #e68523;
-  text-decoration: none;
+  color: #0277b5;
   -webkit-transition: color 0.15s ease;
   -moz-transition: color 0.15s ease;
   transition: color 0.15s ease;
 }
 
 .reveal a:hover {
-  color: #eeab68;
   text-decoration: underline;
   text-shadow: none;
 }

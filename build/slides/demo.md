@@ -15,6 +15,12 @@ A markdown first presentation framework. Based on reveal.js with preinstalled pl
 
 ---
 
+<!-- .slide: data-state="title" class="bg-dark text-warning" -->
+
+# Features
+
+---
+
 # 100% Markdown
 
 - Rayveal assumes you want to use markdown to create slides. The `index.html` file points to a markdown file in `builds/slides/demo.md`.
@@ -26,7 +32,6 @@ A markdown first presentation framework. Based on reveal.js with preinstalled pl
 
 - Look at the title
 - I added some icons from [font-awesome](http://fontawesome.io)
--
 
 ---
 
@@ -79,6 +84,12 @@ You can't see them, but they're there. Speaker notes lets you create notes that 
 2. You can write HTML lists
 
 - If you don't want them
+
+---
+
+<!-- .slide: data-state="title" class="bg-dark text-warning" -->
+
+# Bootstrap Support
 
 ---
 
@@ -149,6 +160,31 @@ You can't see them, but they're there. Speaker notes lets you create notes that 
     <p>The alert contextual colors will also work here, so go nuts with these styles.</p>
   </div>
 </div>
+---
+
+<!-- .slide: data-state="title" class="bg-dark text-warning" -->
+
+# Styles & Customization
+
+---
+
+<!-- .slide: data-state="title" class="bg-info" style="background-color: #563C7C" -->
+
+![Electron](images/pow.svg)<!-- .element: style="width:80%" -->
+
+# Customizing<!-- .element: class="text-warning" style="text-shadow: 2px 2px 10px #222" -->
+
+## slides and elements
+
+<small>Use the default title template by adding a comment with `data-state="title"`.<br>Add bootstrap classes or style attributes to customize.
+
+Control individual elements using `.element:`.
+
+<small>See how I added an SVG icon and the shadow on the headline?
+<a class="btn btn-warning mt-3" href="slides/demo.md">see markdown</a>
+
+</small>
+
 ---
 
 # Code options
@@ -255,6 +291,12 @@ Here's what a table looks like. Use the <a href="http://www.tablesgenerator.com/
 - just list items
 
 &lt;!-- .slide: data-state="circles" --&gt;
+
+---
+
+<!-- .slide: data-state="title" class="bg-dark text-warning" -->
+
+# Installation
 
 ---
 
