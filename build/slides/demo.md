@@ -36,14 +36,14 @@ A markdown first presentation framework. Based on reveal.js with preinstalled pl
 <footer class="footer">
   <div class="persistent">
     <strong>Slides:</strong>
-    <a href="http://bit.ly/thenext50">bit.ly/thenext50</a> &bull;
+    <a href="https://bit.ly/thenext50">bit.ly/thenext50</a> &bull;
     <strong>Contact:</strong>
     <a href="https://www.linkedin.com/in/planetoftheweb">LinkedIn</a> |
     <a href="https://www.linkedin.com/learning/instructors/ray-villalobos"
       >courses</a
     >
-    | <a href="http://twitter.com/planetoftheweb">@planetoftheweb</a> |
-    <a href="http://github.com/planetoftheweb">github</a>
+    | <a href="https://twitter.com/planetoftheweb">@planetoftheweb</a> |
+    <a href="https://github.com/planetoftheweb">github</a>
   </div>
   <div class="smaller">Use arrows to navigate, esc for overview</div>
 </footer>
@@ -85,7 +85,7 @@ You can't see them, but they're there. Speaker notes lets you create notes that 
 # <i class="fab fa-html5"></i> Has Icon Template
 
 - Template with an icon
-- Preloading [font-awesome](http://fontawesome.io) <small>by Dave Gandy</small>
+- Preloading [font-awesome](https://fontawesome.com) <small>by Dave Gandy</small>
 - &lt;!-- .slide: data-state="hasicon" --&gt;
 
 ---
@@ -105,21 +105,21 @@ You can't see them, but they're there. Speaker notes lets you create notes that 
 
 ---
 
-<!-- .slide: data-state="textonimage" data-background-image="http://planetoftheweb.com/i/photo.jpg" -->
+<!-- .slide: data-state="textonimage" data-background-image="images/photo.jpg" -->
 
 # Background with an image
 
 And some text, small shadow...
 
-<small>&lt;!-- .slide: data-background-image="http://planetoftheweb.com/i/photo.jpg" --&gt;</small>
+<small>&lt;!-- .slide: data-background-image="images/photo.jpg" --&gt;</small>
 
 ---
 
 # Background Video
 
-<!-- .slide: data-state="textonvideo" data-background-video="http://planetoftheweb.com/i/video.mp4" -->
+<!-- .slide: data-state="textonvideo" data-background-video="images/video.mp4" -->
 
-<small>&lt;!-- .slide: data-state="textonvideo" data-background-video="http://planetoftheweb.com/i/video.mp4" --&gt;</small>
+<small>&lt;!-- .slide: data-state="textonvideo" data-background-video="images/video.mp4" --&gt;</small>
 
 ---
 
@@ -148,16 +148,16 @@ Control individual elements using `.element:`.
 
 ---
 
-# Icon Samples <a class="btn btn-danger btn-lg text-white fab fa-codepen" href="https://codepen.io/planetoftheweb/pen/oJOwYb"></a> <a class="btn btn-primary btn-lg text-white fab fa-linkedin-in" href="https://www.linkedin.com/learning/vue-js-essential-training-2"></a> <a class="btn btn-success btn-lg text-white fab fa-github-alt" href="https://github.com/planetoftheweb/vue-essentials"></a>
+# Icon Samples <a class="btn btn-danger btn-lg text-white fab fa-codepen" href="https://codepen.io/planetoftheweb/pen/oJOwYb"></a> <a class="btn btn-primary btn-lg text-white fab fa-linkedin-in" href="https://www.linkedin.com/learning/instructors/ray-villalobos"></a> <a class="btn btn-success btn-lg text-white fab fa-github-alt" href="https://github.com/planetoftheweb"></a>
 
 - Look at the title
-- I added some icons from [font-awesome](http://fontawesome.io)
+- I added some icons from [font-awesome](https://fontawesome.com)
 
 ---
 
 # Inline Code Styles
 
-- [Bootstrap](http://getbootstrap.com)-like colors for inline code
+- [Bootstrap](https://getbootstrap.com)-like colors for inline code
 - <code class="code-primary">primary</code> <code class="code-success">success</code> <code class="code-info">info</code> <code class="code-warning">warning</code> <code class="code-danger">danger</code>
 
 - <a class="tooltip" href="#">`tooltips`<span>For overlay explanations</span></a> on rollover
@@ -188,7 +188,7 @@ const app = electron.app;
 app.on("ready", function() {
   const appWindow;
   appWindow = new BrowserWindow();
-  appWindow.loadURL("http://raybo.org");
+  appWindow.loadURL("https://raybo.org");
 });
 ```
 
@@ -202,14 +202,14 @@ Syntax highlighted, editable by default
 
 <small>Here's a sample of an embeded CodePen. Use an iframe.</small>
 
-<iframe height='300' scrolling='no' title='Bootstrap 4' src='//codepen.io/planetoftheweb/embed/bgdOzX/?height=300&theme-id=27192&default-tab=html,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%; min-height: 50vh;'>See the Pen <a href='http://codepen.io/planetoftheweb/pen/bgdOzX/'>Bootstrap 4</a> by Ray Villalobos (<a href='http://codepen.io/planetoftheweb'>@planetoftheweb</a>) on <a href='http://codepen.io'>CodePen</a>.
+<iframe height='300' scrolling='no' title='Bootstrap 4' src='//codepen.io/planetoftheweb/embed/bgdOzX/?height=300&theme-id=27192&default-tab=html,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%; min-height: 50vh;'>See the Pen <a href='https://codepen.io/planetoftheweb/pen/bgdOzX/'>Bootstrap 4</a> by Ray Villalobos (<a href='https://codepen.io/planetoftheweb'>@planetoftheweb</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
 ---
 
 # Tables
 
-Here's what a table looks like. Use the <a href="http://www.tablesgenerator.com/markdown_tables">tables generator</a> to help you write the markdown.
+Here's what a table looks like. Use the <a href="https://www.tablesgenerator.com/markdown_tables">tables generator</a> to help you write the markdown.
 
 |                  | Extra small <small>< 768px</small> | Small <small> ≥ 768px</small> | Medium <small>≥992px</small> | Large <small>≥1200px</small> |
 | ---------------- | ---------------------------------- | ----------------------------- | ---------------------------- | ---------------------------- |
@@ -231,7 +231,7 @@ Here's what a table looks like. Use the <a href="http://www.tablesgenerator.com/
 
 <div class="card-deck mx-5">
 <div class="card fragment fade-in-then-semi-out">
-  <img src="http://planetoftheweb.com/i/photo.jpg" class="card-img-top img-fluid" alt="Sample Image">
+  <img src="images/photo.jpg" class="card-img-top img-fluid" alt="Sample Image">
   <div class="card-body">
     <h4 class="card-title">Card title</h4>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -239,7 +239,7 @@ Here's what a table looks like. Use the <a href="http://www.tablesgenerator.com/
   </div>
 </div>
 <div class="card fragment fade-in-then-semi-out">
-  <img src="http://planetoftheweb.com/i/photo.jpg" class="card-img-top  img-fluid" alt="Sample Image">
+  <img src="images/photo.jpg" class="card-img-top  img-fluid" alt="Sample Image">
   <div class="card-body">
     <h4 class="card-title">Card title</h4>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -247,7 +247,7 @@ Here's what a table looks like. Use the <a href="http://www.tablesgenerator.com/
   </div>
 </div>
 <div class="card fragment fade-in-then-semi-out">
-  <img src="http://planetoftheweb.com/i/photo.jpg" class="card-img-top  img-fluid" alt="Sample Image">
+  <img src="images/photo.jpg" class="card-img-top  img-fluid" alt="Sample Image">
   <div class="card-body">
     <h4 class="card-title">Card title</h4>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
