@@ -3,8 +3,8 @@
  *********************************************/
 
 .reveal {
-  font-family: Avenir, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: Avenir, -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    sans-serif;
   font-size: 2rem;
   font-weight: 100;
   letter-spacing: 0.015em;
@@ -42,8 +42,8 @@
 .reveal h5,
 .reveal h6 {
   margin: 0 0 0.2em 0;
-  font-family: Avenir, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: Avenir, -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    sans-serif;
   font-weight: 900;
   line-height: 120%;
   letter-spacing: normal;
@@ -260,13 +260,13 @@
   border-bottom: 1px solid black;
 }
 
-.reveal table th[align="center"],
-.reveal table td[align="center"] {
+.reveal table th[align='center'],
+.reveal table td[align='center'] {
   text-align: center;
 }
 
-.reveal table th[align="right"],
-.reveal table td[align="right"] {
+.reveal table th[align='right'],
+.reveal table td[align='right'] {
   text-align: right;
 }
 
@@ -434,7 +434,7 @@
  * Title Slide
  *********************************************/
 .title body {
-  background: #0077b5;
+  background-image: linear-gradient(to right, #2484bb, #30b6c7);
   font-weight: 100;
 }
 
