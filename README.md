@@ -8,7 +8,7 @@ You can see the demo at [rayveal.tech](http://rayveal.tech).
 
 ## Instructions
 
-Instead of creating HTML files, you simply create one or more `*.md` files in the `build/slides` folder. A server is required in order to use RayVeal properly...since the markdown files have to be loaded dynamicaly, so upload the contents of the `build` folder to a server.
+Instead of creating HTML files, you simply create one or more `*.md` files in the `docs/slides` folder. A server is required in order to use RayVeal properly...since the markdown files have to be loaded dynamicaly, so upload the contents of the `build` folder to a server.
 
 ## Installing Locally with NPM (optional)
 
@@ -16,15 +16,15 @@ Optionally, you can just run the presentation locally (great when you can't guar
 
 1. Grab/Fork from [repo](http://github.com/planetoftheweb/rayveal)
 1. `build` folder has presentation
-1. `build/slides/demo.md` subfolder has sample markdown
+1. `docs/slides/demo.md` subfolder has sample markdown
 1. `slides/index.json` has a list of presentations (optional)
 
 ## Running locally
 
 1. Run `$ npm install` from your terminal
-1. Edit `build/slides/demo.md` or add `*.md files`
+1. Edit `docs/slides/demo.md` or add `*.md files`
 1. Run `$ npm start` from your terminal
-1. Generates the `build/slides/index.json` file (index)
+1. Generates the `docs/slides/index.json` file (index)
 1. Creates a live reload server
 
 ## Pre-installed libraries
@@ -75,8 +75,7 @@ You can use `code` blocks with different colors
 I'm not importing the Bootstrap JavaScript or the Bootstrap Grid, so I created my own way of doing a simple tooltip using CSS.
 
 ```html
-<a class="tooltip" href="#">`tooltips`<span>For overlay explanations</span></a>
-on rollover
+<a class="tooltip" href="#">`tooltips`<span>For overlay explanations</span></a> on rollover
 ```
 
 ### Code Sample Lists

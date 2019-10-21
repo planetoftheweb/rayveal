@@ -39,9 +39,7 @@ A markdown first presentation framework. Based on reveal.js with preinstalled pl
     <a href="https://bit.ly/thenext50">bit.ly/thenext50</a> &bull;
     <strong>Contact:</strong>
     <a href="https://www.linkedin.com/in/planetoftheweb">LinkedIn</a> |
-    <a href="https://www.linkedin.com/learning/instructors/ray-villalobos"
-      >courses</a
-    >
+    <a href="https://www.linkedin.com/learning/instructors/ray-villalobos">courses</a>
     | <a href="https://twitter.com/planetoftheweb">@planetoftheweb</a> |
     <a href="https://github.com/planetoftheweb">github</a>
   </div>
@@ -55,7 +53,7 @@ A markdown first presentation framework. Based on reveal.js with preinstalled pl
 
 You can use multiple markdown files within the same project, just add a file in the `build/slides` folder.
 
-<small>Press the `m` key to show [sidebar menu](https://github.com/denehyg/reveal.js-menu). You can use it to jump to different slideshows. This list is created using the gulp build process, which generates an `index.json` file for you as you add more markdown files to the `builds/slides` folder.</small>
+<small>Press the `m` key to show [sidebar menu](https://github.com/denehyg/reveal.js-menu). You can use it to jump to different slideshows. This list is created using the gulp build process, which generates an `index.json` file for you as you add more markdown files to the `docs/slides` folder.</small>
 
 ---
 
