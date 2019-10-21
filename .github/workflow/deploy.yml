@@ -7,8 +7,3 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - name: release
-      uses: actions/zeit-now@master
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        ZEIT_TOKEN: ${{ secrets.ZEIT_TOKEN }}
