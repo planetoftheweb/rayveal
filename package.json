@@ -1,6 +1,6 @@
 {
   "name": "rayveal",
-  "version": "2.0.5",
+  "version": "2.1.0",
   "description": "RayVeal.js is an opinionated install of the awesome reveal.js with a mardown focused workflow.",
   "scripts": {
     "start": "gulp",
@@ -13,7 +13,7 @@
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.0",
     "gulp-folder-index": "0.0.3",
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.13.1"
   },
   "author": "Ray Villalobos",
   "dependencies": {

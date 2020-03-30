@@ -6,12 +6,12 @@
 
 A markdown first presentation framework. Based on reveal.js with preinstalled plugins, a dash of Bootstrap and sweet extras.
 
-<a class="btn btn-lg btn-info text-white mr-3" href="https://github.com/planetoftheweb/rayveal">Github Repo</a>
+<a class="btn btn-lg btn-danger text-white mr-3" href="https://github.com/planetoftheweb/rayveal">Github Repo</a>
 
-<div class="small mt-4"><span class="badge badge-light mr-1 ml-2">&larr; &rarr;</span> navigate
-<span class="badge badge-light mr-1 ml-2">t</span>toolbar
-<span class="badge badge-light mr-1 ml-2">m</span>menu
-<span class="badge badge-light mr-1 ml-2">esc</span>overview</div>
+<div class="small mt-4"><span class="badge badge-warning mr-1 ml-2">&larr; &rarr;</span> navigate
+<span class="badge badge-warning mr-1 ml-2">t</span>toolbar
+<span class="badge badge-warning mr-1 ml-2">m</span>menu
+<span class="badge badge-warning mr-1 ml-2">esc</span>overview</div>
 
 ---
 
@@ -46,6 +46,7 @@ A markdown first presentation framework. Based on reveal.js with preinstalled pl
   <div class="smaller">Use arrows to navigate, esc for overview</div>
 </footer>
 ```
+<!-- data-line-numbers="1-2" -->
 
 ---
 
@@ -72,7 +73,7 @@ You can't see them, but they're there. Speaker notes lets you create notes that 
 
 ---
 
-<!-- .slide: data-state="title" class="bg-dark text-warning" -->
+<!-- .slide: data-state="title title-dark" class="bg-dark text-warning" -->
 
 # Templates
 
@@ -190,9 +191,7 @@ app.on("ready", function() {
 });
 ```
 
-<!-- .element: data-trim="true" contenteditable="true" -->
-
-Syntax highlighted, editable by default
+<p class="fragment">Syntax highlighted, editable by default</p>
 
 ---
 

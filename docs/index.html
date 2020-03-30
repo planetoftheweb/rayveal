@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="css/fontawesome.css">
   <link rel="stylesheet" href="css/reveal.css">
   <link rel="stylesheet" href="css/learning.css" id="theme">
-  <link rel="stylesheet" href="css/syntax/github-gist.css">
+  <link rel="stylesheet" href="css/syntax/github.css">
 
 <!-- Printing and PDF exports -->
 <script>
@@ -35,7 +35,6 @@
       <section data-markdown="slides/demo.md" data-separator="\n---\n" data-separator-notes="\n> >"></section>
     </div>
     <!-- slides -->
-
     <!-- ADD PERSISTENT NAVBAR CODE HERE -->
     <footer class="footer fadein">
       <div class="persistent">
@@ -85,12 +84,12 @@
       minScale: 0,
       maxScale: 1,
       display: 'flex',
-      fragments: true,
       history: true,
+	    fragments: true,
 
-	    transition: 'slide', // none/fade/slide/convex/concave/zoom
-	    transitionSpeed: 'default', // default/fast/slow
-    	backgroundTransition: 'none', // none/fade/slide/convex/concave/zoom
+	    transition: 'fade', // none/fade/slide/convex/concave/zoom
+	    transitionSpeed: 'slow', // default/fast/slow
+    	backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
 
       center: false,
       controls: false,
@@ -129,19 +128,22 @@
         item.dataset.trim = true;
       }, this);
 
+      //This adds a fragment class to all list items by default
+      var fragmentNodes = document.querySelectorAll('.slides li, .slides pre, .slides table, .slides embed, .slides iframe');
+      fragmentNodes.forEach(function (item) {
+        item.classList.add('fragment', 'fade-left');
+      }, this);
+
       var codeNodes = document.querySelectorAll('code');
       codeNodes.forEach(function (item) {
         item.contentEditable = true;
       }, this);
 
-
-
       // Remove fragments in notes
-      var asideNodes = document.querySelectorAll('aside.notes li');
+      var asideNodes = document.querySelectorAll('aside.notes *');
       asideNodes.forEach(function (item) {
-        item.className = '';
+        item.classList.remove('fragment');
       }, this);
-
 
       Reveal.addKeyBinding( { keyCode: 84, key: 'T', description: 'Start timer' }, function() {
         var myNode = document.querySelector('.footer');

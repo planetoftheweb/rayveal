@@ -185,8 +185,6 @@
 }
 
 .reveal code {
-  background: #eee;
-  color: #0077b5;
   font-family: monospace;
   display: inline-block;
   padding: 0 10px;
@@ -196,8 +194,6 @@
 }
 
 .reveal li code {
-  background: #eee;
-  color: #0077b5;
   border-radius: 5px;
   margin: 2px;
 }
@@ -207,7 +203,7 @@
   color: #555;
   display: block;
   font-family: monospace;
-  font-size: 0.7em;
+  font-size: 0.8em;
   line-height: 110%;
   margin: 20px auto;
   width: fit-content;
@@ -216,6 +212,12 @@
   text-align: left;
   white-space: inherit;
   word-wrap: break-word;
+}
+
+.reveal p code,
+.reveal li code {
+  background: rgb(126, 126, 126);
+  color: #ffffff;
 }
 
 .reveal table {
@@ -418,29 +420,16 @@
 }
 
 /*********************************************
- * OVERRIDE FRAGMENTS ANIMATION
- *********************************************/
-.reveal .slides > section,
-.reveal .slides > section > section {
-  padding: 0;
-}
-
-.reveal .slides section .fragment {
-  -webkit-transition: all ease;
-  transition: all ease;
-}
-
-/*********************************************
  * Title Slide
  *********************************************/
-.title body {
+.title body .reveal {
   background-image: linear-gradient(to right, #2484bb, #30b6c7);
   font-weight: 100;
+  color: #fff !important;
 }
 
-.title .slides {
+.title .title .slides {
   letter-spacing: 0.03em;
-  color: #fff;
   text-align: center;
 }
 
@@ -450,7 +439,6 @@
 .title .slides h4,
 .title .slides h5,
 .title .slides h6 {
-  color: inherit;
   text-align: center;
   margin-bottom: 0;
   margin-top: 0;
@@ -458,6 +446,7 @@
 
 .title .slides h1 {
   font-size: 2.2em;
+  color: #ffc109;
 }
 
 .title .slides h2 {
@@ -473,6 +462,10 @@
 .title .slides .small {
   font-weight: 100;
   font-size: 0.5em;
+}
+
+.title section {
+  background-color: transparent !important;
 }
 
 /*********************************************
