@@ -69,6 +69,10 @@
 
 .hljs {
   display: block;
+<<<<<<< HEAD
+=======
+  overflow-x: auto;
+>>>>>>> ba13bac9afcbd04eebd3d3b11016ae5b607409c1
   background: #322931;
   color: #b9b5b8;
   padding: 0.5em;

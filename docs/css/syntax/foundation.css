@@ -10,7 +10,12 @@ Date: 2013-04-02
   display: block;
   overflow-x: auto;
   padding: 0.5em;
+<<<<<<< HEAD
   background: #eee; color: black;
+=======
+  background: #eee;
+  color: black;
+>>>>>>> ba13bac9afcbd04eebd3d3b11016ae5b607409c1
 }
 
 .hljs-link,

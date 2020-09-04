@@ -21,7 +21,11 @@ NOTE_2:	Color names provided in comments were derived using "Name that Color" on
 			http://chir.ag/projects/name-that-color
 */
 
+<<<<<<< HEAD
 .hljs { /* Common set of rules required by highlight.js (don'r remove!) */
+=======
+.hljs {
+>>>>>>> ba13bac9afcbd04eebd3d3b11016ae5b607409c1
 	display: block;
 	overflow-x: auto;
 	padding: 0.5em;

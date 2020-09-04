@@ -11,8 +11,12 @@
   overflow-x: auto;
   /* Custom font is optional */
   /* font-family: 'Operator Mono', 'Fira Code', 'Menlo', 'Monaco', 'Courier New', 'monospace';  */
+<<<<<<< HEAD
   line-height: 1.45;
   padding: 2rem;
+=======
+  padding: 0.5em;
+>>>>>>> ba13bac9afcbd04eebd3d3b11016ae5b607409c1
   background: #2d2b57;
   font-weight: normal;
 }

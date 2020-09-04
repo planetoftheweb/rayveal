@@ -4,9 +4,9 @@
   "alias": ["rayveal.tech"],
   "builds": [
     {
-      "src": "./build/**/*.*",
+      "src": "./docs/**/*.*",
       "use": "@now/static"
     }
   ],
-  "routes": [{ "src": "/(.*)", "dest": "build/$1" }]
+  "routes": [{ "src": "/(.*)", "dest": "docs/$1" }]
 }

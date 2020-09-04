@@ -6,12 +6,21 @@
 
 A markdown first presentation framework. Based on reveal.js with preinstalled plugins, a dash of Bootstrap and sweet extras.
 
+<<<<<<< HEAD
 <a class="btn btn-lg btn-info text-white mr-3" href="https://github.com/planetoftheweb/rayveal">Github Repo</a>
 
 <div class="small mt-4"><span class="badge badge-light mr-1 ml-2">&larr; &rarr;</span> navigate
 <span class="badge badge-light mr-1 ml-2">t</span>toolbar
 <span class="badge badge-light mr-1 ml-2">m</span>menu
 <span class="badge badge-light mr-1 ml-2">esc</span>overview</div>
+=======
+<a class="btn btn-lg btn-danger text-white mr-3" href="https://github.com/planetoftheweb/rayveal">Github Repo</a>
+
+<div class="small mt-4"><span class="badge badge-warning mr-1 ml-2">&larr; &rarr;</span> navigate
+<span class="badge badge-warning mr-1 ml-2">t</span>toolbar
+<span class="badge badge-warning mr-1 ml-2">m</span>menu
+<span class="badge badge-warning mr-1 ml-2">esc</span>overview</div>
+>>>>>>> ba13bac9afcbd04eebd3d3b11016ae5b607409c1
 
 ---
 
@@ -46,6 +55,10 @@ A markdown first presentation framework. Based on reveal.js with preinstalled pl
   <div class="smaller">Use arrows to navigate, esc for overview</div>
 </footer>
 ```
+<<<<<<< HEAD
+=======
+<!-- data-line-numbers="1-2" -->
+>>>>>>> ba13bac9afcbd04eebd3d3b11016ae5b607409c1
 
 ---
 
@@ -72,7 +85,11 @@ You can't see them, but they're there. Speaker notes lets you create notes that 
 
 ---
 
+<<<<<<< HEAD
 <!-- .slide: data-state="title" class="bg-dark text-warning" -->
+=======
+<!-- .slide: data-state="title title-dark" class="bg-dark text-warning" -->
+>>>>>>> ba13bac9afcbd04eebd3d3b11016ae5b607409c1
 
 # Templates
 
@@ -190,9 +207,13 @@ app.on("ready", function() {
 });
 ```
 
+<<<<<<< HEAD
 <!-- .element: data-trim="true" contenteditable="true" -->
 
 Syntax highlighted, editable by default
+=======
+<p class="fragment">Syntax highlighted, editable by default</p>
+>>>>>>> ba13bac9afcbd04eebd3d3b11016ae5b607409c1
 
 ---
 

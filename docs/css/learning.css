@@ -185,8 +185,11 @@
 }
 
 .reveal code {
+<<<<<<< HEAD
   background: #eee;
   color: #0077b5;
+=======
+>>>>>>> ba13bac9afcbd04eebd3d3b11016ae5b607409c1
   font-family: monospace;
   display: inline-block;
   padding: 0 10px;
@@ -196,8 +199,11 @@
 }
 
 .reveal li code {
+<<<<<<< HEAD
   background: #eee;
   color: #0077b5;
+=======
+>>>>>>> ba13bac9afcbd04eebd3d3b11016ae5b607409c1
   border-radius: 5px;
   margin: 2px;
 }
@@ -207,7 +213,11 @@
   color: #555;
   display: block;
   font-family: monospace;
+<<<<<<< HEAD
   font-size: 0.7em;
+=======
+  font-size: 0.8em;
+>>>>>>> ba13bac9afcbd04eebd3d3b11016ae5b607409c1
   line-height: 110%;
   margin: 20px auto;
   width: fit-content;
@@ -218,6 +228,15 @@
   word-wrap: break-word;
 }
 
+<<<<<<< HEAD
+=======
+.reveal p code,
+.reveal li code {
+  background: rgb(126, 126, 126);
+  color: #ffffff;
+}
+
+>>>>>>> ba13bac9afcbd04eebd3d3b11016ae5b607409c1
 .reveal table {
   width: 90%;
   margin: 0 auto;
@@ -418,6 +437,7 @@
 }
 
 /*********************************************
+<<<<<<< HEAD
  * OVERRIDE FRAGMENTS ANIMATION
  *********************************************/
 .reveal .slides > section,
@@ -441,6 +461,18 @@
 .title .slides {
   letter-spacing: 0.03em;
   color: #fff;
+=======
+ * Title Slide
+ *********************************************/
+.title body .reveal {
+  background-image: linear-gradient(to right, #2484bb, #30b6c7);
+  font-weight: 100;
+  color: #fff !important;
+}
+
+.title .title .slides {
+  letter-spacing: 0.03em;
+>>>>>>> ba13bac9afcbd04eebd3d3b11016ae5b607409c1
   text-align: center;
 }
 
@@ -450,7 +482,10 @@
 .title .slides h4,
 .title .slides h5,
 .title .slides h6 {
+<<<<<<< HEAD
   color: inherit;
+=======
+>>>>>>> ba13bac9afcbd04eebd3d3b11016ae5b607409c1
   text-align: center;
   margin-bottom: 0;
   margin-top: 0;
@@ -458,6 +493,10 @@
 
 .title .slides h1 {
   font-size: 2.2em;
+<<<<<<< HEAD
+=======
+  color: #ffc109;
+>>>>>>> ba13bac9afcbd04eebd3d3b11016ae5b607409c1
 }
 
 .title .slides h2 {
@@ -475,6 +514,13 @@
   font-size: 0.5em;
 }
 
+<<<<<<< HEAD
+=======
+.title section {
+  background-color: transparent !important;
+}
+
+>>>>>>> ba13bac9afcbd04eebd3d3b11016ae5b607409c1
 /*********************************************
  * Text On Image
  *********************************************/

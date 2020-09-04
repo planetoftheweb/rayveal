@@ -6,7 +6,12 @@ Monokai style - ported by Luigi Maselli - http://grigio.org
   display: block;
   overflow-x: auto;
   padding: 0.5em;
+<<<<<<< HEAD
   background: #272822; color: #ddd;
+=======
+  background: #272822;
+  color: #ddd;
+>>>>>>> ba13bac9afcbd04eebd3d3b11016ae5b607409c1
 }
 
 .hljs-tag,
