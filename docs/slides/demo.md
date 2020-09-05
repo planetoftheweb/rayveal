@@ -178,7 +178,7 @@ Automatically colorize on second level lists<br>
 
 # Here's some code
 
-```js [1|3-4]
+```js [1|5-7]
 const electron = require("electron");
 const BrowserWindow = electron.BrowserWindow;
 const app = electron.app;
@@ -190,8 +190,8 @@ app.on("ready", function() {
 });
 ```
 
-<p class="fragment">Syntax highlighted, editable by default</p>
-<p class="fragment">Optional Line Numbers</p>
+- Syntax highlighted, editable by default
+- Language, line numbers, ranges `js [1|5-7]`
 
 ---
 

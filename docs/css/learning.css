@@ -253,6 +253,9 @@
   margin: 2px;
 }
 
+.reveal pre {
+  position: relative;
+}
 .reveal pre > code {
   background: #edebe8;
   display: block;
