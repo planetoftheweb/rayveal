@@ -65,6 +65,7 @@
     <script src="js/plugin/notes/notes.js"></script>
     <script src="js/plugin/math/math.js"></script>
     <script src="js/plugin/zoom/zoom.js"></script>
+    <script src="js/plugin/menu/menu.js"></script>
 
     <script>
       Reveal.initialize({
@@ -75,9 +76,17 @@
           RevealNotes,
           RevealMath,
           RevealZoom,
+          RevealMenu,
         ],
         markdown: {
           smartypants: true,
+        },
+        menu: {
+          transitions: false,
+          themes: false,
+          slides: false,
+          openButton: false,
+          loadIcons: false,
         },
         width: 1296,
         height: 858,
@@ -88,7 +97,7 @@
         history: true,
 
         transition: 'fade', // none/fade/slide/convex/concave/zoom
-        transitionSpeed: 'slow', // default/fast/slow
+        transitionSpeed: 'fast', // default/fast/slow
         backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
 
         center: false,
@@ -115,6 +124,7 @@
         },
       })
 
+      // When Reveal.js has finished loading
       Reveal.on('ready', (event) => {
         //Modify all the PRE tags so they trim spacing
         let preNodes = document.querySelectorAll('pre')
@@ -147,6 +157,28 @@
           myNode.classList.toggle('fadeout')
         }, 5000)
       })
+
+      Reveal.on('menu-ready', (event) => {
+        fetch('slides/index.json')
+          .then((response) => response.json())
+          .then((data) => {
+            var menuData = data.map(function (slide) {
+              simpleName = slide.replace(/\/(.*)\.md/i, '$1')
+              return (
+                '<div class="slide-menu-item"><a href="?d=' +
+                simpleName +
+                '&">' +
+                simpleName +
+                '</a> | <a href="slides/' +
+                slide +
+                '">notes</a></div>'
+              )
+            })
+            document.querySelector('.slide-menu-items').innerHTML = menuData.join('')
+          })
+      })
+
+      // When the menu plugin has finished loading.
     </script>
   </body>
 </html>

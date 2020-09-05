@@ -15,7 +15,7 @@ A markdown first presentation framework. Based on reveal.js with preinstalled pl
 
 ---
 
-<!-- .slide: data-state="title-gray" class="concave"-->
+<!-- .slide: data-state="title" class="bg-dark"-->
 
 # Features
 
@@ -72,7 +72,7 @@ You can't see them, but they're there. Speaker notes lets you create notes that 
 
 ---
 
-<!-- .slide: data-state="title-gray" -->
+<!-- .slide: data-state="title" class="bg-dark" -->
 
 # Templates
 
@@ -121,45 +121,36 @@ And some text, small shadow...
 
 ---
 
-<!-- .slide: data-state="title-gray" -->
+<!-- .slide: data-state="title" class="bg-dark" -->
 
-# Styles & Customization
-
----
-
-<!-- .slide: data-state="title" class="bg-info" style="background-color: #044B52" -->
-
-![pow](images/pow.svg)<!-- .element: style="width:80%" -->
-
-# Customizing<!-- .element: class="text-warning" style="text-shadow: 2px 2px 10px #222" -->
-
-## slides and elements
-
-<small>Add bootstrap classes or style attributes to customize.
-
-Control individual elements using `.element:`.
-
-<small>See how I added an SVG icon and the shadow on the headline?
-<a class="btn btn-warning mt-3" href="slides/demo.md">see markdown</a>
-
-</small>
+# Style Samples
 
 ---
 
-# Icon Samples <a class="btn btn-danger btn-lg text-white fab fa-codepen" href="https://codepen.io/planetoftheweb/pen/oJOwYb"></a> <a class="btn btn-primary btn-lg text-white fab fa-linkedin-in" href="https://www.linkedin.com/learning/instructors/ray-villalobos"></a> <a class="btn btn-success btn-lg text-white fab fa-github-alt" href="https://github.com/planetoftheweb"></a>
+# Using Icons <a class="btn btn-danger btn-lg text-white fab fa-codepen" href="https://codepen.io/planetoftheweb/pen/oJOwYb"></a> <a class="btn btn-primary btn-lg text-white fab fa-linkedin-in" href="https://www.linkedin.com/learning/instructors/ray-villalobos"></a> <a class="btn btn-success btn-lg text-white fab fa-github-alt" href="https://github.com/planetoftheweb"></a>
 
 - Look at the title
 - I added some icons from [font-awesome](https://fontawesome.com)
 
 ---
 
-# Inline Code Styles
+<!-- .slide: data-state="hasquote" class="bg-dark" -->
+
+<blockquote>
+ <i class="fa fa-quote-left text-secondary" aria-hidden="true"></i>
+Amazingly few discotheques provide jukeboxes
+ <i class="fa fa-quote-right text-secondary" aria-hidden="true"></i> 
+  <footer class="fragment text-secondary">--Dr. Panagram</footer>
+</blockquote>
+
+---
+
+# Inline &lt;code&gt; Styles
 
 - [Bootstrap](https://getbootstrap.com)-like colors for inline code
-- <code class="code-primary">primary</code> <code class="code-success">success</code> <code class="code-info">info</code> <code class="code-warning">warning</code> <code class="code-danger">danger</code>
-
-- <a class="tooltip" href="#">`tooltips`<span>For overlay explanations</span></a> on rollover
+- `default` <code class="code-primary">primary</code> <code class="code-success">success</code><br><code class="code-info">info</code> <code class="code-warning">warning</code> <code class="code-danger">danger</code>
 - Always content-editable
+- <a class="tooltip" href="#">`tooltips`<span>Overlay explanations, clickable</span></a> available on rollover
 
 ---
 
@@ -206,17 +197,17 @@ app.on("ready", function() {
 
 # Tables
 
-Here's what a table looks like. Use the <a href="https://www.tablesgenerator.com/markdown_tables">tables generator</a> to help you write the markdown.
+Here's what a table looks like.<br>Use the <a href="https://www.tablesgenerator.com/markdown_tables">tables generator</a> to help you write the markdown.
 
-|                  | Extra small <small>< 768px</small> | Small <small> ≥ 768px</small> | Medium <small>≥992px</small> | Large <small>≥1200px</small> |
-| ---------------- | ---------------------------------- | ----------------------------- | ---------------------------- | ---------------------------- |
-| **Container**    | Auto                               | 750px                         | 970px                        | 1170px                       |
-| **Size**         | .col-xs-                           | .col-sm-                      | .col-md-                     | .col-lg-                     |
-| **Column width** | Auto                               | ~62px                         | ~81px                        | ~97px                        |
+|                  | Extra small <small>< 768px</small> | Small <small> &ge; 768px</small> | Medium <small>&ge;992px</small> | Large <small>&ge;1200px</small> |
+| ---------------- | ---------------------------------- | -------------------------------- | ------------------------------- | ------------------------------- |
+| **Container**    | Auto                               | 750px                            | 970px                           | 1170px                          |
+| **Size**         | .col-xs-                           | .col-sm-                         | .col-md-                        | .col-lg-                        |
+| **Column width** | Auto                               | ~62px                            | ~81px                           | ~97px                           |
 
 ---
 
-<!-- .slide: data-state="title-gray" -->
+<!-- .slide: data-state="title" class="bg-dark" -->
 
 # Bootstrap Support
 
@@ -224,7 +215,7 @@ Here's what a table looks like. Use the <a href="https://www.tablesgenerator.com
 
 # Bootstrap Cards
 
-<p class="small">Some styles from the [bootstrap framework](https://getbootstrap.com/) can be real useful...like bootstrap cards. Combine them with reveal fragment transitions.</p>
+<span class="small">Some styles from the [bootstrap framework](https://getbootstrap.com/) can be real useful...like bootstrap cards. Combine them with reveal fragment transitions.</span>
 
 <div class="card-deck mx-5">
 <div class="card fragment fade-in-then-semi-out">
@@ -292,7 +283,7 @@ Here's what a table looks like. Use the <a href="https://www.tablesgenerator.com
 
 ---
 
-<!-- .slide: data-state="title-gray" -->
+<!-- .slide: data-state="title" class="bg-dark" -->
 
 # Installation
 

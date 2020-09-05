@@ -298,7 +298,6 @@
  *********************************************/
 .reveal a {
   color: #0277b5;
-  transition: color 0.15s ease;
 }
 
 .reveal a:hover {
@@ -371,7 +370,7 @@
  * Title Slide
  *********************************************/
 .reveal-viewport.title {
-  background-image: linear-gradient(to right, #2484bb, #30b6c7);
+  background: linear-gradient(to right, #2484bb, #30b6c7);
 }
 
 .reveal-viewport.title .slides {
@@ -412,55 +411,6 @@
 }
 
 .reveal-viewport.title section {
-  background-color: transparent !important;
-}
-
-/*********************************************
- * Title Slide
- *********************************************/
-.reveal-viewport.title-gray {
-  background-color: #2e3338;
-  transition: color 0.15s ease;
-}
-
-.reveal-viewport.title-gray .slides {
-  color: #fff;
-  letter-spacing: 0.03em;
-  text-align: center;
-}
-
-.reveal-viewport.title-gray .slides h1,
-.reveal-viewport.title-gray .slides h2,
-.reveal-viewport.title-gray .slides h3,
-.reveal-viewport.title-gray .slides h4,
-.reveal-viewport.title-gray .slides h5,
-.reveal-viewport.title-gray .slides h6 {
-  text-align: center;
-  margin-bottom: 0;
-  margin-top: 0;
-}
-
-.reveal-viewport.title-gray .slides h1 {
-  font-size: 2.2em;
-  color: #ffc109;
-}
-
-.reveal-viewport.title-gray .slides h2 {
-  font-size: 1.6em;
-  font-weight: 100;
-  line-height: 100%;
-}
-
-.reveal-viewport.title-gray .slides p {
-  font-size: 0.9em;
-}
-
-.reveal-viewport.title-gray .slides .small {
-  font-weight: 100;
-  font-size: 0.5em;
-}
-
-.reveal-viewport.title-gray section {
   background-color: transparent !important;
 }
 
@@ -550,6 +500,31 @@
 .textonvideo .slides a {
   color: #fff;
   text-shadow: 0px 0px 10px black;
+}
+
+/*********************************************
+ * Quotes
+ *********************************************/
+.hasquote {
+  background: transparent;
+}
+
+.reveal-viewport.hasquote .slides {
+  color: #fff;
+  letter-spacing: 0.03em;
+}
+
+.hasquote blockquote {
+  color: #fff !important;
+  font-size: 2em;
+  line-height: 110%;
+}
+.hasquote blockquote footer {
+  font-size: 0.3em;
+}
+
+.reveal-viewport.hasquote section {
+  background-color: transparent !important;
 }
 
 /*********************************************
