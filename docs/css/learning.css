@@ -3,8 +3,9 @@
  *********************************************/
 
 .reveal {
-  font-family: Avenir, -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
-    sans-serif;
+  background-color: transparent;
+  font-family: Avenir, -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
   font-size: 2rem;
   font-weight: 100;
   letter-spacing: 0.015em;
@@ -42,8 +43,6 @@
 .reveal h5,
 .reveal h6 {
   margin: 0 0 0.2em 0;
-  font-family: Avenir, -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
-    sans-serif;
   font-weight: 900;
   line-height: 120%;
   letter-spacing: normal;
@@ -184,59 +183,6 @@
   font-style: italic;
 }
 
-.reveal code {
-<<<<<<< HEAD
-  background: #eee;
-  color: #0077b5;
-=======
->>>>>>> ba13bac9afcbd04eebd3d3b11016ae5b607409c1
-  font-family: monospace;
-  display: inline-block;
-  padding: 0 10px;
-  white-space: nowrap;
-  cursor: text;
-  border-radius: 5px;
-}
-
-.reveal li code {
-<<<<<<< HEAD
-  background: #eee;
-  color: #0077b5;
-=======
->>>>>>> ba13bac9afcbd04eebd3d3b11016ae5b607409c1
-  border-radius: 5px;
-  margin: 2px;
-}
-
-.reveal pre code {
-  background: rgb(250, 241, 218);
-  color: #555;
-  display: block;
-  font-family: monospace;
-<<<<<<< HEAD
-  font-size: 0.7em;
-=======
-  font-size: 0.8em;
->>>>>>> ba13bac9afcbd04eebd3d3b11016ae5b607409c1
-  line-height: 110%;
-  margin: 20px auto;
-  width: fit-content;
-  padding: 15px;
-  position: relative;
-  text-align: left;
-  white-space: inherit;
-  word-wrap: break-word;
-}
-
-<<<<<<< HEAD
-=======
-.reveal p code,
-.reveal li code {
-  background: rgb(126, 126, 126);
-  color: #ffffff;
-}
-
->>>>>>> ba13bac9afcbd04eebd3d3b11016ae5b607409c1
 .reveal table {
   width: 90%;
   margin: 0 auto;
@@ -293,6 +239,43 @@
   font-size: 1.7rem;
 }
 
+.reveal code {
+  font-family: monospace;
+  display: inline-block;
+  padding: 0 10px;
+  white-space: nowrap;
+  cursor: text;
+  border-radius: 5px;
+}
+
+.reveal li code {
+  border-radius: 5px;
+  margin: 2px;
+}
+
+.reveal pre > code {
+  background: #edebe8;
+  display: block;
+  font-family: monospace;
+  font-size: 1.2rem;
+  padding: 1em 0;
+  position: relative;
+  text-align: left;
+  white-space: pre-line;
+  padding-left: 1em !important;
+  padding-right: 1em !important;
+}
+
+.reveal code table td {
+  font-size: 1.2rem;
+}
+
+.reveal p code,
+.reveal li code {
+  background: rgb(126, 126, 126);
+  color: #ffffff;
+}
+
 .reveal sup {
   vertical-align: super;
 }
@@ -312,8 +295,6 @@
  *********************************************/
 .reveal a {
   color: #0277b5;
-  -webkit-transition: color 0.15s ease;
-  -moz-transition: color 0.15s ease;
   transition: color 0.15s ease;
 }
 
@@ -352,63 +333,10 @@
 }
 
 /*********************************************
- * NAVIGATION CONTROLS
- *********************************************/
-.reveal .controls .navigate-left,
-.reveal .controls .navigate-left.enabled {
-  border-right-color: #e68523;
-}
-
-.reveal .controls .navigate-right,
-.reveal .controls .navigate-right.enabled {
-  border-left-color: #e68523;
-}
-
-.reveal .controls .navigate-up,
-.reveal .controls .navigate-up.enabled {
-  border-bottom-color: #e68523;
-}
-
-.reveal .controls .navigate-down,
-.reveal .controls .navigate-down.enabled {
-  border-top-color: #e68523;
-}
-
-.reveal .controls .navigate-left.enabled:hover {
-  border-right-color: #eeab68;
-}
-
-.reveal .controls .navigate-right.enabled:hover {
-  border-left-color: #eeab68;
-}
-
-.reveal .controls .navigate-up.enabled:hover {
-  border-bottom-color: #eeab68;
-}
-
-.reveal .controls .navigate-down.enabled:hover {
-  border-top-color: #eeab68;
-}
-
-/*********************************************
- * PROGRESS BAR
- *********************************************/
-.reveal .progress {
-  background: rgba(0, 0, 0, 0.2);
-}
-
-.reveal .progress span {
-  background: #e68523;
-  -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
-  -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
-  transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
-}
-
-/*********************************************
 * Code Colors
 *********************************************/
 .reveal .code-primary {
-  background-color: #0077b5 !important;
+  background: #0077b5 !important;
   margin: 5px;
   color: #fff !important;
 }
@@ -437,90 +365,102 @@
 }
 
 /*********************************************
-<<<<<<< HEAD
- * OVERRIDE FRAGMENTS ANIMATION
- *********************************************/
-.reveal .slides > section,
-.reveal .slides > section > section {
-  padding: 0;
-}
-
-.reveal .slides section .fragment {
-  -webkit-transition: all ease;
-  transition: all ease;
-}
-
-/*********************************************
  * Title Slide
  *********************************************/
-.title body {
+.reveal-viewport.title {
   background-image: linear-gradient(to right, #2484bb, #30b6c7);
-  font-weight: 100;
 }
 
-.title .slides {
-  letter-spacing: 0.03em;
+.reveal-viewport.title .slides {
   color: #fff;
-=======
- * Title Slide
- *********************************************/
-.title body .reveal {
-  background-image: linear-gradient(to right, #2484bb, #30b6c7);
-  font-weight: 100;
-  color: #fff !important;
-}
-
-.title .title .slides {
   letter-spacing: 0.03em;
->>>>>>> ba13bac9afcbd04eebd3d3b11016ae5b607409c1
   text-align: center;
 }
 
-.title .slides h1,
-.title .slides h2,
-.title .slides h3,
-.title .slides h4,
-.title .slides h5,
-.title .slides h6 {
-<<<<<<< HEAD
-  color: inherit;
-=======
->>>>>>> ba13bac9afcbd04eebd3d3b11016ae5b607409c1
+.reveal-viewport.title .slides h1,
+.reveal-viewport.title .slides h2,
+.reveal-viewport.title .slides h3,
+.reveal-viewport.title .slides h4,
+.reveal-viewport.title .slides h5,
+.reveal-viewport.title .slides h6 {
   text-align: center;
   margin-bottom: 0;
   margin-top: 0;
 }
 
-.title .slides h1 {
+.reveal-viewport.title .slides h1 {
   font-size: 2.2em;
-<<<<<<< HEAD
-=======
   color: #ffc109;
->>>>>>> ba13bac9afcbd04eebd3d3b11016ae5b607409c1
 }
 
-.title .slides h2 {
+.reveal-viewport.title .slides h2 {
   font-size: 1.6em;
   font-weight: 100;
   line-height: 100%;
 }
 
-.title .slides p {
+.reveal-viewport.title .slides p {
   font-size: 0.9em;
 }
 
-.title .slides .small {
+.reveal-viewport.title .slides .small {
   font-weight: 100;
   font-size: 0.5em;
 }
 
-<<<<<<< HEAD
-=======
-.title section {
+.reveal-viewport.title section {
   background-color: transparent !important;
 }
 
->>>>>>> ba13bac9afcbd04eebd3d3b11016ae5b607409c1
+/*********************************************
+ * Title Slide
+ *********************************************/
+.reveal-viewport.title-gray {
+  background-color: #2e3338;
+  transition: color 0.15s ease;
+}
+
+.reveal-viewport.title-gray .slides {
+  color: #fff;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.reveal-viewport.title-gray .slides h1,
+.reveal-viewport.title-gray .slides h2,
+.reveal-viewport.title-gray .slides h3,
+.reveal-viewport.title-gray .slides h4,
+.reveal-viewport.title-gray .slides h5,
+.reveal-viewport.title-gray .slides h6 {
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.reveal-viewport.title-gray .slides h1 {
+  font-size: 2.2em;
+  color: #ffc109;
+}
+
+.reveal-viewport.title-gray .slides h2 {
+  font-size: 1.6em;
+  font-weight: 100;
+  line-height: 100%;
+}
+
+.reveal-viewport.title-gray .slides p {
+  font-size: 0.9em;
+}
+
+.reveal-viewport.title-gray .slides .small {
+  font-weight: 100;
+  font-size: 0.5em;
+}
+
+.reveal-viewport.title-gray section {
+  background-color: transparent !important;
+}
+
 /*********************************************
  * Text On Image
  *********************************************/

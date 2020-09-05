@@ -9,10 +9,7 @@
 
     <title>Learning</title>
 
-    <meta
-      http-equiv="Cache-Control"
-      content="no-cache, no-store, must-revalidate"
-    />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
 
@@ -20,19 +17,8 @@
     <link rel="stylesheet" href="css/bootstrap-light.css" />
     <link rel="stylesheet" href="css/fontawesome.css" />
     <link rel="stylesheet" href="css/reveal.css" />
-    <link rel="stylesheet" href="css/learning.css" id="theme" />
-    <link rel="stylesheet" href="css/syntax/github-gist.css" />
-
-    <!-- Printing and PDF exports -->
-    <script>
-      var link = document.createElement('link')
-      link.rel = 'stylesheet'
-      link.type = 'text/css'
-      link.href = window.location.search.match('print-pdf/gi')
-        ? 'css/print/pdf.css'
-        : 'css/print/paper.css'
-      document.getElementsByTagName('head')[0].appendChild(link)
-    </script>
+    <link rel="stylesheet" href="css/learning.css" />
+    <link rel="stylesheet" href="css/syntax/color-brewer.css" />
   </head>
 
   <body spellcheck="false">
@@ -41,7 +27,9 @@
         <section
           data-markdown="slides/demo.md"
           data-separator="\n---\n"
+          data-separator-vertical="^\n\n"
           data-separator-notes="\n> >"
+          data-charset="iso-8859-15"
         ></section>
       </div>
       <!-- slides -->
@@ -55,22 +43,15 @@
           <a href="https://www.linkedin.com/in/planetoftheweb">LinkedIn</a>,
           <a href="http://twitter.com/planetoftheweb">@planetoftheweb</a>,
           <a href="http://github.com/planetoftheweb">Github</a> |
-          <a href="https://www.linkedin.com/learning/instructors/ray-villalobos"
-            >Courses</a
-          >
+          <a href="https://www.linkedin.com/learning/instructors/ray-villalobos">Courses</a>
         </div>
 
         <div class="small mt-1">
-          <span class="badge badge-warning mr-1 ml-2 font-weight-bold"
-            >&larr; &rarr;</span
-          >
+          <span class="badge badge-warning mr-1 ml-2 font-weight-bold">&larr; &rarr;</span>
           navigate
-          <span class="badge badge-warning mr-1 ml-2 font-weight-bold">t</span
-          >toolbar
-          <span class="badge badge-warning mr-1 ml-2 font-weight-bold">m</span
-          >menu
-          <span class="badge badge-warning mr-1 ml-2 font-weight-bold">esc</span
-          >overview
+          <span class="badge badge-warning mr-1 ml-2 font-weight-bold">t</span>toolbar
+          <span class="badge badge-warning mr-1 ml-2 font-weight-bold">m</span>menu
+          <span class="badge badge-warning mr-1 ml-2 font-weight-bold">esc</span>overview
         </div>
       </footer>
       <!-- ADD PERSISTENT NAVBAR CODE HERE -->
@@ -78,40 +59,37 @@
     <!-- reveal -->
 
     <script src="js/reveal.js"></script>
+    <script src="js/plugin/markdown/markdown.js"></script>
+    <script src="js/plugin/highlight/highlight.js"></script>
+    <script src="js/plugin/search/search.js"></script>
+    <script src="js/plugin/notes/notes.js"></script>
+    <script src="js/plugin/math/math.js"></script>
+    <script src="js/plugin/zoom/zoom.js"></script>
+
     <script>
-      function getUrlVars() {
-        var vars = [],
-          hash
-        var hashes = window.location.href
-          .slice(window.location.href.indexOf('?') + 1)
-          .split('&')
-        for (var i = 0; i < hashes.length; i++) {
-          hash = hashes[i].split('=')
-          vars.push(hash[0])
-          vars[hash[0]] = hash[1]
-        }
-        return vars
-      }
-
-      if (getUrlVars().d) {
-        var dataFile = getUrlVars().d
-        document.querySelector('section').dataset.markdown =
-          'slides/' + dataFile + '.md'
-      }
-
       Reveal.initialize({
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealSearch,
+          RevealNotes,
+          RevealMath,
+          RevealZoom,
+        ],
+        markdown: {
+          smartypants: true,
+        },
         width: 1296,
         height: 858,
-        margin: 0,
+        margin: 0.05,
         minScale: 0,
         maxScale: 1,
         display: 'flex',
-        fragments: true,
         history: true,
 
-        transition: 'slide', // none/fade/slide/convex/concave/zoom
-        transitionSpeed: 'default', // default/fast/slow
-        backgroundTransition: 'none', // none/fade/slide/convex/concave/zoom
+        transition: 'fade', // none/fade/slide/convex/concave/zoom
+        transitionSpeed: 'slow', // default/fast/slow
+        backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
 
         center: false,
         controls: false,
@@ -124,78 +102,50 @@
           openButton: false,
           loadIcons: false,
         },
-        // More info https://github.com/hakimel/reveal.js#dependencies
-        dependencies: [
-          { src: 'js/plugin/markdown/marked.js' },
-          { src: 'js/plugin/markdown/markdown.js' },
-          { src: 'js/plugin/menu/menu.js' },
-          { src: 'js/plugin/notes/notes.js', async: true },
-          {
-            src: 'js/plugin/highlight/highlight.js',
-            async: true,
-            callback: function () {
-              hljs.configure({
-                tabReplace: '  ', // 2 spaces
-              })
-              hljs.initHighlightingOnLoad()
-            },
-          },
-        ],
       })
 
-      Reveal.addEventListener('ready', function (event) {
-        //Modifying all the PRE tags so they are teditable
-        var preNodes = document.querySelectorAll('pre')
+      //Add Keyboard Shortcuts
+      Reveal.configure({
+        keyboard: {
+          // hide footer using the t key
+          84: () => {
+            var myNode = document.querySelector('.footer')
+            myNode.classList.toggle('fadeout')
+          },
+        },
+      })
+
+      Reveal.on('ready', (event) => {
+        //Modify all the PRE tags so they trim spacing
+        let preNodes = document.querySelectorAll('pre')
         preNodes.forEach(function (item) {
-          item.contentEditable = true
           item.dataset.trim = true
         }, this)
 
-        var codeNodes = document.querySelectorAll('code')
+        //Modify all the PRE>CODE tags so they have line numbers
+        let preCodeNodes = document.querySelectorAll('pre code')
+        preCodeNodes.forEach(function (item) {
+          item.dataset.lineNumbers = true
+        }, this)
+
+        //Add a fragment class to all list items by default
+        let fragmentNodes = document.querySelectorAll('.slides li, .slides embed, .slides iframe')
+        fragmentNodes.forEach(function (item) {
+          //also animate them from the left
+          item.classList.add('fragment', 'fade-left')
+        }, this)
+
+        //Make code tags also automatically editable
+        let codeNodes = document.querySelectorAll('code')
         codeNodes.forEach(function (item) {
           item.contentEditable = true
         }, this)
 
-        // Remove fragments in notes
-        var asideNodes = document.querySelectorAll('aside.notes li')
-        asideNodes.forEach(function (item) {
-          item.className = ''
-        }, this)
-
-        Reveal.addKeyBinding(
-          { keyCode: 84, key: 'T', description: 'Start timer' },
-          function () {
-            var myNode = document.querySelector('.footer')
-            myNode.classList.toggle('fadeout')
-          }
-        )
-
+        //Hide bottom toolbar automatically after 5 seconds
         setTimeout(function () {
-          var myNode = document.querySelector('.footer')
+          let myNode = document.querySelector('.footer')
           myNode.classList.toggle('fadeout')
         }, 5000)
-      }) // ready
-
-      Reveal.addEventListener('menu-ready', function (event) {
-        fetch('slides/index.json')
-          .then((response) => response.json())
-          .then((data) => {
-            var menuData = data.map(function (slide) {
-              simpleName = slide.replace(/\/(.*)\.md/i, '$1')
-              return (
-                '<div class="slide-menu-item"><a href="?d=' +
-                simpleName +
-                '&">' +
-                simpleName +
-                '</a> | <a href="slides/' +
-                slide +
-                '">notes</a></div>'
-              )
-            })
-            document.querySelector(
-              '.slide-menu-items'
-            ).innerHTML = menuData.join('')
-          })
       })
     </script>
   </body>

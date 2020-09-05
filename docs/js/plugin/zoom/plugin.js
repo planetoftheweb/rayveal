@@ -1,31 +1,35 @@
-// Custom reveal.js integration
-(function(){
-	var isEnabled = true;
+/*!
+ * reveal.js Zoom plugin
+ */
+const Plugin = {
 
-	document.querySelector( '.reveal .slides' ).addEventListener( 'mousedown', function( event ) {
-		var modifier = ( Reveal.getConfig().zoomKey ? Reveal.getConfig().zoomKey : 'alt' ) + 'Key';
+	id: 'zoom',
 
-		var zoomPadding = 20;
-		var revealScale = Reveal.getScale();
+	init: function( reveal ) {
 
-		if( event[ modifier ] && isEnabled ) {
-			event.preventDefault();
+		reveal.getRevealElement().addEventListener( 'mousedown', function( event ) {
+			var defaultModifier = /Linux/.test( window.navigator.platform ) ? 'ctrl' : 'alt';
 
-			var bounds = event.target.getBoundingClientRect();
+			var modifier = ( reveal.getConfig().zoomKey ? reveal.getConfig().zoomKey : defaultModifier ) + 'Key';
+			var zoomLevel = ( reveal.getConfig().zoomLevel ? reveal.getConfig().zoomLevel : 2 );
 
-			zoom.to({
-				x: ( bounds.left * revealScale ) - zoomPadding,
-				y: ( bounds.top * revealScale ) - zoomPadding,
-				width: ( bounds.width * revealScale ) + ( zoomPadding * 2 ),
-				height: ( bounds.height * revealScale ) + ( zoomPadding * 2 ),
-				pan: false
-			});
-		}
-	} );
+			if( event[ modifier ] && !reveal.isOverview() ) {
+				event.preventDefault();
 
-	Reveal.addEventListener( 'overviewshown', function() { isEnabled = false; } );
-	Reveal.addEventListener( 'overviewhidden', function() { isEnabled = true; } );
-})();
+				zoom.to({
+					x: event.clientX,
+					y: event.clientY,
+					scale: zoomLevel,
+					pan: false
+				});
+			}
+		} );
+
+	}
+
+};
+
+export default () => Plugin;
 
 /*!
  * zoom.js 0.3 (modified for use with reveal.js)
@@ -273,6 +277,3 @@ var zoom = (function(){
 	}
 
 })();
-
-
-

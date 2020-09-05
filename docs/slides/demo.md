@@ -6,25 +6,16 @@
 
 A markdown first presentation framework. Based on reveal.js with preinstalled plugins, a dash of Bootstrap and sweet extras.
 
-<<<<<<< HEAD
-<a class="btn btn-lg btn-info text-white mr-3" href="https://github.com/planetoftheweb/rayveal">Github Repo</a>
+<a class="btn btn-lg btn-danger text-white mr-3" href="https://github.com/planetoftheweb/rayveal">Github Repo</a>
 
 <div class="small mt-4"><span class="badge badge-light mr-1 ml-2">&larr; &rarr;</span> navigate
 <span class="badge badge-light mr-1 ml-2">t</span>toolbar
 <span class="badge badge-light mr-1 ml-2">m</span>menu
 <span class="badge badge-light mr-1 ml-2">esc</span>overview</div>
-=======
-<a class="btn btn-lg btn-danger text-white mr-3" href="https://github.com/planetoftheweb/rayveal">Github Repo</a>
-
-<div class="small mt-4"><span class="badge badge-warning mr-1 ml-2">&larr; &rarr;</span> navigate
-<span class="badge badge-warning mr-1 ml-2">t</span>toolbar
-<span class="badge badge-warning mr-1 ml-2">m</span>menu
-<span class="badge badge-warning mr-1 ml-2">esc</span>overview</div>
->>>>>>> ba13bac9afcbd04eebd3d3b11016ae5b607409c1
 
 ---
 
-<!-- .slide: data-state="title" class="bg-dark text-warning" -->
+<!-- .slide: data-state="title-gray" class="concave"-->
 
 # Features
 
@@ -55,10 +46,6 @@ A markdown first presentation framework. Based on reveal.js with preinstalled pl
   <div class="smaller">Use arrows to navigate, esc for overview</div>
 </footer>
 ```
-<<<<<<< HEAD
-=======
-<!-- data-line-numbers="1-2" -->
->>>>>>> ba13bac9afcbd04eebd3d3b11016ae5b607409c1
 
 ---
 
@@ -80,16 +67,12 @@ You can't see them, but they're there. Speaker notes lets you create notes that 
 
 # Fragments
 
-1. Are on by default
+1. Are on by 'default'
 1. You can write HTML lists<br><small>(If you don't want them)</small>
 
 ---
 
-<<<<<<< HEAD
-<!-- .slide: data-state="title" class="bg-dark text-warning" -->
-=======
-<!-- .slide: data-state="title title-dark" class="bg-dark text-warning" -->
->>>>>>> ba13bac9afcbd04eebd3d3b11016ae5b607409c1
+<!-- .slide: data-state="title-gray" -->
 
 # Templates
 
@@ -138,13 +121,13 @@ And some text, small shadow...
 
 ---
 
-<!-- .slide: data-state="title" class="bg-dark text-warning" -->
+<!-- .slide: data-state="title-gray" -->
 
 # Styles & Customization
 
 ---
 
-<!-- .slide: data-state="title" class="bg-info" style="background-color: #563C7C" -->
+<!-- .slide: data-state="title" class="bg-info" style="background-color: #044B52" -->
 
 ![pow](images/pow.svg)<!-- .element: style="width:80%" -->
 
@@ -195,7 +178,7 @@ Automatically colorize on second level lists<br>
 
 # Here's some code
 
-```javascript
+```js [1|3-4]
 const electron = require("electron");
 const BrowserWindow = electron.BrowserWindow;
 const app = electron.app;
@@ -207,13 +190,8 @@ app.on("ready", function() {
 });
 ```
 
-<<<<<<< HEAD
-<!-- .element: data-trim="true" contenteditable="true" -->
-
-Syntax highlighted, editable by default
-=======
 <p class="fragment">Syntax highlighted, editable by default</p>
->>>>>>> ba13bac9afcbd04eebd3d3b11016ae5b607409c1
+<p class="fragment">Optional Line Numbers</p>
 
 ---
 
@@ -221,7 +199,7 @@ Syntax highlighted, editable by default
 
 <small>Here's a sample of an embeded CodePen. Use an iframe.</small>
 
-<iframe height='300' scrolling='no' title='Bootstrap 4' src='//codepen.io/planetoftheweb/embed/bgdOzX/?height=300&theme-id=27192&default-tab=html,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%; min-height: 50vh;'>See the Pen <a href='https://codepen.io/planetoftheweb/pen/bgdOzX/'>Bootstrap 4</a> by Ray Villalobos (<a href='https://codepen.io/planetoftheweb'>@planetoftheweb</a>) on <a href='https://codepen.io'>CodePen</a>.
+<iframe height='300' scrolling='no' title='Bootstrap 4' data-src='//codepen.io/planetoftheweb/embed/bgdOzX/?height=300&theme-id=27192&default-tab=html,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%; min-height: 50vh;'>See the Pen <a href='https://codepen.io/planetoftheweb/pen/bgdOzX/'>Bootstrap 4</a> by Ray Villalobos (<a href='https://codepen.io/planetoftheweb'>@planetoftheweb</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
 ---
@@ -238,7 +216,7 @@ Here's what a table looks like. Use the <a href="https://www.tablesgenerator.com
 
 ---
 
-<!-- .slide: data-state="title" class="bg-dark text-warning" -->
+<!-- .slide: data-state="title-gray" -->
 
 # Bootstrap Support
 
@@ -250,7 +228,7 @@ Here's what a table looks like. Use the <a href="https://www.tablesgenerator.com
 
 <div class="card-deck mx-5">
 <div class="card fragment fade-in-then-semi-out">
-  <img src="images/photo.jpg" class="card-img-top img-fluid" alt="Sample Image">
+  <img data-src="images/photo.jpg" class="card-img-top img-fluid" alt="Sample Image">
   <div class="card-body">
     <h4 class="card-title">Card title</h4>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -258,7 +236,7 @@ Here's what a table looks like. Use the <a href="https://www.tablesgenerator.com
   </div>
 </div>
 <div class="card fragment fade-in-then-semi-out">
-  <img src="images/photo.jpg" class="card-img-top  img-fluid" alt="Sample Image">
+  <img data-src="images/photo.jpg" class="card-img-top  img-fluid" alt="Sample Image">
   <div class="card-body">
     <h4 class="card-title">Card title</h4>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -266,7 +244,7 @@ Here's what a table looks like. Use the <a href="https://www.tablesgenerator.com
   </div>
 </div>
 <div class="card fragment fade-in-then-semi-out">
-  <img src="images/photo.jpg" class="card-img-top  img-fluid" alt="Sample Image">
+  <img data-src="images/photo.jpg" class="card-img-top  img-fluid" alt="Sample Image">
   <div class="card-body">
     <h4 class="card-title">Card title</h4>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -314,7 +292,7 @@ Here's what a table looks like. Use the <a href="https://www.tablesgenerator.com
 
 ---
 
-<!-- .slide: data-state="title" class="bg-dark text-warning" -->
+<!-- .slide: data-state="title-gray" -->
 
 # Installation
 
