@@ -4,10 +4,12 @@
 
 ## Opinionated Reveal.js
 
-A markdown first presentation framework. Based on reveal.js with preinstalled plugins, a dash of Bootstrap and sweet extras.
+<p class="my-3">A markdown first presentation framework. Based on reveal.js with preinstalled plugins, a dash of Bootstrap and sweet extras.</p>
 
-<a class="btn btn-lg btn-danger text-white mr-3" href="https://github.com/planetoftheweb/rayveal">Github Repo</a>
-
+<div class="btn-group" role="group" aria-label="Basic example">
+<a class="btn btn-lg btn-warning text-white" href="https://github.com/planetoftheweb/rayveal">Github Repo</a>
+<a class="btn btn-lg btn-danger text-white" href="https://rayveal.tech">Demo</a>
+</div>
 <div class="small mt-4"><span class="badge badge-light mr-1 ml-2">&larr; &rarr;</span> navigate
 <span class="badge badge-light mr-1 ml-2">t</span>toolbar
 <span class="badge badge-light mr-1 ml-2">m</span>menu
@@ -23,7 +25,7 @@ A markdown first presentation framework. Based on reveal.js with preinstalled pl
 
 # 100% Markdown
 
-- Assumes you use markdown to create slides. The `index.html` file points to a markdown file in `build/slides/demo.md`.
+- Assumes you use markdown to create slides. The `index.html` file points to a markdown file in `docs/slides/demo.md`.
 - It does whatever [reveal.js](https://github.com/hakimel/reveal.js) can.
 
 ---
@@ -51,7 +53,7 @@ A markdown first presentation framework. Based on reveal.js with preinstalled pl
 
 # Multiple slides
 
-You can use multiple markdown files within the same project, just add a file in the `build/slides` folder.
+You can use multiple markdown files within the same project, just add a file in the `docs/slides` folder.
 
 <small>Press the `m` key to show [sidebar menu](https://github.com/denehyg/reveal.js-menu). You can use it to jump to different slideshows. This list is created using the gulp build process, which generates an `index.json` file for you as you add more markdown files to the `docs/slides` folder.</small>
 
@@ -84,7 +86,8 @@ You can't see them, but they're there. Speaker notes lets you create notes that 
 
 - Template with an icon
 - Preloading [font-awesome](https://fontawesome.com) <small>by Dave Gandy</small>
-- &lt;!-- .slide: data-state="hasicon" --&gt;
+
+<small>&lt;!-- .slide: data-state="hasicon" --&gt;</small>
 
 ---
 
@@ -99,17 +102,32 @@ You can't see them, but they're there. Speaker notes lets you create notes that 
 - five
 - just list items
 
-&lt;!-- .slide: data-state="circles" --&gt;
+<small> &lt;!-- .slide: data-state="circles" --&gt;</small>
 
 ---
 
 <!-- .slide: data-state="textonimage" data-background-image="images/photo.jpg" -->
 
-# Background with an image
+# Background with an image<!-- .element: class="animate__animated animate__backInDown  animate__fast " -->
 
-And some text, small shadow...
+<p  class="animate__animated animate__backInUp animate__slow">
+And some text, small shadow, fancy animation...
+</div><!-- .slide: data-state="textonimage" data-background-image="images/photo.jpg" -->
 
-<small>&lt;!-- .slide: data-background-image="images/photo.jpg" --&gt;</small>
+<small class="animate__animated animate__backInUp animate__delay-2s">&lt;!-- .slide: data-background-image="images/photo.jpg" --&gt;</small>
+
+---
+
+<!-- .slide: data-state="mostlyimage" data-background-image="images/photo.jpg" -->
+
+# Mostly Image
+
+<small class="fragment" data-fragment-index="5">&lt;!-- .slide: data-state="mostlyimage" data-background-image="images/photo.jpg" --&gt;
+</small>
+
+- Photo takes up 60%
+- Title slides from right
+- Slightly smaller font
 
 ---
 
@@ -136,20 +154,21 @@ And some text, small shadow...
 
 <!-- .slide: data-state="hasquote" class="bg-dark" -->
 
-<blockquote>
- <i class="fa fa-quote-left text-secondary" aria-hidden="true"></i>
+<blockquote class="animate__animated animate__backInDown">
+ <i class="fa fa-quote-left text-secondary " aria-hidden="true"></i>
 Amazingly few discotheques provide jukeboxes
  <i class="fa fa-quote-right text-secondary" aria-hidden="true"></i> 
-  <footer class="fragment text-secondary">--Dr. Panagram</footer>
+  <footer class="fragment text-secondary">--Animate with <a href="https://animate.style/" class="text-warning">animate.style</a></footer>
+<small class="text-gray" style="font-size: .35em">&lt;!-- .slide: data-state="hasquote" class="bg-dark" --&gt;</small>
+
 </blockquote>
 
 ---
 
-# Inline &lt;code&gt; Styles
+# Inline Color Styles</small>
 
-- [Bootstrap](https://getbootstrap.com)-like colors for inline code
-- `default` <code class="code-primary">primary</code> <code class="code-success">success</code><br><code class="code-info">info</code> <code class="code-warning">warning</code> <code class="code-danger">danger</code>
-- Always content-editable
+- [Bootstrap](https://getbootstrap.com)-like colors for bg, text, buttons, code
+- Code: `default` <code class="code-primary">primary</code> <code class="code-success">success</code> <code class="code-info">info</code><br> <code class="code-warning">warning</code> <code class="code-danger">danger</code> <code class="code-royal">royal</code> <code class="code-exciting">exciting</code><br>editable
 - <a class="tooltip" href="#">`tooltips`<span>Overlay explanations, clickable</span></a> available on rollover
 
 ---
@@ -181,8 +200,8 @@ app.on("ready", function() {
 });
 ```
 
-- Syntax highlighted, editable by default
-- Language, line numbers, ranges `js [1|5-7]`
+- Colorized with [highlight.js](https://highlightjs.org/), editable by default
+- Language, line numbers, animation `js [1|5-7]`
 
 ---
 
@@ -207,39 +226,62 @@ Here's what a table looks like.<br>Use the <a href="https://www.tablesgenerator.
 
 ---
 
+# Wait, What? Charts?
+
+<small class="mb-2">You can also add [chart.js](https://www.chartjs.org/) charts using this [fantastic plugin](https://github.com/rajgoel/reveal.js-plugins).</small>
+
+<canvas data-chart="bar">
+<!--
+{
+ "data": {
+  "labels": ["Jan"," Feb"," Mar"," Apr"," May"," Jun"," Jul"],
+  "datasets": [
+   {
+    "data":[32,42,18,23,39,73,36],
+    "label":"My first dataset","backgroundColor":"rgba(20,220,220,.8)"
+   }
+  ]
+ },
+ "options": { "responsive": "false" }
+}
+-->
+</canvas>
+
+---
+
 <!-- .slide: data-state="title" class="bg-dark" -->
 
-# Bootstrap Support
+# Bootstrap Components
 
 ---
 
 # Bootstrap Cards
 
-<span class="small">Some styles from the [bootstrap framework](https://getbootstrap.com/) can be real useful...like bootstrap cards. Combine them with reveal fragment transitions.</span>
+<p class="small mb-4" style="font-size: .7em">Use cards with reveal fragment and fragment animation classes.</p>
 
-<div class="card-deck mx-5">
-<div class="card fragment fade-in-then-semi-out">
+<div class="card-group mx-5">
+<div class="card fragment fade-in-then-semi-out" style="width: 18em">
   <img data-src="images/photo.jpg" class="card-img-top img-fluid" alt="Sample Image">
   <div class="card-body">
     <h4 class="card-title">Card title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary text-white">Go somewhere</a>
+    <p class="card-text">Quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary mt-2 text-white">Go somewhere</a>
   </div>
 </div>
-<div class="card fragment fade-in-then-semi-out">
+<div class="card fragment fade-in-then-semi-out" style="width: 18em">
   <img data-src="images/photo.jpg" class="card-img-top  img-fluid" alt="Sample Image">
   <div class="card-body">
     <h4 class="card-title">Card title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary text-white">Go somewhere</a>
+    <p class="card-text">Quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary mt-2 text-white">Go somewhere</a>
   </div>
 </div>
-<div class="card fragment fade-in-then-semi-out">
+<div class="card fragment fade-in-then-semi-out" style="width: 18em">
   <img data-src="images/photo.jpg" class="card-img-top  img-fluid" alt="Sample Image">
   <div class="card-body">
     <h4 class="card-title">Card title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary text-white">Go somewhere</a>
+    <p class="card-text">Quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary mt-2 text-white">Go somewhere</a>
   </div>
 </div>
 </div>
@@ -247,21 +289,25 @@ Here's what a table looks like.<br>Use the <a href="https://www.tablesgenerator.
 
 # Stages of a project
 
-<p class="small">List groups are another nice component you can use.<br>Here's the classic six stages of a project: </p>
+List groups are another nice component.<br>Why not use [emojis](https://github.com/SebastianAigner/twemoji-amazing) (search [here](https://emojipedia.org/))
+
+<!-- .element class="fragment" style="font-size: .8em" -->
 
 <ul class="list-group">
-  <li class="list-group-item fragment fade-down"><i class="far fa-smile"></i> Enthusiasm</li>
-  <li class="list-group-item fragment fade-down">Disillusionment</li>
-  <li class="list-group-item  d-flex justify-content-between align-items-center fragment fade-down">Panic <span class="badge badge-danger badge-pill"><i class="fas fa-star text-white"></i></span>
+  <li class="list-group-item fragment fade-right">
+  <i class="twa twa-beaming-face-with-smiling-eyes"></i>  Enthusiasm</li>
+  <li class="list-group-item fragment fade-right">
+  <i class="twa twa-disappointed-face"></i> Disillusionment</li>
+  <li class="list-group-item fragment fade-right">
+  <i class="twa twa-face-screaming-in-fear"></i> Panic</li>
+  <li class="list-group-item fragment fade-right">
+    <i class="twa twa-pensive-face"></i> Search for the guilty
   </li>
-  <li class="list-group-item fragment fade-down">
-    Search for the guilty
-  </li>
-  <li class="list-group-item fragment fade-down">
-    Punishment of the innocent
+  <li class="list-group-item fragment fade-right">
+    <i class="twa twa-pleading-face"></i> Punishment of the innocent
   </li>
   <li class="list-group-item fragment fade-in-then-semi-out">
-    Praise for the non-participants
+    <i class="twa twa-raising-hands"></i> Praise for the non-participants
   </li>
 </ul>
 
@@ -292,8 +338,8 @@ Here's what a table looks like.<br>Use the <a href="https://www.tablesgenerator.
 # Installing
 
 1. Grab/Fork from [repo](http://github.com/planetoftheweb/rayveal)
-1. `build` folder has presentation
-1. `build/slides/demo.md` subfolder has sample markdown
+1. `docs` folder has presentation
+1. `docs/slides/demo.md` subfolder has sample markdown
 1. `slides/index.json` has a list of presentations (optional)
 
 ---
@@ -301,7 +347,7 @@ Here's what a table looks like.<br>Use the <a href="https://www.tablesgenerator.
 # Running locally
 
 1. Run `$ npm install` from your terminal
-1. Edit `build/slides/demo.md` or add `*.md files`
+1. Edit `docs/slides/demo.md` or add `*.md files`
 1. Run `$ npm start` from your terminal
-1. Generates the `build/slides/index.json` file (index)
+1. Generates the `docs/slides/index.json` file (index)
 1. Creates a live reload server

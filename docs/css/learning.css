@@ -3,17 +3,14 @@
  *********************************************/
 
 .reveal {
-  background-color: transparent;
-  font-family: Avenir, -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Source Sans Pro';
   font-size: 2rem;
-  font-weight: 100;
-  letter-spacing: 0.015em;
-  color: #444;
+  font-weight: 400;
+  color: var(--bs-dark);
 }
 
 ::selection {
-  background-color: #f2da63;
+  background-color: var(--bs-warning);
   text-shadow: none;
 }
 
@@ -43,7 +40,7 @@
 .reveal h5,
 .reveal h6 {
   margin: 0 0 0.2em 0;
-  font-weight: 900;
+  font-weight: 700;
   line-height: 120%;
   letter-spacing: normal;
   margin-top: 0;
@@ -54,27 +51,36 @@
 }
 
 .reveal section > h1 {
-  font-size: 50pt;
+  font-size: 2em;
+  color: var(--bs-black);
 }
 
 .reveal section > h2 {
-  font-size: 48pt;
+  font-size: 1.7em;
 }
 
 .reveal section > h3 {
-  font-size: 44pt;
+  font-size: 1.5em;
 }
 
 .reveal section > h4 {
-  font-size: 38pt;
+  font-size: 1.25em;
+}
+
+.reveal section > h5 {
+  font-size: 1em;
+}
+
+.reveal section > h6 {
+  font-size: 0.85em;
 }
 
 /*********************************************
  * OTHER
  *********************************************/
 .reveal p {
-  margin: 20px 0;
-  padding: 0 5%;
+  margin: 0;
+  padding: 0;
   line-height: 120%;
 }
 
@@ -93,6 +99,7 @@
 .reveal iframe {
   width: 90% !important;
   height: 100%;
+  margin: 0.5em;
 }
 
 .reveal strong,
@@ -116,12 +123,18 @@
 }
 
 .reveal ul {
+  margin-top: 3em;
   list-style-type: disc;
+}
+
+.reveal .slides ul li:first-child,
+.reveal .slides ol li:first-child {
+  margin: 0 3em;
 }
 
 .reveal .slides ul li,
 .reveal .slides ol li {
-  margin: 1em 2em;
+  margin: 1em 3em;
   line-height: 120%;
 }
 
@@ -194,8 +207,8 @@
 .reveal table th {
   vertical-align: middle;
   font-weight: bold;
-  color: #fff;
-  background: #0077b5;
+  color: var(--bs-light);
+  background: var(--bs-info);
   line-height: 100%;
   border: 1px solid;
 }
@@ -204,25 +217,25 @@
 .reveal table td {
   text-align: left;
   padding: 0.5em;
-  border: 1px solid black;
+  border: 1px solid var(--bs-dark);
 }
 
 .reveal table th {
-  border: 1px solid #fff;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border: 1px solid var(--bs-light);
+  border-top: 1px solid var(--bs-dark);
+  border-bottom: 1px solid var(--bs-dark);
 }
 
 .reveal table th:first-child {
-  border-left: 1px solid black;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-left: 1px solid var(--bs-dark);
+  border-top: 1px solid var(--bs-dark);
+  border-bottom: 1px solid var(--bs-dark);
 }
 
 .reveal table th:last-child {
-  border-right: 1px solid black;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-right: 1px solid var(--bs-dark);
+  border-top: 1px solid var(--bs-dark);
+  border-bottom: 1px solid var(--bs-dark);
 }
 
 .reveal table th[align='center'],
@@ -257,7 +270,7 @@
   position: relative;
 }
 .reveal pre > code {
-  background: #edebe8;
+  background: var(--bs-beige);
   display: block;
   font-family: monospace;
   font-size: 1.2rem;
@@ -275,8 +288,8 @@
 
 .reveal p code,
 .reveal li code {
-  background: rgb(126, 126, 126);
-  color: #ffffff;
+  background: var(--bs-gray);
+  color: var(--bs-light);
 }
 
 .reveal sup {
@@ -297,7 +310,7 @@
  * LINKS
  *********************************************/
 .reveal a {
-  color: #0277b5;
+  color: var(--bs-info);
 }
 
 .reveal a:hover {
@@ -305,17 +318,11 @@
   text-shadow: none;
 }
 
-.reveal .roll span:after {
-  color: #fff;
-  background: #a95f13;
-}
-
 /*********************************************
  * IMAGES
  *********************************************/
 .reveal section > img {
   margin: 15px 0px;
-  background: rgba(255, 255, 255, 0.12);
 }
 
 .reveal section img.plain {
@@ -323,58 +330,63 @@
   box-shadow: none;
 }
 
-.reveal a img {
-  -webkit-transition: all 0.15s linear;
-  -moz-transition: all 0.15s linear;
-  transition: all 0.15s linear;
-}
-
-.reveal a:hover img {
-  background: rgba(255, 255, 255, 0.2);
-  border-color: #e68523;
-}
-
 /*********************************************
 * Code Colors
 *********************************************/
-.reveal .code-primary {
-  background: #0077b5 !important;
+.reveal .code {
+  background: var(--bs-gray) !important;
   margin: 5px;
-  color: #fff !important;
+  color: var(--bs-light) !important;
+}
+
+.reveal .code-primary {
+  background: var(--bs-primary) !important;
+  margin: 5px;
+  color: var(--bs-light) !important;
 }
 
 .reveal .code-success {
-  background-color: #5cb85c !important;
+  background-color: var(--bs-success) !important;
   margin: 5px;
-  color: #fff !important;
+  color: var(--bs-light) !important;
 }
 
 .reveal .code-info {
-  background-color: #5bc0de !important;
+  background-color: var(--bs-info) !important;
   margin: 5px;
-  color: #fff !important;
+  color: var(--bs-light) !important;
 }
 
 .reveal .code-warning {
-  background-color: #e68523 !important;
+  background-color: var(--bs-warning) !important;
   margin: 5px;
-  color: #fff !important;
+  color: var(--bs-dark) !important;
 }
 
 .reveal .code-danger {
-  background-color: #d9534e !important;
-  color: #fff !important;
+  background-color: var(--bs-danger) !important;
+  color: var(--bs-light) !important;
+}
+
+.reveal .code-royal {
+  background-color: var(--bs-royal) !important;
+  color: var(--bs-light) !important;
+}
+
+.reveal .code-exciting {
+  background-color: var(--bs-exciting) !important;
+  color: var(--bs-light) !important;
 }
 
 /*********************************************
  * Title Slide
  *********************************************/
 .reveal-viewport.title {
-  background: linear-gradient(to right, #2484bb, #30b6c7);
+  background: linear-gradient(to right, var(--bs-primary), var(--bs-info));
 }
 
 .reveal-viewport.title .slides {
-  color: #fff;
+  color: var(--bs-light);
   letter-spacing: 0.03em;
   text-align: center;
 }
@@ -392,7 +404,7 @@
 
 .reveal-viewport.title .slides h1 {
   font-size: 2.2em;
-  color: #ffc109;
+  color: var(--bs-yellow);
 }
 
 .reveal-viewport.title .slides h2 {
@@ -431,7 +443,7 @@
 
 .textonimage .slides {
   letter-spacing: 0.03em;
-  color: #fff;
+  color: var(--bs-light);
   text-align: center;
 }
 
@@ -450,19 +462,117 @@
 
 .textonimage .slides p {
   margin-top: 0;
-  text-shadow: 0px 0px 10px black;
+  text-shadow: 0px 0px 10px var(--bs-dark);
 }
 
 .textonimage .slides a {
-  color: #fff;
-  text-shadow: 0px 0px 10px black;
+  color: var(--bs-light);
+  text-shadow: 0px 0px 10px var(--bs-dark);
+}
+
+/*********************************************
+ * Half Image
+ *********************************************/
+.mostlyimage {
+  background-color: var(--bs-dark);
+}
+
+.mostlyimage .slide-background-content {
+  width: 60% !important;
+  animation: fadeInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 0.5s; /* don't forget to set a duration! */
+}
+
+.mostlyimage .slides {
+  width: 100% !important;
+  left: 0 !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  right: 0 !important;
+  transform: none !important;
+}
+
+.reveal-viewport.mostlyimage section {
+  animation: fadeInRight; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 0.5s; /* don't forget to set a duration! */
+  align-self: flex-end !important;
+  width: 40% !important;
+  color: var(--bs-gray-light);
+}
+
+.reveal-viewport.mostlyimage section li {
+  color: var(--bs-gray-lighter);
+}
+
+.reveal-viewport.mostlyimage .reveal {
+  font-size: 1.4em;
+}
+
+.reveal-viewport.mostlyimage ul li:first-child,
+.reveal-viewport.mostlyimage ul li:first-child {
+  margin-top: 0.5em;
+}
+
+/*********************************************
+ * Inline Code in Lists
+ *********************************************/
+
+.reveal ul {
+  margin-top: 1rem;
+}
+.reveal ul ul {
+  margin-left: 0 !important;
+  font-weight: bold;
+}
+
+.reveal ul li ul li,
+.reveal ol li ul li {
+  line-height: 100%;
+  font-size: 0.7em;
+  margin-bottom: 20px !important;
+  margin-left: -30px !important;
+  list-style-type: none;
+  white-space: nowrap !important;
+}
+
+.reveal ul li ul li:nth-child(1) code {
+  background-color: var(--bs-success);
+  color: var(--bs-light);
+  font-weight: normal;
+  margin: 4px 0;
+}
+.reveal ul li ul li:nth-child(2) code {
+  background-color: var(--bs-danger);
+  color: var(--bs-light);
+  font-weight: normal;
+  margin: 4px 0;
+}
+.reveal ul li ul li:nth-child(3) code {
+  background-color: var(--bs-primary);
+  color: var(--bs-light);
+  font-weight: normal;
+  margin: 4px 0;
+}
+.reveal ul li ul li:nth-child(4) code {
+  background-color: var(--bs-warning);
+  color: var(--bs-light);
+  font-weight: normal;
+  color: var(--bs-dark) !important;
+  margin: 4px 0;
+}
+.reveal ul li ul li:nth-child(5) code {
+  background-color: var(--bs-info);
+  color: var(--bs-light);
+  font-weight: normal;
+  margin: 4px 0;
 }
 
 /*********************************************
  * Text On Video
  *********************************************/
+
 .textonvideo body {
-  background-color: black;
+  background-color: var(--bs-dark);
 }
 
 .textonvideo .slides {
@@ -475,7 +585,7 @@
 
 .textonvideo .slides {
   letter-spacing: 0.03em;
-  color: #fff;
+  color: var(--bs-light);
   text-align: center;
 }
 
@@ -489,17 +599,17 @@
   text-align: center;
   margin-bottom: 0;
   margin-top: 0;
-  text-shadow: 0px 0px 50px rgba(0, 0, 0, 0.7);
+  text-shadow: 0px 0px 50px var(--bs-dark);
 }
 
 .textonvideo .slides p {
   margin-top: 0;
-  text-shadow: 0px 0px 10px black;
+  text-shadow: 0px 0px 10px var(--bs-dark);
 }
 
 .textonvideo .slides a {
-  color: #fff;
-  text-shadow: 0px 0px 10px black;
+  color: var(--bs-light);
+  text-shadow: 0px 0px 10px var(--bs-dark);
 }
 
 /*********************************************
@@ -510,12 +620,12 @@
 }
 
 .reveal-viewport.hasquote .slides {
-  color: #fff;
+  color: var(--bs-light);
   letter-spacing: 0.03em;
 }
 
 .hasquote blockquote {
-  color: #fff !important;
+  color: var(--bs-light) !important;
   font-size: 2em;
   line-height: 110%;
 }
@@ -592,7 +702,7 @@
 }
 
 .footer a:hover {
-  color: #fff;
+  color: var(--bs-light);
 }
 
 footer.fadein {
@@ -649,7 +759,7 @@ footer.fadeout {
 }
 
 .reveal a.tooltip span {
-  color: #fff !important;
+  color: var(--bs-light) !important;
 }
 
 .reveal a code {
@@ -657,22 +767,23 @@ footer.fadeout {
 }
 
 /*********************************************
- * Tooltips
+ * Circles
  *********************************************/
-.circles ul {
+
+.reveal .circles ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.circles li.fragment {
+.reveal .circles li.fragment {
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   font-weight: 500;
-  color: #666;
-  border: 10px solid #5bc0de;
+  color: var(--bs-dark);
+  border: 10px solid var(--bs-primary);
   list-style: none;
   padding: 1vmin;
   font-size: 5vmin;
@@ -684,80 +795,40 @@ footer.fadeout {
   opacity: 0.5 !important;
 }
 
-.circles li.current-fragment {
+.reveal .circles li.current-fragment {
   opacity: 1 !important;
 }
 
-.reveal a code {
-  cursor: pointer !important;
+/*********************************************
+ * Bootstrap Card Adjustments
+ *********************************************/
+.reveal .card {
+  font-size: 0.6em;
 }
 
-.reveal ul {
-  margin-top: 1rem;
-}
-.reveal ul ul {
-  margin-left: 0 !important;
-  font-weight: bold;
-}
+/*********************************************
+ * Bootstrap List Group Adjustments
+ *********************************************/
 
-.reveal ul li ul li,
-.reveal ol li ul li {
-  line-height: 100%;
+.reveal .list-group {
   font-size: 0.7em;
-  margin-bottom: 20px !important;
-  margin-left: -30px !important;
-  list-style-type: none;
-  white-space: nowrap !important;
 }
 
-.reveal ul li ul li:nth-child(1) code {
-  background-color: var(--success);
-  color: white;
-  font-weight: normal;
-  margin: 4px 0;
-}
-.reveal ul li ul li:nth-child(2) code {
-  background-color: var(--danger);
-  color: white;
-  font-weight: normal;
-  margin: 4px 0;
-}
-.reveal ul li ul li:nth-child(3) code {
-  background-color: var(--primary);
-  color: white;
-  font-weight: normal;
-  margin: 4px 0;
-}
-.reveal ul li ul li:nth-child(4) code {
-  background-color: var(--warning);
-  color: white;
-  font-weight: normal;
-  margin: 4px 0;
-}
-.reveal ul li ul li:nth-child(5) code {
-  background-color: var(--info);
-  color: white;
-  font-weight: normal;
-  margin: 4px 0;
+.reveal .list-group .list-group-item {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.card {
-  font-size: 1rem;
+.reveal .list-group .current-fragment {
+  background-color: var(--bs-primary);
+  color: var(--bs-white);
 }
 
-ul.list-group li,
-ol.list-group li {
-  font-size: 1.2rem;
-  margin: 0 !important;
-  margin-bottom: -1px !important;
-}
+/*********************************************
+ * Bootstrap List Group Adjustments
+ *********************************************/
 
-ul.list-group li.current-fragment {
-  background-color: var(--primary);
-  color: var(--white);
-}
-
-.alert {
+.reveal .alert {
   width: auto;
   font-size: 0.6em;
 }

@@ -18,7 +18,13 @@
     <link rel="stylesheet" href="css/fontawesome.css" />
     <link rel="stylesheet" href="css/reveal.css" />
     <link rel="stylesheet" href="css/learning.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
     <link rel="stylesheet" href="css/syntax/color-brewer.css" />
+    <link rel="stylesheet" href="css/twemoji-amazing.css" />
+    <script
+      src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body spellcheck="false">
@@ -66,6 +72,8 @@
     <script src="js/plugin/math/math.js"></script>
     <script src="js/plugin/zoom/zoom.js"></script>
     <script src="js/plugin/menu/menu.js"></script>
+    <script src="js/plugin/chart/Chart.min.js"></script>
+    <script src="js/plugin/chart/plugin.js"></script>
 
     <script>
       Reveal.initialize({
@@ -77,10 +85,8 @@
           RevealMath,
           RevealZoom,
           RevealMenu,
+          RevealChart,
         ],
-        markdown: {
-          smartypants: true,
-        },
         menu: {
           transitions: false,
           themes: false,
@@ -88,15 +94,14 @@
           openButton: false,
           loadIcons: false,
         },
-        width: 1296,
-        height: 858,
-        margin: 0.05,
+        width: 1152,
+        height: 720,
         minScale: 0,
-        maxScale: 1,
+        maxScale: 1.25,
         display: 'flex',
         history: true,
 
-        transition: 'fade', // none/fade/slide/convex/concave/zoom
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
         transitionSpeed: 'fast', // default/fast/slow
         backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
 
