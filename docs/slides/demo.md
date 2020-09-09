@@ -4,16 +4,16 @@
 
 ## Opinionated Reveal.js
 
-<p class="my-3">A markdown first presentation framework. Based on reveal.js with preinstalled plugins, a dash of Bootstrap and sweet extras.</p>
+A markdown first presentation framework. Based on reveal.js with preinstalled plugins, a dash of Bootstrap and sweet extras.
 
 <div class="btn-group" role="group" aria-label="Basic example">
-<a class="btn btn-lg btn-warning text-white" href="https://github.com/planetoftheweb/rayveal">Github Repo</a>
-<a class="btn btn-lg btn-danger text-white" href="https://rayveal.tech">Demo</a>
+<a class="btn btn-lg btn-warning text-dark" href="https://github.com/planetoftheweb/rayveal">Github Repo</a>
+<a class="btn btn-lg btn-light text-dark" href="https://rayveal.tech">Demo</a>
 </div>
-<div class="small mt-4"><span class="badge badge-light mr-1 ml-2">&larr; &rarr;</span> navigate
-<span class="badge badge-light mr-1 ml-2">t</span>toolbar
-<span class="badge badge-light mr-1 ml-2">m</span>menu
-<span class="badge badge-light mr-1 ml-2">esc</span>overview</div>
+<div class="small mt-4"><span class="badge bg-light text-dark mr-1 ml-2">&larr; &rarr;</span> navigate
+<span class="badge bg-light text-dark mr-1 ml-2">t</span>toolbar
+<span class="badge bg-light text-dark mr-1 ml-2">m</span>menu
+<span class="badge bg-light text-dark mr-1 ml-2">esc</span>overview</div>
 
 ---
 
@@ -30,9 +30,9 @@
 
 ---
 
-# Persistent Navigation
+## Customizable
 
-<small>The persistent navigation bar at the bottom is on every page. It will disappear after 5 seconds. You can also toggle it by hitting the `t` key. Look for the following code on `index.html`</small>
+The persistent navigation bar at the bottom is on every page. It will disappear after 5 seconds. You can also toggle it by hitting the `t` key. Look for the following code on `index.html`
 
 ```html
 <footer class="footer">
@@ -67,7 +67,9 @@ You can't see them, but they're there. Speaker notes lets you create notes that 
 
 ---
 
-# Fragments
+# The Quick Brown Fox Jumps Over The Lazy Dog.
+
+The Quick Brown Fox **Jumps** OveT The Lazy Dog.The Quick Brown Fox Jumps OveT The Lazy Dog.
 
 1. Are on by 'default'
 1. You can write HTML lists<br><small>(If you don't want them)</small>
@@ -218,11 +220,11 @@ app.on("ready", function() {
 
 Here's what a table looks like.<br>Use the <a href="https://www.tablesgenerator.com/markdown_tables">tables generator</a> to help you write the markdown.
 
-|                  | Extra small <small>< 768px</small> | Small <small> &ge; 768px</small> | Medium <small>&ge;992px</small> | Large <small>&ge;1200px</small> |
-| ---------------- | ---------------------------------- | -------------------------------- | ------------------------------- | ------------------------------- |
-| **Container**    | Auto                               | 750px                            | 970px                           | 1170px                          |
-| **Size**         | .col-xs-                           | .col-sm-                         | .col-md-                        | .col-lg-                        |
-| **Column width** | Auto                               | ~62px                            | ~81px                           | ~97px                           |
+|                  | Extra small <small>< 768px</small> | Small <small> &ge; 768px</small> | Medium <small>&ge; 992px</small> | Large <small>&ge; 1200px</small> |
+| ---------------- | ---------------------------------- | -------------------------------- | -------------------------------- | -------------------------------- |
+| **Container**    | Auto                               | 750px                            | 970px                            | 1170px                           |
+| **Size**         | .col-xs-                           | .col-sm-                         | .col-md-                         | .col-lg-                         |
+| **Column width** | Auto                               | ~62px                            | ~81px                            | ~97px                            |
 
 ---
 
