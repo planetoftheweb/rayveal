@@ -1,23 +1,23 @@
-<!-- .slide: data-state="title" -->
+<!-- .slide: data-state="title"  -->
 
 # RayVeal
 
 ## Opinionated Reveal.js
 
-A markdown first presentation framework. Based on reveal.js with preinstalled plugins, a dash of Bootstrap and sweet extras.
-
-<div class="btn-group" role="group" aria-label="Basic example">
+<p>A markdown first presentation framework.<br> Based on reveal.js with preinstalled plugins, a dash of Bootstrap and sweet extras.</p>
+<p class="no-fragment btn-group" role="group" aria-label="Basic example">
 <a class="btn btn-lg btn-warning text-dark" href="https://github.com/planetoftheweb/rayveal">Github Repo</a>
 <a class="btn btn-lg btn-light text-dark" href="https://rayveal.tech">Demo</a>
-</div>
-<div class="small mt-4"><span class="badge bg-light text-dark mr-1 ml-2">&larr; &rarr;</span> navigate
+</p>
+
+<p class="no-fragment small mt-4"><span class="badge bg-light text-dark mr-1 ml-2">&larr; &rarr;</span> navigate
 <span class="badge bg-light text-dark mr-1 ml-2">t</span>toolbar
 <span class="badge bg-light text-dark mr-1 ml-2">m</span>menu
-<span class="badge bg-light text-dark mr-1 ml-2">esc</span>overview</div>
+<span class="badge bg-light text-dark mr-1 ml-2">esc</span>overview</p>
 
 ---
 
-<!-- .slide: data-state="title" class="bg-dark"-->
+<!-- .slide: data-state="title" data-transition="zoom" class="bg-dark"-->
 
 # Features
 
@@ -30,7 +30,7 @@ A markdown first presentation framework. Based on reveal.js with preinstalled pl
 
 ---
 
-## Customizable
+# Customizable
 
 The persistent navigation bar at the bottom is on every page. It will disappear after 5 seconds. You can also toggle it by hitting the `t` key. Look for the following code on `index.html`
 
@@ -55,24 +55,26 @@ The persistent navigation bar at the bottom is on every page. It will disappear 
 
 You can use multiple markdown files within the same project, just add a file in the `docs/slides` folder.
 
-<small>Press the `m` key to show [sidebar menu](https://github.com/denehyg/reveal.js-menu). You can use it to jump to different slideshows. This list is created using the gulp build process, which generates an `index.json` file for you as you add more markdown files to the `docs/slides` folder.</small>
+<small>Press the `m` key to show [sidebar menu](https://github.com/denehyg/reveal.js-menu). You can _use_ it to jump to different slideshows. This list is created using the gulp build process, which generates an `index.json` file for you as you add more markdown files to the `docs/slides` folder.</small>
 
 ---
 
 # Author Notes
 
-You can't see them, but they're there. Speaker notes lets you create notes that only you see. Press the `s`. I also use them so that I know what I'm going to say when using simpler bullets.
+You can't see them, but they're there. Speaker notes lets you create notes that only you see. Press the `s` key to view **presenter mode**. I also use them so that I know what I'm going to say when using simpler bullets.
 
-> > Author Notes: Author notes are similar to markdown blockquotes, but you use double greater than signs. They won't appear on your slides, so I personally use them as reading notes, but Reveal.js has a presentation mode that allows you to see them in your slides.
+> >
+
+Author notes are similar to markdown blockquotes, but you use double greater than signs. They won't appear on your slides, so I personally use them as reading notes, but Reveal.js has a presentation mode that allows you to see them in your slides.
 
 ---
 
-# The Quick Brown Fox Jumps Over The Lazy Dog.
-
-The Quick Brown Fox **Jumps** OveT The Lazy Dog.The Quick Brown Fox Jumps OveT The Lazy Dog.
+# Fragments
 
 1. Are on by 'default'
-1. You can write HTML lists<br><small>(If you don't want them)</small>
+1. You can write HTML lists
+
+(If you don't want them)
 
 ---
 
@@ -104,7 +106,7 @@ The Quick Brown Fox **Jumps** OveT The Lazy Dog.The Quick Brown Fox Jumps OveT T
 - five
 - just list items
 
-<small> &lt;!-- .slide: data-state="circles" --&gt;</small>
+<small>&lt;!-- .slide: data-state="circles" --&gt;</small>
 
 ---
 
@@ -114,7 +116,7 @@ The Quick Brown Fox **Jumps** OveT The Lazy Dog.The Quick Brown Fox Jumps OveT T
 
 <p  class="animate__animated animate__backInUp animate__slow">
 And some text, small shadow, fancy animation...
-</div><!-- .slide: data-state="textonimage" data-background-image="images/photo.jpg" -->
+</div>
 
 <small class="animate__animated animate__backInUp animate__delay-2s">&lt;!-- .slide: data-background-image="images/photo.jpg" --&gt;</small>
 
@@ -137,7 +139,7 @@ And some text, small shadow, fancy animation...
 
 <!-- .slide: data-state="textonvideo" data-background-video="images/video.mp4" -->
 
-<small>&lt;!-- .slide: data-state="textonvideo" data-background-video="images/video.mp4" --&gt;</small>
+<small>&lt;!-- .slide: data-state="textonvideo" </small>data-background-video="images/video.mp4" --&gt;
 
 ---
 
@@ -158,12 +160,14 @@ And some text, small shadow, fancy animation...
 
 <blockquote class="animate__animated animate__backInDown">
  <i class="fa fa-quote-left text-secondary " aria-hidden="true"></i>
-Amazingly few discotheques provide jukeboxes
+Amazingly few<br>
+discotheques provide<br>
+jukeboxes
  <i class="fa fa-quote-right text-secondary" aria-hidden="true"></i> 
   <footer class="fragment text-secondary">--Animate with <a href="https://animate.style/" class="text-warning">animate.style</a></footer>
-<small class="text-gray" style="font-size: .35em">&lt;!-- .slide: data-state="hasquote" class="bg-dark" --&gt;</small>
-
 </blockquote>
+
+<small>&lt;!-- .slide: data-state="hasquote" class="bg-dark" --&gt;</small>
 
 ---
 
@@ -175,9 +179,11 @@ Amazingly few discotheques provide jukeboxes
 
 ---
 
+<!-- .slide: data-state="layout-codelist" -->
+
 # Inline Code in Lists
 
-Automatically colorize on second level lists<br>
+Automatically colorize on second level lists
 
 - `sample`
   - NUM: `one` `two` `three`
@@ -209,10 +215,14 @@ app.on("ready", function() {
 
 # Embedded Code
 
-<small>Here's a sample of an embeded CodePen. Use an iframe.</small>
+Here's a sample of an embeded CodePen. Use an iframe. The iframe can take up the full screen (sample on next page).
 
 <iframe height='300' scrolling='no' title='Bootstrap 4' data-src='//codepen.io/planetoftheweb/embed/bgdOzX/?height=300&theme-id=27192&default-tab=html,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%; min-height: 50vh;'>See the Pen <a href='https://codepen.io/planetoftheweb/pen/bgdOzX/'>Bootstrap 4</a> by Ray Villalobos (<a href='https://codepen.io/planetoftheweb'>@planetoftheweb</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
+
+> > You can also use a full screen iframe. If you make it optionally interactive, it's hard for it to lose focus (like making the above codepen editable), so use with care. Here's the special code for that.
+
+`.slide: data-background-iframe="" data-background-interactive="true"`
 
 ---
 
@@ -230,7 +240,7 @@ Here's what a table looks like.<br>Use the <a href="https://www.tablesgenerator.
 
 # Wait, What? Charts?
 
-<small class="mb-2">You can also add [chart.js](https://www.chartjs.org/) charts using this [fantastic plugin](https://github.com/rajgoel/reveal.js-plugins).</small>
+You can also add [chart.js](https://www.chartjs.org/) charts using this [fantastic plugin](https://github.com/rajgoel/reveal.js-plugins).
 
 <canvas data-chart="bar">
 <!--
@@ -259,7 +269,7 @@ Here's what a table looks like.<br>Use the <a href="https://www.tablesgenerator.
 
 # Bootstrap Cards
 
-<p class="small mb-4" style="font-size: .7em">Use cards with reveal fragment and fragment animation classes.</p>
+Use cards with reveal fragment and fragment animation classes.
 
 <div class="card-group mx-5">
 <div class="card fragment fade-in-then-semi-out" style="width: 18em">
@@ -353,3 +363,7 @@ List groups are another nice component.<br>Why not use [emojis](https://github.c
 1. Run `$ npm start` from your terminal
 1. Generates the `docs/slides/index.json` file (index)
 1. Creates a live reload server
+
+```
+
+```

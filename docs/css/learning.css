@@ -4,19 +4,19 @@
 
 .reveal {
   font-family: 'Source Sans Pro';
-  font-size: 2rem;
+  font-size: 2em;
+  line-height: 1.2em;
   font-weight: 200;
-  line-height: 100%;
-  color: var(--bs-dark);
+  color: var(--bs-black);
+}
+
+.reveal * {
+  margin-bottom: 0;
 }
 
 ::selection {
   background-color: var(--bs-warning);
   text-shadow: none;
-}
-
-h3::selection {
-  color: var(--bs-light);
 }
 
 .reveal .slides {
@@ -45,6 +45,7 @@ h3::selection {
 .reveal h5,
 .reveal h6 {
   margin: 0;
+  padding: 0;
   text-transform: inherit;
   text-shadow: none;
   word-wrap: break-word;
@@ -67,6 +68,9 @@ h3::selection {
   color: var(--bs-warning);
 }
 
+h3::selection {
+  color: var(--bs-light);
+}
 .reveal section > h4 {
   font-size: 1.25em;
   color: var(--bs-royal);
@@ -97,15 +101,28 @@ h3::selection {
   quotes: none;
 }
 
+.reveal sup {
+  vertical-align: super;
+}
+
+.reveal sub {
+  vertical-align: sub;
+}
+
+.reveal small {
+  display: inline-block;
+  font-size: 0.8em;
+}
+
 /*********************************************
  * Paragraphs
  *********************************************/
 
 .reveal p {
-  margin: 0.7em 5em;
-  padding: 0;
-  line-height: 120%;
   font-size: 0.8em;
+  margin-bottom: 0;
+  margin: auto 3em;
+  margin-top: 1em;
 }
 
 .reveal h1 + p,
@@ -113,6 +130,14 @@ h3::selection {
   margin-top: 0.5em;
 }
 
+.reveal p > em {
+  font-size: 0.7em;
+  padding: 0 !important;
+}
+
+.reveal p small {
+  line-height: 120%;
+}
 /*********************************************
  * Headlines
  *********************************************/
@@ -131,23 +156,33 @@ h3::selection {
 .reveal dl,
 .reveal ul {
   text-align: left;
-  margin-top: 0.5em;
+  margin: 0;
 }
 
 .reveal ul {
+  margin-top: 0;
   list-style-type: disc;
   font-size: 0.8em;
-  line-height: 90%;
-}
-
-.reveal .slides ul li:first-child,
-.reveal .slides ol li:first-child {
-  margin-top: 0;
 }
 
 .reveal .slides ul li,
 .reveal .slides ol li {
-  margin: 0.9em 3em;
+  margin: 0.8em 6em;
+}
+
+.reveal ul li ul li,
+.reveal ol li ul li {
+  line-height: 100%;
+  font-size: 0.7em;
+  margin-bottom: 20px !important;
+  margin-left: -30px !important;
+  list-style-type: none;
+  white-space: nowrap !important;
+}
+
+.reveal .slides ul li:first-child,
+.reveal .slides ol li:first-child {
+  margin-top: 1.25em;
 }
 
 /*********************************************
@@ -167,7 +202,6 @@ h3::selection {
 
 .reveal table th,
 .reveal table td {
-  text-align: left;
   padding: 0.4em;
   border: 1px solid var(--bs-gray-light);
   text-align: center;
@@ -221,30 +255,14 @@ h3::selection {
   max-width: 100%;
 }
 
-.reveal iframe {
-  width: 90% !important;
-  height: 100%;
-  margin: 0.5em;
-}
-
 /*********************************************
  * Code
  *********************************************/
 
-.reveal code {
-  font-family: monospace;
-  display: inline-block;
-  padding: 0.2em 0.3em;
-  white-space: nowrap;
-  cursor: text;
-  border-radius: 5px;
-  background: var(--bs-gray);
-  color: var(--bs-light);
-}
-
 .reveal pre {
   position: relative;
   margin: 1em;
+  overflow: hidden;
 }
 
 .reveal p code,
@@ -258,30 +276,17 @@ h3::selection {
   font-family: monospace;
   font-size: 1.2rem;
   text-align: left;
-  white-space: pre-line;
+  white-space: pre;
   line-height: 120%;
   padding: 1em;
   color: inherit;
+  max-width: 100%;
 }
 
 .reveal code table td {
   font-size: 1.2rem;
   text-align: left;
   padding-left: 0 !important;
-}
-
-.reveal sup {
-  vertical-align: super;
-}
-
-.reveal sub {
-  vertical-align: sub;
-}
-
-.reveal small {
-  display: inline-block;
-  font-size: 0.6em;
-  line-height: 120%;
 }
 
 /*********************************************
@@ -311,10 +316,17 @@ h3::selection {
 /*********************************************
 * Code Colors
 *********************************************/
-.reveal .code {
-  background: var(--bs-gray) !important;
-  margin: 5px;
-  color: var(--bs-light) !important;
+
+.reveal code {
+  font-family: monospace;
+  margin: 1px;
+  padding: 0 0.5em;
+  display: inline-block;
+  white-space: nowrap;
+  cursor: text;
+  border-radius: 5px;
+  background: var(--bs-gray);
+  color: var(--bs-light);
 }
 
 .reveal .code-primary {
@@ -343,16 +355,19 @@ h3::selection {
 
 .reveal .code-danger {
   background-color: var(--bs-danger) !important;
+  margin: 5px;
   color: var(--bs-light) !important;
 }
 
 .reveal .code-royal {
   background-color: var(--bs-royal) !important;
+  margin: 5px;
   color: var(--bs-light) !important;
 }
 
 .reveal .code-exciting {
   background-color: var(--bs-exciting) !important;
+  margin: 5px;
   color: var(--bs-light) !important;
 }
 
@@ -375,8 +390,6 @@ h3::selection {
 .reveal-viewport.title .slides h4,
 .reveal-viewport.title .slides h5,
 .reveal-viewport.title .slides h6 {
-  text-align: center;
-  margin-bottom: 0;
   margin-top: 0;
 }
 
@@ -388,6 +401,8 @@ h3::selection {
 .reveal-viewport.title .slides h2 {
   font-size: 1.6em;
   line-height: 100%;
+  color: var(--bs-dark);
+  filter: contrast(0.9);
 }
 
 .reveal-viewport.title .slides p {
@@ -460,6 +475,16 @@ h3::selection {
   animation-duration: 0.5s; /* don't forget to set a duration! */
 }
 
+.mostlyimage h1 {
+  font-size: calc(1.3rem + 0.6vw);
+}
+
+@media (min-width: 1200px) {
+  .mostlyimage h1 {
+    font-size: 1.75rem;
+  }
+}
+
 .mostlyimage .slides {
   width: 100% !important;
   left: 0 !important;
@@ -488,60 +513,6 @@ h3::selection {
 .reveal-viewport.mostlyimage ul li:first-child,
 .reveal-viewport.mostlyimage ul li:first-child {
   margin-top: 0.5em;
-}
-
-/*********************************************
- * List Items
- *********************************************/
-
-.reveal ul {
-  margin-top: 1rem;
-}
-.reveal ul ul {
-  margin-left: 0 !important;
-  font-weight: bold;
-}
-
-.reveal ul li ul li,
-.reveal ol li ul li {
-  line-height: 100%;
-  font-size: 0.7em;
-  margin-bottom: 20px !important;
-  margin-left: -30px !important;
-  list-style-type: none;
-  white-space: nowrap !important;
-}
-
-.reveal ul li ul li:nth-child(1) code {
-  background-color: var(--bs-success);
-  color: var(--bs-light);
-  font-weight: normal;
-  margin: 4px 0;
-}
-.reveal ul li ul li:nth-child(2) code {
-  background-color: var(--bs-danger);
-  color: var(--bs-light);
-  font-weight: normal;
-  margin: 4px 0;
-}
-.reveal ul li ul li:nth-child(3) code {
-  background-color: var(--bs-primary);
-  color: var(--bs-light);
-  font-weight: normal;
-  margin: 4px 0;
-}
-.reveal ul li ul li:nth-child(4) code {
-  background-color: var(--bs-warning);
-  color: var(--bs-light);
-  font-weight: normal;
-  color: var(--bs-dark) !important;
-  margin: 4px 0;
-}
-.reveal ul li ul li:nth-child(5) code {
-  background-color: var(--bs-info);
-  color: var(--bs-light);
-  font-weight: normal;
-  margin: 4px 0;
 }
 
 /*********************************************
@@ -603,10 +574,11 @@ h3::selection {
 
 .hasquote blockquote {
   color: var(--bs-light) !important;
-  font-size: 2em;
+  font-size: 2.5em;
   line-height: 110%;
 }
 .hasquote blockquote footer {
+  font-color: var(--bs-light);
   font-size: 0.3em;
 }
 
@@ -617,14 +589,18 @@ h3::selection {
 /*********************************************
  * Has Icon
  *********************************************/
+
 .hasicon .slides h1 {
-  margin-top: 20px;
-  margin-bottom: 10px;
+  position: relative;
+  padding-left: 2em;
 }
 
 .hasicon .slides h1 > i {
-  font-size: 120px;
-  color: var(--danger);
+  position: absolute;
+  margin-left: -1em;
+  top: -0.22em;
+  font-size: 1.8em;
+  color: var(--bs-danger);
   vertical-align: middle;
 }
 
@@ -661,17 +637,16 @@ h3::selection {
 }
 
 .footer {
-  font-size: 0.6em !important;
-  display: block;
+  font-size: 0.5em;
   background: var(--bs-dark);
   color: var(--bs-light);
   text-align: center;
   position: absolute;
-  display: block;
   bottom: 0;
   width: 100%;
   z-index: 500;
   padding: 10px 0 !important;
+  line-height: 100%;
 }
 
 .footer a {
@@ -706,9 +681,6 @@ footer.fadeout {
 /*********************************************
  * Tooltips
  *********************************************/
-.reveal .tooltip {
-  position: relative;
-}
 
 .reveal .tooltip span {
   background: #444;
@@ -744,16 +716,51 @@ footer.fadeout {
 }
 
 /*********************************************
+ * Layout Codelist
+ *********************************************/
+
+.reveal-viewport.layout-codelist ul ul {
+  font-weight: bold;
+}
+
+.reveal-viewport.layout-codelist ul li ul li:nth-child(1) code {
+  background-color: var(--bs-success);
+  color: var(--bs-light);
+  font-weight: 800;
+}
+.reveal-viewport.layout-codelist ul li ul li:nth-child(2) code {
+  background-color: var(--bs-danger);
+  color: var(--bs-light);
+  font-weight: normal;
+}
+.reveal-viewport.layout-codelist ul li ul li:nth-child(3) code {
+  background-color: var(--bs-primary);
+  color: var(--bs-light);
+  font-weight: normal;
+}
+.reveal-viewport.layout-codelist ul li ul li:nth-child(4) code {
+  background-color: var(--bs-warning);
+  color: var(--bs-light);
+  font-weight: normal;
+  color: var(--bs-dark) !important;
+}
+.reveal-viewport.layout-codelist ul li ul li:nth-child(5) code {
+  background-color: var(--bs-info);
+  color: var(--bs-light);
+  font-weight: normal;
+}
+
+/*********************************************
  * Circles
  *********************************************/
 
-.reveal .circles ul {
+.reveal-viewport.circles ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.reveal .circles li.fragment {
+.reveal-viewport.circles li.fragment {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -772,14 +779,14 @@ footer.fadeout {
   opacity: 0.5 !important;
 }
 
-.reveal .circles li.current-fragment {
+.reveal-viewport.circles li.current-fragment {
   opacity: 1 !important;
 }
 
 /*********************************************
  * Bootstrap Card Adjustments
  *********************************************/
-.reveal .card {
+.reveal-viewport .card {
   font-size: 0.6em;
 }
 
@@ -787,7 +794,7 @@ footer.fadeout {
  * Bootstrap List Group Adjustments
  *********************************************/
 
-.reveal .list-group {
+.reveal-viewport .list-group {
   font-size: 0.7em;
 }
 

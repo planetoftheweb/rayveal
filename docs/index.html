@@ -14,10 +14,10 @@
     <meta http-equiv="Expires" content="0" />
 
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/bootstrap-light.css" />
-    <link rel="stylesheet" href="css/fontawesome.css" />
     <link rel="stylesheet" href="css/reveal.css" />
     <link rel="stylesheet" href="css/learning.css" />
+    <link rel="stylesheet" href="css/bootstrap-light.css" />
+    <link rel="stylesheet" href="css/fontawesome.css" />
     <link rel="stylesheet" href="css/animate.min.css" />
     <link rel="stylesheet" href="css/syntax/color-brewer.css" />
     <link rel="stylesheet" href="css/twemoji-amazing.css" />
@@ -110,21 +110,10 @@
         display: 'flex',
         history: true,
 
-        transition: 'slide', // none/fade/slide/convex/concave/zoom
-        transitionSpeed: 'fast', // default/fast/slow
-        backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
-
         center: false,
         controls: false,
         progress: false,
         rollingLinks: false,
-        menu: {
-          transitions: false,
-          themes: false,
-          slides: false,
-          openButton: false,
-          loadIcons: false,
-        },
       })
 
       //Add Keyboard Shortcuts
@@ -140,12 +129,6 @@
 
       // When Reveal.js has finished loading
       Reveal.on('ready', (event) => {
-        //Modify all the PRE tags so they trim spacing
-        let preNodes = document.querySelectorAll('pre')
-        preNodes.forEach(function (item) {
-          item.dataset.trim = true
-        }, this)
-
         //Modify all the PRE>CODE tags so they have line numbers
         let preCodeNodes = document.querySelectorAll('pre code')
         preCodeNodes.forEach(function (item) {
@@ -153,9 +136,11 @@
         }, this)
 
         //Add a fragment class to all list items by default
-        let fragmentNodes = document.querySelectorAll('.slides li, .slides embed, .slides iframe')
+        let fragmentNodes = document.querySelectorAll(
+          '.slide li, .slide section > p, .slide pre code:not(.has-highlights),.slide embed, .slide iframe:not(data-allowfullscreen), .slide table:not(.hljs-ln), .slide canvas'
+        )
         fragmentNodes.forEach(function (item) {
-          //also animate them from the left
+          //also animate them from the leftf
           item.classList.add('fragment', 'fade-left')
         }, this)
 
