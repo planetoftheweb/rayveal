@@ -3,7 +3,9 @@
  *********************************************/
 
 .reveal {
-  font-family: 'Source Sans Pro';
+  font-family: 'Source Sans Pro', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue',
+    Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji';
   font-size: 1.8em;
   line-height: 1.2em;
   font-weight: 200;
