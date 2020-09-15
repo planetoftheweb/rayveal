@@ -1,4 +1,4 @@
-<!-- .slide: data-state="title"  -->
+<!-- .slide: data-state="layout-title"  -->
 
 # RayVeal
 
@@ -17,9 +17,9 @@
 
 ---
 
-<!-- .slide: data-state="title" data-transition="zoom" class="bg-dark"-->
+<!-- .slide: data-state="layout-title" data-transition="zoom" class="bg-dark"-->
 
-# Features
+# Unique Features
 
 ---
 
@@ -30,7 +30,7 @@
 
 ---
 
-# Customizable
+# Persistent Toolbar Navigation
 
 The persistent navigation bar at the bottom is on every page. It will disappear after 5 seconds. You can also toggle it by hitting the `t` key. Look for the following code on `index.html`
 
@@ -51,9 +51,9 @@ The persistent navigation bar at the bottom is on every page. It will disappear 
 
 ---
 
-# Multiple slides
+# Multiple Documents
 
-You can use multiple markdown files within the same project, just add a file in the `docs/slides` folder.
+It assumes you want to write multiple markdown files within the same project, just add a file in the `docs/slides` folder.
 
 <small>Press the `m` key to show [sidebar menu](https://github.com/denehyg/reveal.js-menu). You can _use_ it to jump to different slideshows. This list is created using the gulp build process, which generates an `index.json` file for you as you add more markdown files to the `docs/slides` folder.</small>
 
@@ -78,72 +78,7 @@ Author notes are similar to markdown blockquotes, but you use double greater tha
 
 ---
 
-<!-- .slide: data-state="title" class="bg-dark" -->
-
-# Templates
-
----
-
-<!-- .slide: data-state="hasicon" -->
-
-# <i class="fab fa-html5"></i> Has Icon Template
-
-- Template with an icon
-- Preloading [font-awesome](https://fontawesome.com) <small>by Dave Gandy</small>
-
-<small>&lt;!-- .slide: data-state="hasicon" --&gt;</small>
-
----
-
-<!-- .slide: data-state="circles" -->
-
-# Circles Template
-
-- one
-- two
-- three
-- four
-- five
-- just list items
-
-<small>&lt;!-- .slide: data-state="circles" --&gt;</small>
-
----
-
-<!-- .slide: data-state="textonimage" data-background-image="images/photo.jpg" -->
-
-# Background with an image<!-- .element: class="animate__animated animate__backInDown  animate__fast " -->
-
-<p  class="animate__animated animate__backInUp animate__slow">
-And some text, small shadow, fancy animation...
-</div>
-
-<small class="animate__animated animate__backInUp animate__delay-2s">&lt;!-- .slide: data-background-image="images/photo.jpg" --&gt;</small>
-
----
-
-<!-- .slide: data-state="mostlyimage" data-background-image="images/photo.jpg" -->
-
-# Mostly Image
-
-<small class="fragment" data-fragment-index="5">&lt;!-- .slide: data-state="mostlyimage" data-background-image="images/photo.jpg" --&gt;
-</small>
-
-- Photo takes up 60%
-- Title slides from right
-- Slightly smaller font
-
----
-
-# Background Video
-
-<!-- .slide: data-state="textonvideo" data-background-video="images/video.mp4" -->
-
-<small>&lt;!-- .slide: data-state="textonvideo" </small>data-background-video="images/video.mp4" --&gt;
-
----
-
-<!-- .slide: data-state="title" class="bg-dark" -->
+<!-- .slide: data-state="layout-title" class="bg-dark" -->
 
 # Style Samples
 
@@ -156,41 +91,11 @@ And some text, small shadow, fancy animation...
 
 ---
 
-<!-- .slide: data-state="hasquote" class="bg-dark" -->
+# Inline Color Styles
 
-<blockquote class="animate__animated animate__backInDown">
- <i class="fa fa-quote-left text-secondary " aria-hidden="true"></i>
-Amazingly few<br>
-discotheques provide<br>
-jukeboxes
- <i class="fa fa-quote-right text-secondary" aria-hidden="true"></i> 
-  <footer class="fragment text-secondary">--Animate with <a href="https://animate.style/" class="text-warning">animate.style</a></footer>
-</blockquote>
-
-<small>&lt;!-- .slide: data-state="hasquote" class="bg-dark" --&gt;</small>
-
----
-
-# Inline Color Styles</small>
-
-- [Bootstrap](https://getbootstrap.com)-like colors for bg, text, buttons, code
-- Code: `default` <code class="code-primary">primary</code> <code class="code-success">success</code> <code class="code-info">info</code><br> <code class="code-warning">warning</code> <code class="code-danger">danger</code> <code class="code-royal">royal</code> <code class="code-exciting">exciting</code><br>editable
-- <a class="tooltip" href="#">`tooltips`<span>Overlay explanations, clickable</span></a> available on rollover
-
----
-
-<!-- .slide: data-state="layout-codelist" -->
-
-# Inline Code in Lists
-
-Automatically colorize on second level lists
-
-- `sample`
-  - NUM: `one` `two` `three`
-  - NUM: `four` `five` `six`
-  - NUM: `seven` `eight` `nine`
-  - NUM: `ten` `eleven` `twelve`
-  - NUM: `thirteen` `fourteen` `fifteen`
+- [Bootstrap](https://getbootstrap.com)-like colors for bg, text, buttons, code. Notice the two extra bootstrap colors available.
+- **Code**: `default` <code class="code-primary">primary</code> <code class="code-success">success</code> <code class="code-info">info</code><br> <code class="code-warning">warning</code> <code class="code-danger">danger</code> <code class="code-royal">royal</code> <code class="code-exciting">exciting</code><br>editable
+- <a class="tooltip" href="#">`tooltips`<span>Overlay explanations, clickable</span></a> available on rollover.
 
 ---
 
@@ -261,7 +166,114 @@ You can also add [chart.js](https://www.chartjs.org/) charts using this [fantast
 
 ---
 
-<!-- .slide: data-state="title" class="bg-dark" -->
+<!-- .slide: data-state="layout-title" class="bg-dark" -->
+
+# Layouts
+
+This is a title layout, the default background color is what you saw on the first page. This one uses a custom gray background instead. You can use [Bootstrap](https://getbootstrap.com) background colors if you wish.
+
+They use special tags (see below).<br>Keep going for some additional layouts.
+
+<small>&lt;!-- .slide: data-state="layout-title" --&gt;</small>
+
+---
+
+<!-- .slide: data-state="layout-has-icon" -->
+
+# <i class="fab fa-html5"></i> Has Icon
+
+- Template with an icon
+- Preloading [font-awesome](https://fontawesome.com) <small>by Dave Gandy</small>
+- You can use icons from that library anywhere
+- This layout aligns it to the heading
+
+<small>&lt;!-- .slide: data-state="layout-has-icon" class="bg-dark" --&gt;</small>
+
+---
+
+<!-- .slide: data-state="layout-circles" -->
+
+# Circles
+
+Quick small text inside circles
+
+- one
+- two
+- three
+- four
+- five
+- just list items
+
+<small>&lt;!-- .slide: data-state="layout-circles" --&gt;</small>
+
+---
+
+<!-- .slide: data-state="layout-background-image" data-background-image="images/photo.jpg" -->
+
+# Background with an image<!-- .element: class="animate__animated animate__backInDown  animate__fast " -->
+
+<p  class="animate__animated animate__backInUp animate__slow">
+And some text, small shadow, fancy animation...
+</p>
+
+<small>&lt;!-- .slide: data-state="layout-background-image" data-background-image="images/photo.jpg" --&gt;</small>
+
+---
+
+<!-- .slide: data-state="layout-mostly-image" data-background-image="images/photo.jpg" -->
+
+# Mostly Image
+
+<small>&lt;!-- .slide: data-state="layout-mostly-image" data-background-image="images/photo.jpg" --&gt;
+</small>
+
+- Photo takes up 60%
+- Slide full width
+- Responsive fonts
+
+---
+
+# Background Video
+
+<!-- .slide: data-state="layout-background-video" data-background-video="images/video.mp4" -->
+
+<small>&lt;!-- .slide: data-state="layout-background-video" data-background-video="images/video.mp4" --&gt;</small>
+
+---
+
+<!-- .slide: data-state="layout-quote" class="bg-dark" -->
+
+<blockquote class="animate__animated animate__backInDown">
+ <i class="fa fa-quote-left text-secondary " aria-hidden="true"></i>
+Amazingly few<br>
+discotheques provide<br>
+jukeboxes
+ <i class="fa fa-quote-right text-secondary" aria-hidden="true"></i> 
+  <footer class="fragment">--Animate with <a href="https://animate.style/" class="text-warning">animate.style</a></footer>
+</blockquote>
+
+<small>&lt;!-- .slide: data-state="layout-quote" class="bg-dark" --&gt;</small>
+
+---
+
+<!-- .slide: data-state="layout-code-list" -->
+
+# Inline Code in Lists
+
+Automatically colorize on second level lists
+
+- `sample`
+  - NUM: `one` `two` `three`
+  - NUM: `four` `five` `six`
+  - NUM: `seven` `eight` `nine`
+  - NUM: `ten` `eleven` `twelve`
+  - NUM: `thirteen` `fourteen` `fifteen`
+
+<small>&lt;!-- .slide: data-state="layout-code-list" --&gt;</small>
+
+---
+
+<!-- .slide: data-state="layout-title" class="bg-dark" -->
 
 # Bootstrap Components
 
@@ -269,43 +281,44 @@ You can also add [chart.js](https://www.chartjs.org/) charts using this [fantast
 
 # Bootstrap Cards
 
-Use cards with reveal fragment and fragment animation classes.
+<p class="fragment">Use cards with reveal fragment and fragment animation classes.</p>
 
-<div class="card-group mx-5">
-<div class="card fragment fade-in-then-semi-out" style="width: 18em">
-  <img data-src="images/photo.jpg" class="card-img-top img-fluid" alt="Sample Image">
-  <div class="card-body">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">Quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary mt-2 text-white">Go somewhere</a>
+<div class="card-group">
+  <div class="card fragment fade-in-then-semi-out" style="width: 8em">
+    <img data-src="images/photo.jpg" class="card-img-top img-fluid" alt="Sample Image">
+    <div class="card-body">
+      <h3 class="card-title">Card Title</h3>
+      <p class="card-text">Quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary mt-3 text-white">Go somewhere</a>
+    </div>
+  </div>
+  <div class="card fragment fade-in-then-semi-out" style="width: 8em">
+    <img data-src="images/photo.jpg" class="card-img-top  img-fluid" alt="Sample Image">
+    <div class="card-body">
+      <h3 class="card-title">Card Title</h3>
+      <p class="card-text">Quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary mt-3 text-white">Go somewhere</a>
+    </div>
+  </div>
+  <div class="card fragment fade-in-then-semi-out" style="width: 8em">
+    <img data-src="images/photo.jpg" class="card-img-top  img-fluid" alt="Sample Image">
+    <div class="card-body">
+      <h3 class="card-title">Card Title</h3>
+      <p class="card-text">Quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary mt-3 text-white">Go somewhere</a>
+    </div>
   </div>
 </div>
-<div class="card fragment fade-in-then-semi-out" style="width: 18em">
-  <img data-src="images/photo.jpg" class="card-img-top  img-fluid" alt="Sample Image">
-  <div class="card-body">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">Quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary mt-2 text-white">Go somewhere</a>
-  </div>
-</div>
-<div class="card fragment fade-in-then-semi-out" style="width: 18em">
-  <img data-src="images/photo.jpg" class="card-img-top  img-fluid" alt="Sample Image">
-  <div class="card-body">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">Quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary mt-2 text-white">Go somewhere</a>
-  </div>
-</div>
-</div>
+
 ---
 
 # Stages of a project
 
-List groups are another nice component.<br>Why not use [emojis](https://github.com/SebastianAigner/twemoji-amazing) (search [here](https://emojipedia.org/))
+List groups are another nice component.<br>Why not use [emojis](https://github.com/SebastianAigner/twemoji-amazing) in your presentation? (search [here](https://emojipedia.org/))
 
 <!-- .element class="fragment" style="font-size: .8em" -->
 
-<ul class="list-group">
+<ul class="list-group mt-3">
   <li class="list-group-item fragment fade-right">
   <i class="twa twa-beaming-face-with-smiling-eyes"></i>  Enthusiasm</li>
   <li class="list-group-item fragment fade-right">
@@ -327,21 +340,18 @@ List groups are another nice component.<br>Why not use [emojis](https://github.c
 
 # Alerts
 
-<div class="mx-5">
-  <div class="alert alert-danger fragment">
+  <div class="alert alert-danger fragment w-50">
     <h2 class="alert-heading">Danger Will Robinson</h2>
-    <hr>
-    <p>A few adjustments to other Bootstrap components like alerts, can yield some pretty cool layouts for very little markup.</p>
+    <p>You can also easily use other components and classes like alerts as needed in your layouts.</p>
   </div>
 
-  <div class="alert alert-success fragment">
-    <p>The alert contextual colors will also work here, so go nuts with these styles.</p>
-  </div>
-</div>
+  <p class="alert alert-success fragment w-50">
+    The alert contextual colors will also work here, so go nuts with these styles.
+  </p>
 
 ---
 
-<!-- .slide: data-state="title" class="bg-dark" -->
+<!-- .slide: data-state="layout-title" class="bg-dark" -->
 
 # Installation
 
@@ -363,7 +373,3 @@ List groups are another nice component.<br>Why not use [emojis](https://github.c
 1. Run `$ npm start` from your terminal
 1. Generates the `docs/slides/index.json` file (index)
 1. Creates a live reload server
-
-```
-
-```
