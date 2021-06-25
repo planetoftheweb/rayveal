@@ -8,14 +8,14 @@ You can see the demo at [rayveal.tech](http://rayveal.tech).
 
 ## Instructions
 
-Instead of creating HTML files, you simply create one or more `*.md` files in the `docs/slides` folder. A server is required in order to use RayVeal properly...since the markdown files have to be loaded dynamicaly, so upload the contents of the `build` folder to a server.
+Instead of creating HTML files, you simply create one or more `*.md` files in the `docs/slides` folder. A server is required in order to use RayVeal properly...since the markdown files have to be loaded dynamicaly, so upload the contents of the `docs` folder to a server.
 
 ## Installing Locally with NPM (optional)
 
 Optionally, you can just run the presentation locally (great when you can't guarantee a network connection), There's a live preview server provided.
 
 1. Grab/Fork from [repo](http://github.com/planetoftheweb/rayveal)
-1. `build` folder has presentation
+1. `docs` folder has presentation
 1. `docs/slides/demo.md` subfolder has sample markdown
 1. `slides/index.json` has a list of presentations (optional)
 
