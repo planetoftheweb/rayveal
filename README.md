@@ -8,7 +8,7 @@ You can see the demo at [rayveal.tech](http://rayveal.tech).
 
 ## Instructions
 
-Instead of creating HTML files, you simply create one or more `*.md` files in the `docs/slides` folder. A server is required in order to use RayVeal properly...since the markdown files have to be loaded dynamicaly, so upload the contents of the `docs` folder to a server.
+Instead of creating HTML files, you simply create one or more `*.md` files in the `docs/slides` folder. A server is required in order to use RayVeal properly...since the markdown files have to be loaded dynamically, so upload the contents of the `docs` folder to a server.
 
 ## Installing Locally with NPM (optional)
 
