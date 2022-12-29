@@ -13,7 +13,7 @@
     "browser-sync": "^2.27.11",
     "gulp": "^4.0.0",
     "gulp-folder-index": "0.0.3",
-    "node-sass": "^7.0.0"
+    "node-sass": "^7.0.3"
   },
   "author": "Ray Villalobos",
   "dependencies": {
