@@ -10,7 +10,7 @@
   "main": "gulpfile.js",
   "license": "MIT",
   "devDependencies": {
-    "browser-sync": "^2.27.11",
+    "browser-sync": "^2.29.1",
     "gulp": "^4.0.0",
     "gulp-folder-index": "0.0.3",
     "node-sass": "^7.0.0"
